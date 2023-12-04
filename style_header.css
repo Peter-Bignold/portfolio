@@ -1,8 +1,8 @@
 header {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-right: 48px;
-    padding-left: 48px;
+    padding-right: 80px;
+    padding-left: 80px;
     height: 36px;
     background: #f6f6f6;
     box-shadow: 5px 5px 10px rgb(208, 208, 208);
@@ -12,19 +12,6 @@ header {
 body {
     margin: 0px;
     overflow: hidden;
-}
-
-embed {
-    margin: 0px;
-    width: 100%;
-    height: 67.4px;
-    animation: translateDown ease 0.75s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-img {
-    margin-right: 16px;
 }
 
 .header_button {
@@ -47,6 +34,7 @@ img {
     font-weight: normal;
     font-size: 24px;
     margin: 0px;
+    margin-left: 16px;
     margin-top: 6px;
 }
 
@@ -66,4 +54,8 @@ img {
     margin-left: 16px;
     margin-right: 16px;
     display:block;
+}
+
+.u_header {
+    text-underline-offset: 5px;
 }

@@ -1,4 +1,4 @@
-@keyframes fadeIn {
+@keyframes fadeIn1 {
     0% {
         opacity: 0;
     }
@@ -10,11 +10,23 @@
      }
 }
 
-@keyframes fadeInDelayed {
+@keyframes fadeIn2 {
     0% {
         opacity: 0;
     }
     25% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+@keyframes fadeIn3 {
+    0% {
+        opacity: 0;
+    }
+    40% {
         opacity: 0;
     }
     100% {
