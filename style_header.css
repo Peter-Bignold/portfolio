@@ -3,9 +3,9 @@ header {
     padding-bottom: 10px;
     padding-right: 80px;
     padding-left: 80px;
-    height: 36px;
+    height: 40px;
     background: #f6f6f6;
-    box-shadow: 5px 5px 10px rgb(208, 208, 208);
+    box-shadow: 5px 5px 4px rgb(221, 221, 221);
     font-size: 30px;
 }
 
@@ -21,7 +21,7 @@ body {
     font-family: 'Spartan', sans-serif;
     font-size: 20px;
     padding: 5px;
-    margin-top: 3px;
+    margin-top: 5px;
 }
 
 .header_button:hover{
@@ -35,7 +35,7 @@ body {
     font-size: 24px;
     margin: 0px;
     margin-left: 16px;
-    margin-top: 6px;
+    margin-top: 8px;
 }
 
 .header_text2{
@@ -44,13 +44,13 @@ body {
     font-size: 20px;
     color: rgb(137, 137, 137);
     margin: 0px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .seperator {
     width: 6px;
     height: 6px;
-    margin-top: 13px;
+    margin-top: 15px;
     margin-left: 16px;
     margin-right: 16px;
     display:block;
