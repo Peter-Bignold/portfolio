@@ -10,3 +10,29 @@ body {
     margin: auto;
     text-align: center;
 }
+
+h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: lighter;
+    color: rgb(137, 137, 137);
+    font-size: 30px;
+    animation: fadeInDelayed ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 24px;
+}
