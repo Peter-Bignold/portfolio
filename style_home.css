@@ -1,0 +1,12 @@
+body {
+    margin: 0px;
+    background-image: url('images/home/mclaren1.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.div_center{
+    margin: auto;
+    text-align: center;
+}

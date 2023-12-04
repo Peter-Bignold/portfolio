@@ -1,0 +1,25 @@
+@font-face { font-family: Spartan; src: url('fonts/LeagueSpartan-Regular.ttf'); }
+@font-face { font-family: Spartan; font-weight: bold; src: url('fonts/LeagueSpartan-Bold.ttf');}
+@font-face { font-family: Spartan; font-weight: bolder; src: url('fonts/LeagueSpartan-ExtraBold.ttf');}
+@font-face { font-family: Spartan; font-weight: normal; src: url('fonts/LeagueSpartan-Light.ttf');}
+@font-face { font-family: Spartan; font-weight: lighter; src: url('fonts/LeagueSpartan-ExtraLight.ttf');}
+
+h1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 80px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: lighter;
+    color: rgb(137, 137, 137);
+    font-size: 30px;
+}
+
+h3 {
+    font-family: 'Spartan', sans-serif;
+    font-size: 24px;
+}
