@@ -1,10 +1,6 @@
 body {
     margin: 0px;
     background-color: #eeeeee;
-    /* background-image: url('images/home/mclaren1.png');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover; */
 }
 
 embed {
@@ -60,6 +56,27 @@ b {
     font-weight: bold;
 }
 
+.button_square {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(220, 220, 220);
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.button_square:hover {
+    background-color: rgb(205, 205, 205);
+    transition: 0.2s;
+}
+
 .p_about {
     width: 75%;
 }
@@ -96,7 +113,7 @@ b {
 }
 .button_social:hover{
     opacity: 0.5;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 .img_span {
