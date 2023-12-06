@@ -3,6 +3,11 @@
     flex-direction: row;
 }
 
+.flex_V {
+    display: flex;
+    flex-direction: column;
+}
+
 .flex_MV {
     display: flex;
     flex-direction: column;

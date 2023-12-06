@@ -70,9 +70,9 @@ b {
     padding-right: 20px;
     padding-left: 20px;
     text-align: center;
+    transition: 0.2s ease;
 } .button_square:hover {
     background-color: rgb(205, 205, 205);
-    transition: 0.2s;
 }
 
 .p_about {
@@ -103,9 +103,9 @@ b {
     margin-right: 8px;
     background: none;
     border: none;
+    transition: 0.2s ease;
 } .button_social:hover {
     opacity: 0.5;
-    transition: 0.2s;
 }
 
 .img_span {

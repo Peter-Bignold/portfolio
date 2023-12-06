@@ -23,11 +23,11 @@ body {
     text-wrap: nowrap;
     padding: 5px;
     margin-top: 4px;
+    transition: 0.2s ease;
 }
 
 .header_button:hover{
     color: rgb(23, 23, 23);
-    transition: 0.2s;
 }
 
 .header_text1{

@@ -6,16 +6,18 @@
         <title> Peter Bignold - Portfolio </title>
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <script src="slideshow.js"></script>
         <link rel="stylesheet" href="style_home.css">
         <link rel="stylesheet" href="style_text.css">
         <link rel="stylesheet" href="style_flex.css">
         <link rel="stylesheet" href="style_anims.css">
         <link rel="stylesheet" href="style_scroll.css">
+        <link rel="stylesheet" href="style_slideshow.css">
     </head>
 
     <script src=""></script>
 
-    <body>
+    <body onload="currentSlide(1);">
         <div style="position:sticky; top:0; z-index:1000;">
             <embed type="text/html" src="header.html">
         </div>
@@ -89,6 +91,64 @@
                 <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> HTML </p></div>
                 <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> CSS </p></div>
                 <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blueprints </p></div>
+            </div>
+        </div>
+        <div class="flex_MV" style="margin-bottom:80px;">
+            <h3> Game Development </h3>
+            <p> WIP </p>
+        </div>
+
+        <div class="flex_MV" style="margin-bottom:80px; padding-right:25%; padding-left:25%;">
+            <h3> Digital Artwork </h3>
+            <p> 
+                I started 3D modeling vehicles in Blender during 2016. Since then I've gradually improved my 
+                skills and learned new techniques to achieve an increasing level of quality. 
+            </p>
+            <div class="slideshow_container">
+                <div class="slideshow_slide">
+                    <img src="images/artwork/bmw1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> BMW E30 M3 </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/harley1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Harley Davidson Fatboy </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/mclaren1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Mclaren MP4-6 </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/ninja1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Kawasaki Ninja </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/ferrari1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Ferrari 330-P4 </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/mazda1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Maxda RX-7 </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/civic1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Honda Civic Si </div>
+                </div>
+                <div class="slideshow_slide">
+                    <img src="images/artwork/stingray1.png" style="width:100%; border-radius:10px;">
+                    <div class="caption"> Chevrolet Corvette </div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <div class="flex_MH" style="margin-top:20px;">
+                <span class="slideshow_dot" onclick="currentSlide(1)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(2)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(3)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(4)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(5)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(6)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(7)"></span>
+                <span class="slideshow_dot" onclick="currentSlide(8)"></span>
             </div>
         </div>
     </body>
