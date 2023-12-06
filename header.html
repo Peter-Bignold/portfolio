@@ -5,21 +5,25 @@
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
         <link rel="stylesheet" href="style_text.css">
         <link rel="stylesheet" href="style_header.css">
+        <link rel="stylesheet" href="style_flex.css">
     </head>
     <body>
-        <header>
-            <img src="images/header/noodle1.png" alt="Peter Bignold" style="height:32px; width:32px; display:block; float:left;">
-            <h3 class="header_text1" style="display:block; float:left;"> Peter Bignold </h3>
-            <img class="seperator" src="images/header/dot1.png" alt="" style="float:left;">
-            <h3 class="header_text2" style="display:block; float:left;"> BCS </h3>
-
-            <button class="header_button" style="display:block; float:right;"> Contact </button>
-            <img class="seperator" src="images/header/dot1.png" alt="" style="float:right;">
-            <button class="header_button" style="display:block; float:right;"> Digital Artwork </button>
-            <img class="seperator" src="images/header/dot1.png" alt="" style="float:right;">
-            <button class="header_button" style="display:block; float:right;"> Game Development </button>
-            <img class="seperator" src="images/header/dot1.png" alt="" style="float:right;">
-            <button class="header_button" style="display:block; float:right;"> Home </button>
+        <header class="flex_SH">
+            <div class="flex_LH">
+                <img src="images/header/noodle1.png" alt="Peter Bignold" style="height:32px; width:32px;">
+                <h3 class="header_text1"> Peter Bignold </h3>
+                <img class="seperator" src="images/header/dot1.png" alt="">
+                <h3 class="header_text2"> BCS </h3>
+            </div>
+            <div class="flex_RH">
+                <button class="header_button"> Contact </button>
+                <img class="seperator" src="images/header/dot1.png" alt="">
+                <button class="header_button"> Digital Artwork </button>
+                <img class="seperator" src="images/header/dot1.png" alt="">
+                <button class="header_button"> Game Development </button>
+                <img class="seperator" src="images/header/dot1.png" alt="">
+                <button class="header_button"> Home </button>
+            </div>
         </header>
     </body>
 </html>
