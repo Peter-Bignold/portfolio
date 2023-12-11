@@ -72,7 +72,8 @@ body {
     text-underline-offset: 5px;
 }
 
-@media (max-width: 935px) {
+/* 935 */
+@media (max-width: 1500px) {
     .flex_LH {
         display: none;
         content-visibility: hidden;
