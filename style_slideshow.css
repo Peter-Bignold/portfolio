@@ -1,31 +1,40 @@
 .slideshow_container {
-    max-width: 1256px;
+    display: flex;
     position: relative;
-    margin: auto;
+    max-width: 1256px;
 }
 
 .slideshow_slide {
+    display: flex;
+    margin-bottom: -4px;
     display: none;
     animation-name: fadeInHalf;
     animation-duration: 1.5s;
 }
 
 .prev, .next {
+    display: flex;
+    align-items: center;
     cursor: pointer;
     position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
+    top: 0;
+    height: 100%;
+    padding-left: 24px;
+    padding-right: 24px;
+    font-family: 'Spartan', sans-serif;
     color: white;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 28px;
     transition: 0.2s;
     user-select: none;
 } .next {
     right: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 } .prev {
     left: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 } .next:hover, .prev:hover {
     background-color: rgba(0, 0, 0, 0.323);
     transition: 0.2s;
