@@ -15,6 +15,7 @@ body {
 }
 
 .header_button {
+    cursor: pointer;
     border: none;
     background: none;
     color: rgb(132, 132, 132);
