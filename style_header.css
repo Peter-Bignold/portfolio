@@ -36,7 +36,7 @@ body {
     font-size: 24px;
     margin: 0px;
     margin-left: 16px;
-    margin-top: 9px;
+    margin-top: 7px;
     text-wrap: nowrap;
 }
 
@@ -46,14 +46,14 @@ body {
     font-size: 20px;
     color: rgb(137, 137, 137);
     margin: 0px;
-    margin-top: 12px;
+    margin-top: 10px;
     text-wrap: nowrap;
 }
 
 .seperator {
     width: 6px;
     height: 6px;
-    margin-top: 15px;
+    margin-top: 14px;
     margin-left: 1vw;
     margin-right: 1vw;
     display:block;
@@ -61,4 +61,20 @@ body {
 
 .u_header {
     text-underline-offset: 5px;
+}
+
+.flex_name {
+    display: none;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+}
+
+@media only screen and (min-width: 768px) {
+    header.flex_MH {
+        justify-content: space-between;
+    }
+    div.flex_name {
+        display: flex;
+    }
 }
