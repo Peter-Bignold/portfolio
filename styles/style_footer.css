@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+footer {
+    align-items: flex-end !important;   /* overwrite style_flex.css */
+    width: 100%;
+    padding-right: 80px;
+    padding-left: 80px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 50px 15px #0f0f0f;
+}
+
+p {
+    font-size: 18px;
+    color: rgb(115, 115, 115);
+    margin: 0;
+}

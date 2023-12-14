@@ -1,46 +1,53 @@
-<!DOCTYPE HTML>
 <html lang="en">
     <head>
         <title> Peter Bignold - Portfolio </title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-        <script src="slideshow.js"></script>
-        <link rel="stylesheet" href="style_home.css">
-        <link rel="stylesheet" href="style_text.css">
-        <link rel="stylesheet" href="style_flex.css">
-        <link rel="stylesheet" href="style_anims.css">
-        <link rel="stylesheet" href="style_scroll.css">
-        <link rel="stylesheet" href="style_slideshow.css">
+        <script src="scripts/slideshow.js"></script>
+        <link rel="stylesheet" href="styles/style_text.css">
+        <link rel="stylesheet" href="styles/style_button.css">
+        <link rel="stylesheet" href="styles/style_flex.css">
+        <link rel="stylesheet" href="styles/style_anims.css">
+        <link rel="stylesheet" href="styles/style_scroll.css">
+        <link rel="stylesheet" href="styles/style_slideshow.css">
+        <link rel="stylesheet" href="styles/style_home.css">
     </head>
 
     <body onload="currentSlide(1);">
+        <!-- Header -->
         <div style="position:sticky; top:0; z-index:1000;">
-            <embed type="text/html" src="header.html">
+            <embed class="header_embed" type="text/html" src="header.html">
         </div>
+
+        <!-- Title and Socials -->
         <div class="flex_MV" style = "background-color:#e8e8e8;">
             <h1> Peter Bignold </h1>
             <h2> Computer Scientist &#x2022; Game Developer &#x2022; Digital Artist </h2>
             <div class="flex_MH flex_socials">
-                <button class="button_social" onclick="window.location.href='https://www.linkedin.com/in/peter-bignold-b507171b1/';"> 
+                <button class="button_icon" onclick="window.location.href='https://www.linkedin.com/in/peter-bignold-b507171b1/';"> 
                     <img src="images/home/linkedin1.png" alt="LinkedIn" style="width:32px; height:32px;"> 
                 </button>
-                <button class="button_social" onclick="window.location.href='https://github.com/Noodle-Games';"> 
+                <button class="button_icon" onclick="window.location.href='https://github.com/Noodle-Games';"> 
                     <img src="images/home/github1.png" alt="GitHub" style="width:32px; height:32px;">
                 </button>
-                <button class="button_social" onclick="window.location.href='https://www.youtube.com/@noodle_games';">
+                <button class="button_icon" onclick="window.location.href='https://www.youtube.com/@noodle_games';">
                     <img src="images/home/youtube1.png" alt="YouTube" style="width:32px; height:32px;">
                 </button>
-                <button class="button_social" onclick="window.location.href='https://www.artstation.com/peter_lefaivre';">
+                <button class="button_icon" onclick="window.location.href='https://www.artstation.com/peter_lefaivre';">
                     <img src="images/home/artstation1.png" alt="ArtStation" style="width:32px; height:32px;">
                 </button>
-                <button class="button_social" onclick="window.location.href='https://noodlegames.itch.io/';">
+                <button class="button_icon" onclick="window.location.href='https://noodlegames.itch.io/';">
                     <img src="images/home/itch1.png" alt="ArtStation" style="width:32px; height:32px;">
                 </button>
             </div>
         </div>
+
+        <!-- Hero Image -->
         <div class="flex_MV">
-            <img class="img_span" src="images/home/mclaren1.jpg" alt="Mclaren">
+            <img src="images/home/mclaren1.jpg" alt="Mclaren" style="width:100%;">
         </div>
+
+        <!-- Introduction -->
         <div class="flex_MH wrap_reverse" style="margin-bottom:80px;">
             <img src="images/home/headshot1.jpg" alt="Peter Bignold" style="width:325px; height:325px; border-radius:100%;">
             <div class="flex_LV" style="padding-left:40px; padding-right:40px; margin-bottom:40px;">
@@ -56,6 +63,8 @@
                 </button>
             </div>
         </div>
+
+        <!-- Familiarity -->
         <div class="flex_MV" style="margin-bottom:80px;">
             <h3> I'm Familiar With </h3>
             <div class="flex_MH wrap" style="margin-left:10%; margin-right:10%; max-width:1256px;">
@@ -89,6 +98,8 @@
                 <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blueprints </p></div>
             </div>
         </div>
+
+        <!-- Game Development -->
         <div class="flex_MV" style="margin-bottom:80px;">
             <h3> Game Development </h3>
             <button class="flex_LV flex_game" style="margin-top:10px;">
@@ -187,7 +198,8 @@
             </button>
         </div>
 
-        <div class="flex_MV" style="margin-bottom:80px; margin-right:10%; margin-left:10%;">
+        <!-- Digital Art -->
+        <div class="flex_MV" style="margin-bottom:50px; margin-right:10%; margin-left:10%;">
             <h3> Digital Artwork </h3>
             <p style="padding-left:15%; padding-right:15%;"> 
                 Since 2016 I've gradually improved my 3D modeling skills, incrementally achieving a higher level of quality. 
@@ -240,5 +252,8 @@
                 <span class="slideshow_dot" onclick="currentSlide(8)"></span>
             </div>
         </div>
+
+        <!-- Footer -->
+        <embed class="footer_embed" type="text/html" src="footer.html">
     </body>
 </html>

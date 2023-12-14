@@ -1,0 +1,47 @@
+.button_square {
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(220, 220, 220);
+    color: black;
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    transition: 0.2s ease;
+} .button_square:hover {
+    background-color: rgb(205, 205, 205);
+}
+
+.button_icon {
+    cursor: pointer;
+    padding: 0;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: none;
+    border: none;
+    transition: 0.2s ease;
+} .button_icon:hover {
+    opacity: 0.5;
+}
+
+.button_text {
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: rgb(132, 132, 132);
+    font-family: 'Spartan', sans-serif;
+    font-size: 20px;
+    text-wrap: nowrap;
+    padding: 5px;
+    margin-top: 4px;
+    transition: 0.2s ease;
+} .button_text:hover {
+    color: rgb(23, 23, 23);
+}
