@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1241px) {
+    div.index_intro {
+        justify-content: left !important;
+        text-align: left !important;
+        align-items: flex-start !important;
+    }
+}

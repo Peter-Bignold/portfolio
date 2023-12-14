@@ -6,14 +6,14 @@
         <script src="scripts/slideshow.js"></script>
         <link rel="stylesheet" href="styles/style_text.css">
         <link rel="stylesheet" href="styles/style_button.css">
-        <link rel="stylesheet" href="styles/style_flex.css">
+        <link rel="stylesheet" href="styles/style_container.css">
         <link rel="stylesheet" href="styles/style_anims.css">
         <link rel="stylesheet" href="styles/style_scroll.css">
         <link rel="stylesheet" href="styles/style_slideshow.css">
-        <link rel="stylesheet" href="styles/style_home.css">
+        <link rel="stylesheet" href="styles/style_index.css">
     </head>
 
-    <body onload="currentSlide(1);">
+    <body onload="currentSlide(1);" style="background-color: #eeeeee;">
         <!-- Header -->
         <div style="position:sticky; top:0; z-index:1000;">
             <embed class="header_embed" type="text/html" src="header.html">
@@ -21,8 +21,8 @@
 
         <!-- Title and Socials -->
         <div class="flex_MV" style = "background-color:#e8e8e8;">
-            <h1> Peter Bignold </h1>
-            <h2> Computer Scientist &#x2022; Game Developer &#x2022; Digital Artist </h2>
+            <h1 class="text_fade1"> Peter Bignold </h1>
+            <h2 class="text_fade2"> Computer Scientist &#x2022; Game Developer &#x2022; Digital Artist </h2>
             <div class="flex_MH flex_socials">
                 <button class="button_icon" onclick="window.location.href='https://www.linkedin.com/in/peter-bignold-b507171b1/';"> 
                     <img src="images/home/linkedin1.png" alt="LinkedIn" style="width:32px; height:32px;"> 
@@ -50,7 +50,7 @@
         <!-- Introduction -->
         <div class="flex_MH wrap_reverse" style="margin-bottom:80px;">
             <img src="images/home/headshot1.jpg" alt="Peter Bignold" style="width:325px; height:325px; border-radius:100%;">
-            <div class="flex_LV" style="padding-left:40px; padding-right:40px; margin-bottom:40px;">
+            <div class="flex_MV index_intro" style="padding-left:40px; padding-right:40px; margin-bottom:40px;">
                 <h3> Hey There! </h3>
                 <p style="max-width:820px;">
                     I'm a recent graduate from the <b>University of Calgary</b>, earning my degree in <b>computer science</b> with <b>distinction</b>.
@@ -64,146 +64,68 @@
             </div>
         </div>
 
-        <!-- Familiarity -->
-        <div class="flex_MV" style="margin-bottom:80px;">
-            <h3> I'm Familiar With </h3>
-            <div class="flex_MH wrap" style="margin-left:10%; margin-right:10%; max-width:1256px;">
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PowerBI </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Logic Apps </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Office </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Git </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Unity </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Unreal Engine 4/5 </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blender </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> GIMP </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Audacity </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> OpenGL </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PhysX </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Visual Studio </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> VSCode </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Eclipse </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> CLion </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Intellij </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C++ </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C# </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Python </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Java </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Haskell </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Bash / Shell </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> SQL </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PHP </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> HTML </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> CSS </p></div>
-                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blueprints </p></div>
+        <!-- Game Development -->
+        <div class="flex_MV" style="margin-bottom:80px; margin-left:10%; margin-right:10%;">
+            <h3> Game Development </h3>
+            <p style="padding-left:15%; padding-right:15%;"> 
+                During my free time I create games and real-time simulations. I've worked in UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to 
+                <u><a style="cursor:pointer" onclick="window.location.href='https://noodlegames.itch.io/';">itch.io</a></u>.
+            </p>
+            <div class="flex_MH wrap">
+                <button class="flex_LV button_game_small" style="margin:8px;">
+                    <div class="flex_LH">
+                        <img src="images/flocking_evolution/logo1.png" style="width:68px; height:68px;">
+                        <div class="flex_LV" style="margin-left:24px;">
+                            <h4> Flocking Evolution </h4>
+                            <h5> 2023 &#x2022; Unity </h5>
+                        </div>
+                    </div>
+                </button>
+                <button class="flex_LV button_game_small" style="margin:8px;">
+                    <div class="flex_LH">
+                        <img src="images/space_salvagers/logo1.png" style="width:68px; height:68px;">
+                        <div class="flex_LV" style="margin-left:24px;">
+                            <h4> Super Space Salvagers </h4>
+                            <h5> 2023 &#x2022; C++ </h5>
+                        </div>
+                    </div>
+                </button>
+                <button class="flex_LV button_game_small" style="margin:8px;">
+                    <div class="flex_LH">
+                        <img src="images/mini_racer/logo1.png" style="width:68px; height:68px;">
+                        <div class="flex_LV" style="margin-left:24px;">
+                            <h4> Mini Racer </h4>
+                            <h5> 2022 &#x2022; Unreal Engine 5 </h5>
+                        </div>
+                    </div>
+                </button>
+                <button class="flex_LV button_game_small" style="margin:8px;">
+                    <div class="flex_LH">
+                        <img src="images/apogee/logo1.png" style="width:68px; height:68px;">
+                        <div class="flex_LV" style="margin-left:24px;">
+                            <h4> Apogee </h4>
+                            <h5> 2020 &#x2022; Unreal Engine 4 </h5>
+                        </div>
+                    </div>
+                </button>
+                <button class="flex_LV button_game_small" style="margin:8px;">
+                    <div class="flex_LH">
+                        <img src="images/misfire/logo1.png" style="width:68px; height:68px;">
+                        <div class="flex_LV" style="margin-left:24px;">
+                            <h4> Misfire </h4>
+                            <h5> 2019 &#x2022; Unreal Engine 4 </h5>
+                        </div>
+                    </div>
+                </button>
             </div>
         </div>
 
-        <!-- Game Development -->
-        <div class="flex_MV" style="margin-bottom:80px;">
-            <h3> Game Development </h3>
-            <button class="flex_LV flex_game" style="margin-top:10px;">
-                <div class="flex_LH">
-                    <img src="images/flocking_evolution/logo1.png" style="width:68px; height:68px;">
-                    <div class="flex_LV" style="margin-left:24px;">
-                        <h4> Flocking Evolution </h4>
-                        <h5> 2023 &#x2022; Unity </h5>
-                    </div>
-                </div>
-                <p style="margin-left:4px; margin-right:4px; margin-top:12px; margin-bottom:12px;"> 
-                    An evolutionary flocking simulation with two herbivore species (blue and green) that reproduce 
-                    after surviving for a period, and one carnivore species (red) that reproduces upon eating enough
-                    herbivores.
-                </p>
-                <div class="flex_MH wrap">
-                    <img src="images/flocking_evolution/preview1.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/flocking_evolution/preview2.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/flocking_evolution/preview3.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                </div>
-            </button>
-            <button class="flex_LV flex_game" style="margin-top:16px;">
-                <div class="flex_LH">
-                    <img src="images/space_salvagers/logo1.png" style="width:68px; height:68px;">
-                    <div class="flex_LV" style="margin-left:24px;">
-                        <h4> Super Space Salvagers </h4>
-                        <h5> 2023 &#x2022; C++ </h5>
-                    </div>
-                </div>
-                <p style="margin-left:4px; margin-right:4px; margin-top:12px; margin-bottom:12px;"> 
-                    Super Space Salvagers is a 4-player chaotic, goofy, and frantic party game where players compete to
-                    gather cargo pods from a rugged planet's space wreckage. Made for CPSC 585 - Games Programming, Super Space Salvagers
-                    was the joint effort of myself and 4 other students, made entirely in C++ using OpenGL and Nvidia PhysX.
-                </p>
-                <div class="flex_MH wrap">
-                    <img src="images/space_salvagers/preview1.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/space_salvagers/preview2.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/space_salvagers/preview3.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                </div>
-            </button>
-            <button class="flex_LV flex_game" style="margin-top:16px;">
-                <div class="flex_LH">
-                    <img src="images/mini_racer/logo1.png" style="width:68px; height:68px;">
-                    <div class="flex_LV" style="margin-left:24px;">
-                        <h4> Mini Racer </h4>
-                        <h5> 2022 &#x2022; Unreal Engine 5 </h5>
-                    </div>
-                </div>
-                <p style="margin-left:4px; margin-right:4px; margin-top:12px; margin-bottom:12px;"> 
-                    A prototype top-down circuit racer. Experiments with a unique camera angle, stylized visual presentation, 
-                    and custom arcade vehicle physics.
-                </p>
-                <div class="flex_MH wrap">
-                    <img src="images/mini_racer/preview1.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/mini_racer/preview2.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/mini_racer/preview3.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                </div>
-            </button>
-            <button class="flex_LV flex_game" style="margin-top:16px;">
-                <div class="flex_LH">
-                    <img src="images/apogee/logo1.png" style="width:68px; height:68px;">
-                    <div class="flex_LV" style="margin-left:24px;">
-                        <h4> Apogee </h4>
-                        <h5> 2020 &#x2022; Unreal Engine 4 </h5>
-                    </div>
-                </div>
-                <p style="margin-left:4px; margin-right:4px; margin-top:12px; margin-bottom:12px;"> 
-                    Cruise through a procedurally generated universe - exploring new planets and earning 
-                    high scores along the way. Reach further distances to unlock new ships and move up the 
-                    leaderboard rankings!
-                </p>
-                <div class="flex_MH wrap">
-                    <img src="images/apogee/preview1.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/apogee/preview2.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/apogee/preview3.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                </div>
-            </button>
-            <button class="flex_LV flex_game" style="margin-top:16px;">
-                <div class="flex_LH">
-                    <img src="images/misfire/logo1.png" style="width:68px; height:68px;">
-                    <div class="flex_LV" style="margin-left:24px;">
-                        <h4> Misfire </h4>
-                        <h5> 2019 &#x2022; Unreal Engine 4 </h5>
-                    </div>
-                </div>
-                <p style="margin-left:4px; margin-right:4px; margin-top:12px; margin-bottom:12px;"> 
-                    Face off against your friends with wacky guns that don't shoot straight! 
-                    Misfire is a Casual PVP Platform Shooter. Compete in matches of 2-4 players, 
-                    earn coins to unlock stylish new space suits, and ruin friendships along the way!
-                </p>
-                <div class="flex_MH wrap">
-                    <img src="images/misfire/preview1.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/misfire/preview2.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                    <img src="images/misfire/preview3.jpg" style="max-width:400px; width:98%; margin:4px; border-radius:5px;">
-                </div>
-            </button>
-        </div>
-
         <!-- Digital Art -->
-        <div class="flex_MV" style="margin-bottom:50px; margin-right:10%; margin-left:10%;">
+        <div class="flex_MV" style="margin-bottom:80px; margin-right:10%; margin-left:10%;">
             <h3> Digital Artwork </h3>
             <p style="padding-left:15%; padding-right:15%;"> 
-                Since 2016 I've gradually improved my 3D modeling skills, incrementally achieving a higher level of quality. 
-                I primarily model vehicles, combining my interests in both motorsports and 3D graphics.
+                I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on  
+                <u><a style="cursor:pointer" onclick="window.location.href='https://www.artstation.com/peter_lefaivre';">Artstation</a></u>.
             </p>
             <div class="slideshow_container">
                 <div class="slideshow_slide">
@@ -250,6 +172,41 @@
                 <span class="slideshow_dot" onclick="currentSlide(6)"></span>
                 <span class="slideshow_dot" onclick="currentSlide(7)"></span>
                 <span class="slideshow_dot" onclick="currentSlide(8)"></span>
+            </div>
+        </div>
+
+        <!-- Familiarity -->
+        <div class="flex_MV" style="margin-bottom:50px; margin-left:20%; margin-right:20%;">
+            <h3> I'm Familiar With </h3>
+            <div class="flex_MH wrap">
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PowerBI </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Logic Apps </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Office </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Git </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Unity </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Unreal Engine 4/5 </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blender </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> GIMP </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Audacity </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> OpenGL </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PhysX </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Visual Studio </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> VSCode </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Eclipse </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> CLion </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Intellij </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C++ </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> C# </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Python </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Java </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Haskell </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Bash / Shell </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> SQL </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> PHP </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> HTML </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> CSS </p></div>
+                <div class="flex_textbox"><p style="margin:0; margin-top:5px;"> Blueprints </p></div>
             </div>
         </div>
 

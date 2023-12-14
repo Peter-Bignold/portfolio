@@ -8,12 +8,8 @@ h1 {
     font-family: 'Spartan', sans-serif;
     font-weight: normal;
     font-size: 80px;
-    padding-top: 120px;
-    margin-top: 0px;
+    margin-top: 120px;
     margin-bottom: 10px;
-    animation: fadeIn1 ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 h2 {
@@ -21,9 +17,6 @@ h2 {
     font-weight: lighter;
     color: rgb(137, 137, 137);
     font-size: 30px;
-    animation: fadeIn2 ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
 }
 
 h3 {
@@ -61,3 +54,16 @@ b {
     font-family: 'Spartan', sans-serif;
     font-weight: bold;
 }
+
+.text_fade1 {
+    animation: fadeIn1 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.text_fade2 {
+    animation: fadeIn2 ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
