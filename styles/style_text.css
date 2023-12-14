@@ -54,16 +54,3 @@ b {
     font-family: 'Spartan', sans-serif;
     font-weight: bold;
 }
-
-.text_fade1 {
-    animation: fadeIn1 ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-.text_fade2 {
-    animation: fadeIn2 ease 3s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-

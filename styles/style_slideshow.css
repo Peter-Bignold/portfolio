@@ -7,8 +7,6 @@
 .slideshow_slide {
     display: none;
     vertical-align: middle;     /* gets rid of small whitespace at bottom */
-    animation-name: fadeInHalf;
-    animation-duration: 1.5s;
 }
 
 .prev, .next {
