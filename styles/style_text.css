@@ -43,6 +43,14 @@ h5 {
     margin-top: 8px;
 }
 
+h6 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 p {
     font-family: 'Spartan', sans-serif;
     font-weight: lighter;
@@ -72,6 +80,9 @@ b {
     }
     h5 {
         font-size: 28px;
+    }
+    h6 {
+        font-size: 22px;
     }
     p {
         max-width: 1000px;
