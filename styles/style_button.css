@@ -52,6 +52,7 @@
     cursor: pointer;
     color: black;
     max-width: 1256px;
+    width: 100%;    /* so that the mobile button fills the entire space */
     padding: 20px;
     transition: 0.2s ease;
     border-radius: 5px;
@@ -81,6 +82,9 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .button_game {
+        width: auto;
+    }
     .button_game_small {
         width: auto;
     }
