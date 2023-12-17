@@ -1,0 +1,77 @@
+<html lang="en">
+    <head>
+        <title> Peter Bignold - Portfolio </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+        <link rel="stylesheet" href="styles/style_text.css">
+        <link rel="stylesheet" href="styles/style_button.css">
+        <link rel="stylesheet" href="styles/style_container.css">
+        <link rel="stylesheet" href="styles/style_anims.css">
+        <link rel="stylesheet" href="styles/style_scroll.css">
+    </head>
+
+    <body style="background-color: #eeeeee;">
+        <!-- Header -->
+        <div style="position:sticky; top:0; z-index:1000;">
+            <embed class="header_embed" type="text/html" src="header.html">
+        </div>
+
+
+        <div class="flex_MV" style="margin-right:5%; margin-left:5%; margin-top:120px;">
+            <!-- Title -->
+            <div class="flex_MH anim_fadeIn1" style="margin-bottom:40px;">
+                <img src="images/flocking_evolution/logo1.png" style="width:85px; height:85px;">
+                <div class="flex_LV" style="padding-left:32px;">
+                    <h7> Flocking Evolution </h7>
+                    <h8> 2023 &#x2022; Unity </h8>
+                </div>
+            </div>
+
+            <!-- Description -->
+            <p class="anim_fadeIn2">
+                An evolutionary flocking simulation inspired by <i>Flocks, Herds, and Schools: A Distributed Behavioral Model</i> - Craig Reynolds (1986).
+                The simulation contains two herbivore species (blue and green) that multiply over time and one carnivore species (red) that 
+                reproduces upon eating enough herbivores. Additionally features a suite of tools to alter and interact with the simulation.
+            </p>
+
+            <!-- Download Links -->
+            <div class="flex_MV anim_fadeIn2" style="margin-bottom:40px; max-width:1000px; width:100%;">
+                <button class="button_wide" onclick="window.location.href='https://noodlegames.itch.io/flocking-evolution'" style="margin:4px;"> 
+                    <img src="images/home/itch1.png" alt="Download" style="width:24px; height:24px; padding-right:12px;"> 
+                    Download on itch.io
+                </button>
+            </div>
+            
+            <!-- Gallery -->
+            <div class="flex_MV anim_fadeIn3">
+                <div class="flex_MV" style="margin-bottom:20px;">
+                    <img class="img_gallery" src="images/flocking_evolution/screen4.jpg">
+                    <p> Visualizing quadtree spatial subdivision, which vastly improves the performance
+                        of agent perception. Compared to naively having each agent perceive every other agent, 
+                        quadtree spatial subdivision has agents only perceive others inside the same
+                        quadrant. This enables many more agents to be simulated at once.
+                    </p>
+                </div>
+                <div class="flex_MV" style="margin-bottom:20px;">
+                    <img class="img_gallery" src="images/flocking_evolution/screen1.jpg">
+                    <p> Using the despawner on a large group of herbivores </p>
+                </div>
+                <div class="flex_MV" style="margin-bottom:20px;">
+                    <img class="img_gallery" src="images/flocking_evolution/screen2.jpg">
+                    <p> Carnivores herd and hunt herbivores </p>
+                </div>
+                <div class="flex_MV" style="margin-bottom:20px;">
+                    <img class="img_gallery" src="images/flocking_evolution/screen3.jpg">
+                    <p> Using the lure to redirect blue herbivores </p>
+                </div>
+                <div class="flex_MV">
+                    <img class="img_gallery" src="images/flocking_evolution/screen5.jpg">
+                    <p> Giving agents particle trails </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <embed class="footer_embed" type="text/html" src="footer.html">
+    </body>
+</html>
