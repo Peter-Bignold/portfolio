@@ -67,6 +67,14 @@ h8 {
     margin-top: 8px;
 }
 
+h9 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
 p {
     font-family: 'Spartan', sans-serif;
     font-weight: lighter;
@@ -104,6 +112,9 @@ b {
         font-size: 50px;
     }
     h8 {
+        font-size: 32px;
+    }
+    h9 {
         font-size: 32px;
     }
     p {
