@@ -2,6 +2,7 @@
     display: flex;
     position: relative;
     max-width: 1256px;
+    line-height: 0px;
 }
 
 .slideshow_slide {
