@@ -59,10 +59,10 @@
     height: 15px;
     width: 15px;
     margin: 0 4px;
-    background-color: #bbb;
+    background-color: #dedede;
     border-radius: 50%;
     display: inline-block;
     transition: 0.2s ease;
 } .active, .slideshow_dot:hover {
-    background-color: #717171;
+    background-color: #969696;
 }

@@ -88,6 +88,15 @@ b {
     font-weight: bold;
 }
 
+a {
+    color: rgb(155, 155, 155);
+    font-weight: bold;
+    transition: ease 0.25s;
+}
+a:hover{
+    color: rgb(74, 74, 74);
+}
+
 /* Monitor size - above is mobile size */
 @media only screen and (min-width: 768px) {
     h1 {
