@@ -1,38 +1,37 @@
-let slideIndex = 1;
+let slideIndex = 0;
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function nextSlide() {
+	showSlide(slideIndex + 1);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function lastSlide() {
+	showSlide(slideIndex - 1);
 }
 
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("slideshow_slide");
-  let dots = document.getElementsByClassName("slideshow_dot");
+function toSlide(n){
+	showSlide(n);
+}
 
-  if (n > slides.length) {
-    slideIndex = 1
-  }
-  if (n < 1) {
-    slideIndex = slides.length
-  }
+function showSlide(n) {
+	let slides = document.getElementsByClassName("slideshow_slide");
+	let dots = document.getElementsByClassName("slideshow_dot");
 
-  // Hide all slides
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+	// Clamp slideIndex in range of slide array
+	if (n > slides.length - 1) slideIndex = 0;
+	else if (n < 0) slideIndex = slides.length - 1;
+	else slideIndex = n;
 
-  // Set corrosponding dot to active
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
+	// Hide all slides
+	for (let i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
 
-  // Show active slide, update classname of corrosponding dot
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+	// Set corrosponding dot to active
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+	}
+
+	// Show active slide, update classname of corrosponding dot
+	slides[slideIndex].style.display = "block";
+	dots[slideIndex].className += " active";
 }

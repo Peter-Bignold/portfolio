@@ -6,7 +6,7 @@
         opacity: 1;
      }
 } .anim_fadeIn0 {
-    animation: fadeIn0 ease 2s;
+    animation: fadeIn0 ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -22,7 +22,7 @@
         opacity: 1;
      }
 } .anim_fadeIn1 {
-    animation: fadeIn1 ease 2s;
+    animation: fadeIn1 ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -38,7 +38,7 @@
         opacity: 1;
      }
 } .anim_fadeIn2 {
-    animation: fadeIn2 ease 2s;
+    animation: fadeIn2 ease 1s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -54,7 +54,7 @@
         opacity: 1;
      }
 } .anim_fadeIn3 {
-    animation: fadeIn3 ease 2.5s;
+    animation: fadeIn3 ease 1.5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
@@ -67,7 +67,7 @@
         opacity: 1;
      }
 } .anim_fadeInHalf {
-    animation: fadeInHalf ease 1.5s;
+    animation: fadeInHalf ease 0.75s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }

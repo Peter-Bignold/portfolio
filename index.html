@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <title> Peter Bignold - Portfolio </title>
@@ -13,7 +14,7 @@
         <link rel="stylesheet" href="styles/style_index.css">
     </head>
 
-    <body onload="currentSlide(1);" style="background-color: #eeeeee;">
+    <body onload="toSlide(0);" style="background-color: #eeeeee;">
         <!-- Header -->
         <div style="position:sticky; top:0; z-index:1000;">
             <embed class="header_embed" type="text/html" src="header.html">
@@ -172,7 +173,8 @@
         <div class="flex_MV" style="margin-right:5%; margin-left:5%;">
             <h3> Digital Artwork </h3>
             <p> 
-                I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on  
+                I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of 
+                choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on  
                 <u><a style="cursor:pointer" onclick="window.location.href='https://www.artstation.com/peter_lefaivre';">Artstation</a></u>.
             </p>
             <div class="slideshow_container">
@@ -208,18 +210,18 @@
                     <img src="images/artwork/stingray1.jpg" class="slideshow_img">
                     <div class="caption"> Chevrolet Corvette </div>
                 </div>
-                <div class="prev" onclick="plusSlides(-1)">&#10094;</div>
-                <div class="next" onclick="plusSlides(1)">&#10095;</div>
+                <div class="prev" onclick="lastSlide()">&#10094;</div>
+                <div class="next" onclick="nextSlide()">&#10095;</div>
             </div>
             <div class="flex_MH" style="margin-top:20px;">
-                <span class="slideshow_dot" onclick="currentSlide(1)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(2)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(3)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(4)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(5)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(6)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(7)"></span>
-                <span class="slideshow_dot" onclick="currentSlide(8)"></span>
+                <span class="slideshow_dot" onclick="toSlide(0)"></span>
+                <span class="slideshow_dot" onclick="toSlide(1)"></span>
+                <span class="slideshow_dot" onclick="toSlide(2)"></span>
+                <span class="slideshow_dot" onclick="toSlide(3)"></span>
+                <span class="slideshow_dot" onclick="toSlide(4)"></span>
+                <span class="slideshow_dot" onclick="toSlide(5)"></span>
+                <span class="slideshow_dot" onclick="toSlide(6)"></span>
+                <span class="slideshow_dot" onclick="toSlide(7)"></span>
             </div>
         </div>
 
