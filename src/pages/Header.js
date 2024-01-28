@@ -18,7 +18,7 @@ const Header = () => {
     else home_style = "button_header activated";
     
     return (
-        <div className="header_embed" style={{zIndex: 1000}}>
+        <div className="header_embed">
             <header className="flex_MH">
                 <div className="flex_name">
                     <img className="header_img" alt="Peter Bignold" src={require("../images/header/noodle1.png")} style={{height: "32px", width: "32px"}}></img>

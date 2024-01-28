@@ -82,9 +82,10 @@
 .wrap_reverse {flex-wrap: wrap-reverse;}
 
 .header_embed {
+    z-index: 1000;
     margin: 0px;
     width: 100%;
-    position: absolute; 
+    position: fixed; 
     height: 67.4px; 
     top: 0;
 }
@@ -100,6 +101,9 @@ html, body {
     height: 100%;
     margin: 0px;
     padding: 0px;
+} 
+
+body {
     overflow-x: hidden; 
     overflow-y: auto;
-} 
+}
