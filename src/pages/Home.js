@@ -80,6 +80,8 @@ const Home = () => {
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PHP </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> HTML </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CSS </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> JavaScript </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> React </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blueprints </p></div>
             </div>
         </div>
