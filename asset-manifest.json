@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4773a242.css",
+    "main.css": "/portfolio/static/css/main.cddb919b.css",
     "main.js": "/portfolio/static/js/main.669bff6a.js",
     "static/media/harley1.jpg": "/portfolio/static/media/harley1.3727d93b0d24ded3a6a1.jpg",
     "static/media/mclaren1.jpg": "/portfolio/static/media/mclaren1.6929cc687f55db7ad760.jpg",
@@ -117,11 +117,11 @@
     "static/media/cgt1.png": "/portfolio/static/media/cgt1.efad944fc431118e7bd8.png",
     "static/media/steam1.png": "/portfolio/static/media/steam1.5c67dd1bf43dffce31dc.png",
     "index.html": "/portfolio/index.html",
-    "main.4773a242.css.map": "/portfolio/static/css/main.4773a242.css.map",
+    "main.cddb919b.css.map": "/portfolio/static/css/main.cddb919b.css.map",
     "main.669bff6a.js.map": "/portfolio/static/js/main.669bff6a.js.map"
   },
   "entrypoints": [
-    "static/css/main.4773a242.css",
+    "static/css/main.cddb919b.css",
     "static/js/main.669bff6a.js"
   ]
 }
