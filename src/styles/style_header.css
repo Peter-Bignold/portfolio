@@ -1,0 +1,100 @@
+header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 6%;
+    padding-left: 6%;
+    margin-right: 16px;
+    height: 40px;
+    background: #f6f6f6;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.075);
+    font-size: 30px;
+}
+
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+.header_text1 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0px;
+    margin-left: 16px;
+    margin-top: 7px;
+    text-wrap: nowrap;
+}
+
+.header_text2 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgb(137, 137, 137);
+    margin: 0px;
+    margin-top: 10px;
+    text-wrap: nowrap;
+}
+
+.seperator {
+    width: 6px;
+    height: 6px;
+    margin-top: 14px;
+    margin-left: 0.75vw;
+    margin-right: 0.75vw;
+    display: none;
+} 
+
+.u_header {
+    text-underline-offset: 5px;
+}
+
+.flex_name {
+    display: none;
+    flex-direction: row;
+    justify-content: left;
+    text-align: left;
+}
+
+.button_header {
+    cursor: pointer;
+    border: none;
+    background: none;
+    display: block;
+    width: auto;
+    text-align: center;
+    color: rgb(132, 132, 132);
+    font-family: 'Spartan', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-decoration: none;
+    text-wrap: nowrap;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.2s ease;
+} .button_header:hover {
+    color: rgb(23, 23, 23);
+} .button_header.activated{
+    font-weight: bold;
+    color: rgb(101, 101, 101);
+}
+
+@media only screen and (min-width: 768px) {
+    header.flex_MH {
+        justify-content: space-between;
+    }
+    div.flex_name {
+        display: flex;
+    }
+    .seperator {
+        display: block;
+    }
+    .button_header{
+        width: 90px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
