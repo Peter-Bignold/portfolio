@@ -3,6 +3,4 @@
 A portfolio website that serves as a collection of my personal projects. Created using React.
 
 ## Build ##
-npm run deploy
-    or
-npm run deploy -- -m "Commit Message"
+```npm run deploy``` or ```npm run deploy -- -m "Commit Message"```
