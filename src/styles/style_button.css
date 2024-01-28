@@ -63,6 +63,7 @@
     padding: 0;
     margin: 24px;
     background: none;
+    color: black;
     border: none;
     transition: 0.2s ease;
 } .button_icon_large:hover {
