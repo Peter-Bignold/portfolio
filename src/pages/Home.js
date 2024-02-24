@@ -39,7 +39,7 @@ const Home = () => {
             </div>
 
             <div className="flex_MH wrap_reverse" style={{marginBottom: "100px"}}>
-                <img src={require("../images/home/headshot1.jpg")} alt="Peter Bignold" style={{width: "325px", height: "325px", borderRadius: "100%"}}></img>
+                <img src={require("../images/home/headshot2.jpg")} alt="Peter Bignold" style={{width: "325px", height: "325px", borderRadius: "100%"}}></img>
                 <div className="flex_MV index_intro" style={{paddingLeft: "40px", paddingRight: "40px", marginBottom: "40px"}}>
                     <h3> Hey There! </h3>
                     <p style={{maxWidth: "820px"}}>
