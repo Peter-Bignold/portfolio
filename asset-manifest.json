@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0f2178e8.css",
-    "main.js": "/portfolio/static/js/main.a0dfa585.js",
+    "main.js": "/portfolio/static/js/main.8f60f976.js",
     "static/media/harley1.jpg": "/portfolio/static/media/harley1.3727d93b0d24ded3a6a1.jpg",
     "static/media/mclaren1.jpg": "/portfolio/static/media/mclaren1.6929cc687f55db7ad760.jpg",
     "static/media/gtx1.jpg": "/portfolio/static/media/gtx1.4e194760ca95eaed12fd.jpg",
@@ -16,6 +16,7 @@
     "static/media/screen4.jpg": "/portfolio/static/media/screen4.554c50c1d1e603e48828.jpg",
     "static/media/civic1.jpg": "/portfolio/static/media/civic1.528e8e07da6ac58b2dc0.jpg",
     "static/media/screen2.jpg": "/portfolio/static/media/screen2.7574afed5ecee7f3641e.jpg",
+    "static/media/headshot2.jpg": "/portfolio/static/media/headshot2.516a8b994b7c24ed6f85.jpg",
     "static/media/ferrari1.jpg": "/portfolio/static/media/ferrari1.1819063ccb8db1bd55a7.jpg",
     "static/media/stingray8.jpg": "/portfolio/static/media/stingray8.d308802fcc5c3f7c8847.jpg",
     "static/media/stingray7.jpg": "/portfolio/static/media/stingray7.5debb9201248ce459534.jpg",
@@ -89,7 +90,6 @@
     "static/media/beetle4.jpg": "/portfolio/static/media/beetle4.eaab20e45b3adc5c8420.jpg",
     "static/media/ferrari4.jpg": "/portfolio/static/media/ferrari4.e81294c7c7942011ce0f.jpg",
     "static/media/ferrari5.jpg": "/portfolio/static/media/ferrari5.26ac2522ee427623b585.jpg",
-    "static/media/headshot1.jpg": "/portfolio/static/media/headshot1.6f6f43bac787afa370a4.jpg",
     "static/media/mclaren6.jpg": "/portfolio/static/media/mclaren6.ffce0cbe0aba91d04d93.jpg",
     "static/media/preview_bmw1.jpg": "/portfolio/static/media/preview_bmw1.ceb8d47bf0362f91dcd8.jpg",
     "static/media/logo1.png": "/portfolio/static/media/logo1.6a15e8734fbd2241e09e.png",
@@ -118,10 +118,10 @@
     "static/media/steam1.png": "/portfolio/static/media/steam1.5c67dd1bf43dffce31dc.png",
     "index.html": "/portfolio/index.html",
     "main.0f2178e8.css.map": "/portfolio/static/css/main.0f2178e8.css.map",
-    "main.a0dfa585.js.map": "/portfolio/static/js/main.a0dfa585.js.map"
+    "main.8f60f976.js.map": "/portfolio/static/js/main.8f60f976.js.map"
   },
   "entrypoints": [
     "static/css/main.0f2178e8.css",
-    "static/js/main.a0dfa585.js"
+    "static/js/main.8f60f976.js"
   ]
 }
