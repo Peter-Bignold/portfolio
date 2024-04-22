@@ -53,12 +53,35 @@ const Home = () => {
             <div class="flex_MV" style={{marginBottom:"100px", marginLeft: "5%", marginRight: "5%"}}>
             <h3> I'm Familiar With... </h3>
             <div class="flex_MH wrap" style={{maxWidth: "1200px"}}>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C++ </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C# </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Python </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Java </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Haskell </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bash / Shell </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQL </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> MySQL </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PHP </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> HTML </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CSS </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> JavaScript </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Git </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> React </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Options API </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Composition API </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vuex </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Node </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> NPM </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Tailwind </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bootstrap </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PowerBI </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Logic Apps </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Office </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Git </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Unity </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Unreal Engine 4/5 </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blueprints </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blender </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> GIMP </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Audacity </p></div>
@@ -69,20 +92,6 @@ const Home = () => {
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Eclipse </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CLion </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Intellij </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C++ </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C# </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Python </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Java </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Haskell </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bash / Shell </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQL </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PHP </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> HTML </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CSS </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> JavaScript </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> React </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blueprints </p></div>
             </div>
         </div>
 
