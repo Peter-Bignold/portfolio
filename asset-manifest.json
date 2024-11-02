@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.0f2178e8.css",
-    "main.js": "/portfolio/static/js/main.0800bb89.js",
+    "main.css": "/portfolio/static/css/main.d11e3ce5.css",
+    "main.js": "/portfolio/static/js/main.7a443287.js",
     "static/media/harley1.jpg": "/portfolio/static/media/harley1.3727d93b0d24ded3a6a1.jpg",
     "static/media/mclaren1.jpg": "/portfolio/static/media/mclaren1.6929cc687f55db7ad760.jpg",
     "static/media/gtx1.jpg": "/portfolio/static/media/gtx1.4e194760ca95eaed12fd.jpg",
@@ -117,11 +117,11 @@
     "static/media/cgt1.png": "/portfolio/static/media/cgt1.efad944fc431118e7bd8.png",
     "static/media/steam1.png": "/portfolio/static/media/steam1.5c67dd1bf43dffce31dc.png",
     "index.html": "/portfolio/index.html",
-    "main.0f2178e8.css.map": "/portfolio/static/css/main.0f2178e8.css.map",
-    "main.0800bb89.js.map": "/portfolio/static/js/main.0800bb89.js.map"
+    "main.d11e3ce5.css.map": "/portfolio/static/css/main.d11e3ce5.css.map",
+    "main.7a443287.js.map": "/portfolio/static/js/main.7a443287.js.map"
   },
   "entrypoints": [
-    "static/css/main.0f2178e8.css",
-    "static/js/main.0800bb89.js"
+    "static/css/main.d11e3ce5.css",
+    "static/js/main.7a443287.js"
   ]
 }
