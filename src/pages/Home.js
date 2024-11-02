@@ -43,9 +43,11 @@ const Home = () => {
                 <div className="flex_MV index_intro" style={{paddingLeft: "40px", paddingRight: "40px", marginBottom: "40px"}}>
                     <h3> Hey There! </h3>
                     <p style={{maxWidth: "820px"}}>
-                        I'm a recent graduate from the <b>University of Calgary</b>, earning my degree in <b>computer science</b> with <b>distinction</b>.
-                        I always have a project on the go and love creating new things - many of which can be seen here! My goal is to use my education and skills to 
-                        build a career in the field of information technology.
+                        I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
+                        striving to create innovative and impactful products. With proficiency
+                        in modern development frameworks and a strong problem-solving foundation, 
+                        I'm excited to bring my skills to meaningful projects and collaborate with
+                        creative teams.
                     </p>
                 </div>
             </div>
@@ -62,6 +64,7 @@ const Home = () => {
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bash / Shell </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQL </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> MySQL </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQLite </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PHP </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> HTML </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CSS </p></div>
@@ -72,8 +75,10 @@ const Home = () => {
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Options API </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Composition API </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vuex </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Redux </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Node </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> NPM </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Expo </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Tailwind </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bootstrap </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PowerBI </p></div>
@@ -87,11 +92,11 @@ const Home = () => {
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Audacity </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> OpenGL </p></div>
                 <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PhysX </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Visual Studio </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> VSCode </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Eclipse </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CLion </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Intellij </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> ElasticSearch </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> DynamoDB </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Lambda </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Cloudfront </p></div>
+                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> S3 </p></div>
             </div>
         </div>
 
