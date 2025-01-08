@@ -27,7 +27,7 @@ const Header = () => {
                 <div className="flex_RH" style={{marginTop: "4px"}}>
                     <Link className={home_style} to="/"> Home </Link>
                     <img className="seperator" alt="dot" src={require("../images/header/dot1.png")}></img>
-                    <Link className={games_style} to="/games"> Projects </Link>
+                    <Link className={games_style} to="/games"> Software </Link>
                     <img className="seperator" alt="dot" src={require("../images/header/dot1.png")}></img>
                     <Link className={artwork_style} to="/artwork"> Artwork </Link>
                     <img className="seperator" alt="dot" src={require("../images/header/dot1.png")}></img>

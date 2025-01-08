@@ -101,12 +101,21 @@ const Home = () => {
         </div>
 
         <div class="flex_MV" style={{marginBottom: "100px", marginLeft: "5%", marginRight: "5%"}}>
-            <h3> Game Development </h3>
+            <h3> Software Development </h3>
             <p> 
-                During my free time I create games and real-time simulations. I've worked in UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
+                During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
                 <a style={{cursor: "pointer"}} onClick={() => window.open("https://noodlegames.itch.io/")} href="#/">itch.io</a>
             </p>
             <div class="flex_MH wrap">
+                <Link class="flex_LV button_game_small" to='games/circuitry'>
+                    <div class="flex_LH">
+                        <img alt="logo" src={require("../images/circuitry/logo1.png")} style={{width: "68px", height: "68px"}}></img>
+                        <div class="flex_LV" style={{marginLeft: "24px"}}>
+                            <h4> Circuitry </h4>
+                            <h5> 2025 &#x2022; React Native </h5>
+                        </div>
+                    </div>
+                </Link>
                 <Link class="flex_LV button_game_small" to='games/flocking_evolution'>
                     <div class="flex_LH">
                         <img alt="logo" src={require("../images/flocking_evolution/logo1.png")} style={{width: "68px", height: "68px"}}></img>
@@ -125,6 +134,8 @@ const Home = () => {
                         </div>
                     </div>
                 </Link>
+            </div>
+            <div class="flex_MH wrap">
                 <Link class="flex_LV button_game_small" to='games/mini_racer'>
                     <div class="flex_LH">
                         <img alt="logo" src={require("../images/mini_racer/logo1.png")} style={{width: "68px", height: "68px"}}></img>
@@ -134,8 +145,6 @@ const Home = () => {
                         </div>
                     </div>
                 </Link>
-            </div>
-            <div class="flex_MH wrap">
                 <Link class="flex_LV button_game_small" to='games/apogee'>
                     <div class="flex_LH">
                         <img alt="logo" src={require("../images/apogee/logo1.png")} style={{width: "68px", height: "68px"}}></img>
