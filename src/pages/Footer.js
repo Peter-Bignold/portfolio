@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <body className="footer_body">
             <footer class="flex_MH footer">
-                <p className="footer_p"> &copy; 2024 Peter Bignold </p>
+                <p className="footer_p"> &copy; 2025 Peter Bignold </p>
             </footer>
         </body>
     )

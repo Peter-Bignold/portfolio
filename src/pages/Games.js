@@ -30,8 +30,8 @@ const Games = () => {
                         Featuring innovations like a custom track builder and heads-up-display, Circuitry can be tailored to many different motorsport disciplines.
                     </p>
                     <div className="flex_MH wrap">
-                        <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview1.jpg")}></img>
                         <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview4.jpg")}></img>
+                        <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview1.jpg")}></img>
                         <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview3.jpg")}></img>
                     </div>
                 </Link>
