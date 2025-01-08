@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d11e3ce5.css",
-    "main.js": "/portfolio/static/js/main.7a443287.js",
+    "main.css": "/portfolio/static/css/main.de7bdff0.css",
+    "main.js": "/portfolio/static/js/main.13236b3d.js",
     "static/media/harley1.jpg": "/portfolio/static/media/harley1.3727d93b0d24ded3a6a1.jpg",
     "static/media/mclaren1.jpg": "/portfolio/static/media/mclaren1.6929cc687f55db7ad760.jpg",
     "static/media/gtx1.jpg": "/portfolio/static/media/gtx1.4e194760ca95eaed12fd.jpg",
@@ -9,7 +9,9 @@
     "static/media/screen6.jpg": "/portfolio/static/media/screen6.5506a4a92f400be3e71f.jpg",
     "static/media/ninja1.jpg": "/portfolio/static/media/ninja1.0fcc24a3bf2ea75457a5.jpg",
     "static/media/bmw1.jpg": "/portfolio/static/media/bmw1.2e4f319e41450282bbbd.jpg",
+    "static/media/preview3.jpg": "/portfolio/static/media/preview3.6cc6238c88afdd5a58f4.jpg",
     "static/media/screen1.jpg": "/portfolio/static/media/screen1.9b20209417758bde548a.jpg",
+    "static/media/preview2.jpg": "/portfolio/static/media/preview2.efb8273af46c580439b4.jpg",
     "static/media/screen3.jpg": "/portfolio/static/media/screen3.5955b8c7b2f7358cadcf.jpg",
     "static/media/stingray1.jpg": "/portfolio/static/media/stingray1.9a9ad6e7b0d66b92d979.jpg",
     "static/media/screen7.jpg": "/portfolio/static/media/screen7.777545fdea8bcd27444e.jpg",
@@ -19,17 +21,16 @@
     "static/media/headshot2.jpg": "/portfolio/static/media/headshot2.516a8b994b7c24ed6f85.jpg",
     "static/media/ferrari1.jpg": "/portfolio/static/media/ferrari1.1819063ccb8db1bd55a7.jpg",
     "static/media/stingray8.jpg": "/portfolio/static/media/stingray8.d308802fcc5c3f7c8847.jpg",
+    "static/media/preview1.jpg": "/portfolio/static/media/preview1.80a3d7936f84e9ae106c.jpg",
     "static/media/stingray7.jpg": "/portfolio/static/media/stingray7.5debb9201248ce459534.jpg",
     "static/media/gtx7.jpg": "/portfolio/static/media/gtx7.3bd902fdf45628c1b030.jpg",
     "static/media/harley4.jpg": "/portfolio/static/media/harley4.c5ec09dd420cd9e81ef2.jpg",
     "static/media/stingray6.jpg": "/portfolio/static/media/stingray6.53dd39af99dc2344a545.jpg",
-    "static/media/preview1.jpg": "/portfolio/static/media/preview1.80a3d7936f84e9ae106c.jpg",
     "static/media/screen8.jpg": "/portfolio/static/media/screen8.d786c6f14b9dd67c1d3c.jpg",
     "static/media/harley5.jpg": "/portfolio/static/media/harley5.d430dab048be62a9cac1.jpg",
     "static/media/stingray9.jpg": "/portfolio/static/media/stingray9.fee1d6aadb5ba6f0cb8e.jpg",
+    "static/media/preview4.jpg": "/portfolio/static/media/preview4.94479c10720d0227e72f.jpg",
     "static/media/guitar5.jpg": "/portfolio/static/media/guitar5.76d3cda04e5b4b618c0c.jpg",
-    "static/media/preview3.jpg": "/portfolio/static/media/preview3.6cc6238c88afdd5a58f4.jpg",
-    "static/media/preview2.jpg": "/portfolio/static/media/preview2.efb8273af46c580439b4.jpg",
     "static/media/bmw5.jpg": "/portfolio/static/media/bmw5.c94dc12a450bd1d84266.jpg",
     "static/media/ninja9.jpg": "/portfolio/static/media/ninja9.6ab2b9723254421eef60.jpg",
     "static/media/harley3.jpg": "/portfolio/static/media/harley3.937f0901840f090c9be8.jpg",
@@ -88,11 +89,11 @@
     "static/media/mclaren3.jpg": "/portfolio/static/media/mclaren3.b3310e869c0bac61936f.jpg",
     "static/media/mclaren4.jpg": "/portfolio/static/media/mclaren4.935f9da1cd883d98f88d.jpg",
     "static/media/beetle4.jpg": "/portfolio/static/media/beetle4.eaab20e45b3adc5c8420.jpg",
+    "static/media/logo1.png": "/portfolio/static/media/logo1.6a15e8734fbd2241e09e.png",
     "static/media/ferrari4.jpg": "/portfolio/static/media/ferrari4.e81294c7c7942011ce0f.jpg",
     "static/media/ferrari5.jpg": "/portfolio/static/media/ferrari5.26ac2522ee427623b585.jpg",
     "static/media/mclaren6.jpg": "/portfolio/static/media/mclaren6.ffce0cbe0aba91d04d93.jpg",
     "static/media/preview_bmw1.jpg": "/portfolio/static/media/preview_bmw1.ceb8d47bf0362f91dcd8.jpg",
-    "static/media/logo1.png": "/portfolio/static/media/logo1.6a15e8734fbd2241e09e.png",
     "static/media/preview_stingray1.jpg": "/portfolio/static/media/preview_stingray1.59e15e6c5ab787ac675a.jpg",
     "static/media/preview_harley1.jpg": "/portfolio/static/media/preview_harley1.1e49cccdf186210ebced.jpg",
     "static/media/preview_gtx1.jpg": "/portfolio/static/media/preview_gtx1.c2916fe666d46ae0fbe8.jpg",
@@ -117,11 +118,11 @@
     "static/media/cgt1.png": "/portfolio/static/media/cgt1.efad944fc431118e7bd8.png",
     "static/media/steam1.png": "/portfolio/static/media/steam1.5c67dd1bf43dffce31dc.png",
     "index.html": "/portfolio/index.html",
-    "main.d11e3ce5.css.map": "/portfolio/static/css/main.d11e3ce5.css.map",
-    "main.7a443287.js.map": "/portfolio/static/js/main.7a443287.js.map"
+    "main.de7bdff0.css.map": "/portfolio/static/css/main.de7bdff0.css.map",
+    "main.13236b3d.js.map": "/portfolio/static/js/main.13236b3d.js.map"
   },
   "entrypoints": [
-    "static/css/main.d11e3ce5.css",
-    "static/js/main.7a443287.js"
+    "static/css/main.de7bdff0.css",
+    "static/js/main.13236b3d.js"
   ]
 }
