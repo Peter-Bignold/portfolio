@@ -11,11 +11,30 @@ const Games = () => {
     return (
         <body style={{backgroundColor: "#eeeeee", overflowY: "hidden"}}>
             <div className="flex_MV" style={{marginBottom: "40px", marginRight: "5%", marginLeft: "5%"}}>
-                <h1 className="anim_fadeIn1"> Game Development </h1>
-                <h2 className="anim_fadeIn2"> Full Games, Prototypes, Simulations, and Game Jams </h2>
+                <h1 className="anim_fadeIn1"> Projects </h1>
+                <h2 className="anim_fadeIn2"> Apps, Games, Simulations, and Prototypes </h2>
             </div>
 
             <div className="flex_MV anim_moveUp" style={{marginRight: "5%", marginLeft: "5%"}}>
+                <Link className="flex_LV button_game" to='circuitry' style={{marginTop: "10px"}}>
+                    <div className="flex_LH">
+                        <img alt="logo" src={require("../images/circuitry/logo1.png")} style={{width: "68px", height: "68px"}}></img>
+                        <div className="flex_LV" style={{marginLeft: "24px"}}>
+                            <h4> Circuitry </h4>
+                            <h5> 2025 &#x2022; React Native </h5>
+                        </div>
+                    </div>
+                    <p style={{marginLeft: "4px", marginRight: "4px", marginTop: "12px", marginBottom: "12px", maxWidth: "100%"}}> 
+                        An accessible, polished, and versatile mobile app providing telemetry and insights to performance driving enthusiasts. Circuitry aims to
+                        increase the accessibility of motorsports by providing professional grade location, accelerometer, and timing data with only a mobile device.
+                        Featuring innovations like a custom track builder and heads-up-display, Circuitry can be tailored to many different motorsport disciplines.
+                    </p>
+                    <div className="flex_MH wrap">
+                        <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview1.jpg")}></img>
+                        <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview2.jpg")}></img>
+                        <img className="img_app" alt="preview" width={281} height={609} src={require("../images/circuitry/preview3.jpg")}></img>
+                    </div>
+                </Link>
                 <Link className="flex_LV button_game" to='flocking_evolution' style={{marginTop: "10px"}}>
                     <div className="flex_LH">
                         <img alt="logo" src={require("../images/flocking_evolution/logo1.png")} style={{width: "68px", height: "68px"}}></img>

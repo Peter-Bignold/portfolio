@@ -12,6 +12,7 @@ import Artwork from './pages/Artwork.js';
 import Contact from './pages/Contact.js';
 
 // Games
+import Circuitry from './pages/games/Circuitry.js';
 import FlockingEvolution from './pages/games/FlockingEvolution.js';
 import SpaceSalvagers from './pages/games/SpaceSalvagers.js';
 import MiniRacer from './pages/games/MiniRacer.js';
@@ -39,6 +40,7 @@ const App = () => {
             <Routes>
                 <Route path="/" exact element={<Home/>}/>
                 <Route path="/games" element={<Games/>}/>
+                    <Route path="/games/circuitry" element={<Circuitry/>}/>
                     <Route path="/games/flocking_evolution" element={<FlockingEvolution/>}/>
                     <Route path="/games/space_salvagers" element={<SpaceSalvagers/>}/>
                     <Route path="/games/mini_racer" element={<MiniRacer/>}/>
