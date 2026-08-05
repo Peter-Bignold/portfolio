@@ -30,13 +30,13 @@ const Home = () => {
   ]
 
   const featuredProjects = [
-    {to: 'games/circuitry', logo: require('assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
-    {to: 'games/flocking_evolution', logo: require('assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
-    {to: 'games/space_salvagers', logo: require('assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},
-    {to: 'games/mini_racer', logo: require('assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
-    {to: 'games/apogee', logo: require('assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
-    {to: 'games/pinata_clicker', logo: require('assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
-    {to: 'games/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
+    {to: 'projects/circuitry', logo: require('assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
+    {to: 'projects/flocking_evolution', logo: require('assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
+    {to: 'projects/space_salvagers', logo: require('assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},
+    {to: 'projects/mini_racer', logo: require('assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
+    {to: 'projects/apogee', logo: require('assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
+    {to: 'projects/pinata_clicker', logo: require('assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
+    {to: 'projects/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
   ]
 
   useEffect(() => {
