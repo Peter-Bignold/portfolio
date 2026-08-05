@@ -102,7 +102,7 @@ const Home = () => {
         <img className="mt-8 w-full animate-fade-in-1" src={require('assets/images/home/helmet1.jpg')} alt="Background"></img>
       </div>
 
-      <div className="sticky top-0 h-screen overflow-hidden pb-24">
+      <div className="sticky top-0 h-screen overflow-hidden pb-24 animate-fade-in-3">
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
           <div className="flex w-full flex-col items-center text-center">
