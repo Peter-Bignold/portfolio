@@ -1,7 +1,7 @@
 import React from 'react';
 import CompactProjectLink from 'components/CompactProjectLink.js';
 import IconLink from 'components/IconLink.js';
-import PageShell from 'components/PageShell.js';
+import Page from 'components/Page.js';
 import SkillChip from 'components/SkillChip.js';
 import Slideshow from 'components/Slideshow.js';
 
@@ -33,7 +33,7 @@ const Home = () => {
 
   return (
     <div className="bg-neutral-200">
-      <PageShell className="bg-neutral-200 px-[5%]">
+      <Page className="bg-neutral-200 px-[5%]">
         <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Peter Bignold</h1>
         <h2 className="text-[20px] font-light text-neutral-500 animate-fade-in-2 md:text-[30px]">Computer Scientist &#x2022; Software Developer &#x2022; Digital Artist</h2>
         <div className="flex items-center justify-center animate-fade-in-3">
@@ -41,13 +41,13 @@ const Home = () => {
             <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
           ))}
         </div>
-      </PageShell>
+      </Page>
 
       <div className="flex flex-col items-center bg-neutral-200 text-center">
         <img className="mt-8 w-full animate-fade-in-0" src={require('assets/images/home/mclaren1.jpg')} alt="Mclaren"></img>
       </div>
 
-      <PageShell className="mb-[100px] mt-10 flex-row flex-wrap-reverse justify-center gap-x-10 gap-y-8 text-left">
+      <Page className="mb-[100px] mt-10 flex-row flex-wrap-reverse justify-center gap-x-10 gap-y-8 text-left">
         <img className="h-[325px] w-[325px] rounded-full" src={require('assets/images/home/headshot2.jpg')} alt="Peter Bignold"></img>
         <div className="mb-10 flex max-w-[860px] flex-col items-center px-10 text-center md:items-start md:text-left">
           <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Hey There!</h3>
@@ -59,18 +59,18 @@ const Home = () => {
             creative teams.
           </p>
         </div>
-      </PageShell>
+      </Page>
 
-      <PageShell className="mb-[100px]">
+      <Page className="mb-[100px]">
         <h3 className="my-4 text-[40px] font-normal md:text-[55px]">I'm Familiar With...</h3>
         <div className="flex max-w-[1200px] flex-wrap items-center justify-center">
           {skills.map((skill) => (
             <SkillChip key={skill}>{skill}</SkillChip>
           ))}
         </div>
-      </PageShell>
+      </Page>
 
-      <PageShell className="mb-[100px]">
+      <Page className="mb-[100px]">
         <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Software Development</h3>
         <p className="max-w-[1000px] text-xl font-light leading-[1.3] md:text-2xl">
         During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
@@ -81,16 +81,16 @@ const Home = () => {
             <CompactProjectLink key={project.to} to={project.to} logo={project.logo} title={project.title} meta={project.meta}></CompactProjectLink>
           ))}
         </div>
-      </PageShell>
+      </Page>
 
-      <PageShell>
+      <Page>
         <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Digital Artwork</h3>
         <p className="max-w-[1000px] text-xl font-light leading-[1.3] md:text-2xl">
         I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of 
         choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp; 
         <a className="font-semibold text-neutral-400 hover:text-neutral-700" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
         </p>
-      </PageShell>
+      </Page>
 
       <Slideshow/>
     </div>

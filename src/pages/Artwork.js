@@ -1,7 +1,6 @@
 import React from 'react';
 import ArtworkCard from 'components/ArtworkCard.js';
-import PageIntro from 'components/PageIntro.js';
-import PageShell from 'components/PageShell.js';
+import Page from 'components/Page.js';
 
 const Artwork = () => {
   const artwork = [
@@ -19,14 +18,17 @@ const Artwork = () => {
   ];
 
   return (
-    <PageShell className="pb-10">
-      <PageIntro title="Digital Artwork" subtitle="Rendered in Blender Cycles and Unreal Engine 5"></PageIntro>
+    <Page className="pb-10">
+      <div className="mb-10 flex flex-col items-center">
+        <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Digital Artwork</h1>
+        <h2 className="text-[20px] font-light text-neutral-500 animate-fade-in-2 md:text-[30px]">Rendered in Blender Cycles and Unreal Engine 5</h2>
+      </div>
       <div className="flex flex-wrap items-center justify-center animate-move-up">
         {artwork.map((item) => (
           <ArtworkCard key={item.to} to={item.to} image={item.image} title={item.title}></ArtworkCard>
         ))}
       </div>
-    </PageShell>
+    </Page>
   )
 }
 

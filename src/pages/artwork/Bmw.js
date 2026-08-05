@@ -1,5 +1,7 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
+import ExternalButton from 'components/ExternalButton.js';
+import MediaGallery from 'components/MediaGallery.js';
+import Page from 'components/Page.js';
 
 const Bmw = () => {
   const buttons = [
@@ -35,22 +37,31 @@ const Bmw = () => {
   ];
 
   return (
-    <DetailPageShell
-      title="1987 BMW E30 M3 (DTM)"
-      description={(
-        <>
+    <Page className="pt-[120px]">
+      <div className="mb-10 flex flex-col items-center">
+        <h1 className="my-4 text-[40px] font-normal animate-fade-in-1 md:text-[55px]">1987 BMW E30 M3 (DTM)</h1>
+        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
           <b>Submission to the 3DModels.org 2023 Car Render Challenge</b><br/>
           <i>As the #10 BMW sits in the pitlane the field races by. Mechanics scramble to secure the car's
           damaged front-end, knowing victory prospects fade with every second spent stationary. Bodywork is
           forced into shape with only tape, hammers, and muscle. Eventually the car rejoins to any empty track,
           leagues behind the rest. The team hopes for a stroke of good luck to come their way. It's a long race
           that's only just started, and plenty of opportunities await.</i>
-        </>
-      )}
-      buttons={buttons}
-    >
-      <MediaGallery items={media}></MediaGallery>
-    </DetailPageShell>
+        </div>
+      </div>
+
+      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+        {buttons.map((button) => (
+          <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
+            {button.label}
+          </ExternalButton>
+        ))}
+      </div>
+
+      <div className="flex w-full flex-col items-center animate-fade-in-3">
+        <MediaGallery items={media}></MediaGallery>
+      </div>
+    </Page>
   )
 }
 

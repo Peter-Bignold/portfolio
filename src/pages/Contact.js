@@ -1,8 +1,7 @@
 import React from 'react';
 import ContactCard from 'components/ContactCard.js';
 import IconLink from 'components/IconLink.js';
-import PageIntro from 'components/PageIntro.js';
-import PageShell from 'components/PageShell.js';
+import Page from 'components/Page.js';
 
 const Contact = () => {
   const contacts = [
@@ -29,8 +28,10 @@ const Contact = () => {
   ];
 
   return (
-    <PageShell>
-      <PageIntro title="Contact"></PageIntro>
+    <Page>
+      <div className="mb-10 flex flex-col items-center">
+        <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Contact</h1>
+      </div>
       <div className="mt-16 flex w-full max-w-[1256px] animate-move-up flex-col items-center">
         {contacts.map((contact) => (
           <ContactCard key={contact.value} {...contact}></ContactCard>
@@ -42,7 +43,7 @@ const Contact = () => {
           <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} label={social.label} large></IconLink>
         ))}
       </div>
-    </PageShell>
+    </Page>
   )
 }
 

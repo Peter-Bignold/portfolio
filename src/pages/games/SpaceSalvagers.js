@@ -1,5 +1,7 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
+import ExternalButton from 'components/ExternalButton.js';
+import MediaGallery from 'components/MediaGallery.js';
+import Page from 'components/Page.js';
 
 const SpaceSalvagers = () => {
   const buttons = [
@@ -21,23 +23,36 @@ const SpaceSalvagers = () => {
   ];
 
   return (
-    <DetailPageShell
-      title="Super Space Salvagers"
-      subtitle="2023 • C++"
-      logo={require('assets/images/space_salvagers/logo1.png')}
-      description={(
-        <>
+    <Page className="pt-[120px]">
+      <div className="mb-10 flex flex-col items-center">
+        <div className="mb-10 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
+          <img className="h-[85px] w-[85px]" alt="Super Space Salvagers logo" src={require('assets/images/space_salvagers/logo1.png')}></img>
+          <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
+            <h1 className="mb-[10px] text-[38px] font-semibold md:text-[50px]">Super Space Salvagers</h1>
+            <p className="mt-2 text-[28px] font-normal text-neutral-500 md:text-[32px]">2023 • C++</p>
+          </div>
+        </div>
+        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
           <b>Student Exemplar for CPSC 585 - Games Programming at the University of Calgary</b><br/>
           Super Space Salvagers is a 4-player chaotic, goofy, and frantic party game where players compete to
           gather cargo pods from a rugged planet's space wreckage. Made for CPSC 585 - Games Programming, Super Space Salvagers
           was the joint effort of myself and four other students, made entirely in C++ using OpenGL and Nvidia PhysX. Supports 2 - 4
           player splitscreen and singleplayer with clever AI opponents.
-        </>
-      )}
-      buttons={buttons}
-    >
-      <MediaGallery items={media}></MediaGallery>
-    </DetailPageShell>
+        </div>
+      </div>
+
+      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+        {buttons.map((button) => (
+          <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
+            {button.label}
+          </ExternalButton>
+        ))}
+      </div>
+
+      <div className="flex w-full flex-col items-center animate-fade-in-3">
+        <MediaGallery items={media}></MediaGallery>
+      </div>
+    </Page>
   )
 }
 

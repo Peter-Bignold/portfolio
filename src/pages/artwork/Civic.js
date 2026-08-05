@@ -1,5 +1,7 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
+import ExternalButton from 'components/ExternalButton.js';
+import MediaGallery from 'components/MediaGallery.js';
+import Page from 'components/Page.js';
 
 const Civic = () => {
   const buttons = [
@@ -28,19 +30,28 @@ const Civic = () => {
   ];
 
   return (
-    <DetailPageShell
-      title="2007 Honda Civic Si"
-      description={(
-        <>
+    <Page className="pt-[120px]">
+      <div className="mb-10 flex flex-col items-center">
+        <h1 className="my-4 text-[40px] font-normal animate-fade-in-1 md:text-[55px]">2007 Honda Civic Si</h1>
+        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
           <i>The 8th Generation Honda Civic Si features a lightweight chassis, short wheelbase, 6-speed manual, and
           2.0 liter naturally aspirated i-VTEC 4 cylinder engine. The styling is modest but charming, with no unnecessary
           vents or trim. Relaxed lines flow from front to back, with the flush head and tail lights meshing perfectly.</i>
-        </>
-      )}
-      buttons={buttons}
-    >
-      <MediaGallery items={media}></MediaGallery>
-    </DetailPageShell>
+        </div>
+      </div>
+
+      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+        {buttons.map((button) => (
+          <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
+            {button.label}
+          </ExternalButton>
+        ))}
+      </div>
+
+      <div className="flex w-full flex-col items-center animate-fade-in-3">
+        <MediaGallery items={media}></MediaGallery>
+      </div>
+    </Page>
   )
 }
 
