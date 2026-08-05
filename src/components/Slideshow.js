@@ -30,10 +30,10 @@ const Slideshow = () => {
 
   return (
     <div className="mx-[5%] flex flex-col items-center text-center">
-      <div className="relative flex max-w-5xl items-center leading-none">
+      <div className="relative flex max-w-xl items-center leading-none">
         <div>
           <img
-            className="w-full rounded shadow-gallery animate-fade-in-half"
+            className="w-full rounded-lg shadow-gallery animate-fade-in-half"
             alt="Gallery"
             src={require(`../assets/images/artwork/${slides[index].image}.jpg`)}
           ></img>
@@ -42,14 +42,14 @@ const Slideshow = () => {
           </div>
         </div>
         <button
-          className="absolute left-0 top-0 flex h-full select-none items-center rounded-l px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
+          className="absolute left-0 top-0 flex h-full select-none items-center rounded-l-lg px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
           type="button"
           onClick={() => setSlide(index - 1)}
         >
           &#10094;
         </button>
         <button
-          className="absolute right-0 top-0 flex h-full select-none items-center rounded-r px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
+          className="absolute right-0 top-0 flex h-full select-none items-center rounded-r-lg px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
           type="button"
           onClick={() => setSlide(index + 1)}
         >

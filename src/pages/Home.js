@@ -6,7 +6,7 @@ import Slideshow from 'components/Slideshow.js';
 
 const SCENE_COUNT = 5;
 const SCENE_STEP = 1.2;
-const SCENE_HOLD_RANGE = 0.14;
+const SCENE_HOLD_RANGE = 0.24;
 const SCENE_FADE_RANGE = 0.34;
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -84,13 +84,14 @@ const Home = () => {
   const getSceneStyle = (sceneIndex) => {
     const sceneCenter = sceneIndex * SCENE_STEP;
     const distance = scrollProgress - sceneCenter;
+    const motionDistance = Math.sign(distance) * Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0);
     const distanceFromHold = Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0);
     const normalizedDistance = distanceFromHold / SCENE_FADE_RANGE;
     const opacity = clamp(1 - normalizedDistance, 0, 1);
 
     return {
       opacity,
-      transform: `translateY(${distance * -56}px) scale(${1 - Math.min(Math.abs(distance) * 0.03, 0.03)})`,
+      transform: `translateY(${motionDistance * -56}px) scale(${1 - Math.min(Math.abs(motionDistance) * 0.03, 0.03)})`,
       pointerEvents: opacity > 0.6 ? 'auto' : 'none',
     };
   };
@@ -106,7 +107,7 @@ const Home = () => {
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
           <div className="flex w-full flex-col items-center text-center">
             <h1 className="mb-2.5 text-5xl font-normal md:text-7xl">Peter Bignold</h1>
-            <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Race Driver</h2>
+            <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
             <div className="mt-6 flex items-center justify-center">
               {socials.map((social) => (
                 <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
