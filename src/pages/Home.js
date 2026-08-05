@@ -99,7 +99,7 @@ const Home = () => {
   return (
     <div ref={homeRef} className="relative bg-slate-950" style={{height: `${((SCENE_COUNT - 1) * SCENE_STEP + 1) * 100}vh`}}>
       <div className="fixed inset-0 w-full opacity-10">
-        <img className="mt-8 w-full animate-fade-in-1" src={require('assets/images/backgrounds/background1.jpg')} alt="Background"></img>
+        <img className="w-full animate-fade-in-1" src={require('assets/images/backgrounds/background1.jpg')} alt="Background"></img>
       </div>
 
       <div className="sticky top-0 h-screen overflow-hidden pb-24 animate-fade-in-3">
@@ -108,9 +108,9 @@ const Home = () => {
           <div className="flex w-full flex-col items-center text-center">
             <h1 className="mb-2.5 text-5xl font-normal md:text-7xl">Peter Bignold</h1>
             <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
-            <div className="mt-6 flex items-center justify-center">
+            <div className="mt-4 gap-4 flex items-center justify-center flex-wrap">
               {socials.map((social) => (
-                <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
+                <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} large></IconLink>
               ))}
             </div>
           </div>

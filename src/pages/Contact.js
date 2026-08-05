@@ -8,15 +8,9 @@ const Contact = () => {
     {
       icon: require('assets/images/home/person1.png'),
       alt: 'Professional contact',
-      label: 'Professional',
+      label: 'Contact',
       value: 'p.bignold01@gmail.com',
-    },
-    {
-      icon: require('assets/images/header/noodle1.png'),
-      alt: 'Game development contact',
-      label: 'Game Development',
-      value: 'noodlegamesdev@gmail.com',
-    },
+    }
   ]
 
   const socials = [
@@ -29,19 +23,22 @@ const Contact = () => {
 
   return (
     <Page>
-      <div className="mb-10 flex flex-col items-center">
-        <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Contact</h1>
-      </div>
-      <div className="mt-16 flex w-full max-w-7xl animate-move-up flex-col items-center">
-        {contacts.map((contact) => (
-          <ContactCard key={contact.value} {...contact}></ContactCard>
-        ))}
+      <div className="fixed inset-0 w-full opacity-10">
+        <img className="w-full animate-fade-in-1" src={require('assets/images/backgrounds/background4.jpg')} alt="Background"></img>
       </div>
 
-      <div className="mt-16 flex flex-wrap items-center justify-center animate-fade-in-3">
-        {socials.map((social) => (
-          <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} label={social.label} large></IconLink>
-        ))}
+      <div className="flex flex-col h-screen items-center justify-center">
+        <div className="flex w-full max-w-7xl animate-move-up flex-col items-center">
+          {contacts.map((contact) => (
+            <ContactCard key={contact.value} {...contact}></ContactCard>
+          ))}
+        </div>
+
+        <div className="mt-16 flex flex-wrap items-center justify-center animate-fade-in-3 gap-6">
+          {socials.map((social) => (
+            <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} label={social.label} large></IconLink>
+          ))}
+        </div>
       </div>
     </Page>
   )
