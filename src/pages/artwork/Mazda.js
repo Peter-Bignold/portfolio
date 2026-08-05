@@ -1,23 +1,23 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Mazda = () => {
   const buttons = [
     {
       href: 'https://www.artstation.com/artwork/OmyEyw',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
   ];
 
   const media = [
-    {alt: 'Mazda artwork 1', src: require('../../assets/images/artwork/mazda1.jpg')},
-    {alt: 'Mazda artwork 2', src: require('../../assets/images/artwork/mazda2.jpg')},
-    {alt: 'Mazda artwork 3', src: require('../../assets/images/artwork/mazda3.jpg')},
-    {alt: 'Mazda artwork 4', src: require('../../assets/images/artwork/mazda4.jpg')},
-    {alt: 'Mazda artwork 5', src: require('../../assets/images/artwork/mazda5.jpg')},
-    {alt: 'Mazda artwork 6', src: require('../../assets/images/artwork/mazda6.jpg')},
+    {alt: 'Mazda artwork 1', src: require('assets/images/artwork/mazda1.jpg')},
+    {alt: 'Mazda artwork 2', src: require('assets/images/artwork/mazda2.jpg')},
+    {alt: 'Mazda artwork 3', src: require('assets/images/artwork/mazda3.jpg')},
+    {alt: 'Mazda artwork 4', src: require('assets/images/artwork/mazda4.jpg')},
+    {alt: 'Mazda artwork 5', src: require('assets/images/artwork/mazda5.jpg')},
+    {alt: 'Mazda artwork 6', src: require('assets/images/artwork/mazda6.jpg')},
   ];
 
   return (

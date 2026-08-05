@@ -1,29 +1,29 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Mclaren = () => {
   const buttons = [
     {
       href: 'https://www.cgtrader.com/3d-models/vehicle/other/mclaren-mp4-6-1991-6f723709-69e6-4fd0-8b66-bd52741443d0',
-      icon: require('../../assets/images/home/cgt1.png'),
+      icon: require('assets/images/home/cgt1.png'),
       iconAlt: 'CGTrader',
       label: 'Purchase on CGTrader',
     },
     {
       href: 'https://www.artstation.com/artwork/Krb5NW',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
   ];
 
   const media = [
-    {alt: 'Mclaren artwork 1', src: require('../../assets/images/artwork/mclaren1.jpg')},
-    {alt: 'Mclaren artwork 2', src: require('../../assets/images/artwork/mclaren2.jpg')},
-    {alt: 'Mclaren artwork 3', src: require('../../assets/images/artwork/mclaren3.jpg')},
-    {alt: 'Mclaren artwork 4', src: require('../../assets/images/artwork/mclaren4.jpg')},
-    {alt: 'Mclaren artwork 5', src: require('../../assets/images/artwork/mclaren5.jpg')},
-    {alt: 'Mclaren artwork 6', src: require('../../assets/images/artwork/mclaren6.jpg')},
+    {alt: 'Mclaren artwork 1', src: require('assets/images/artwork/mclaren1.jpg')},
+    {alt: 'Mclaren artwork 2', src: require('assets/images/artwork/mclaren2.jpg')},
+    {alt: 'Mclaren artwork 3', src: require('assets/images/artwork/mclaren3.jpg')},
+    {alt: 'Mclaren artwork 4', src: require('assets/images/artwork/mclaren4.jpg')},
+    {alt: 'Mclaren artwork 5', src: require('assets/images/artwork/mclaren5.jpg')},
+    {alt: 'Mclaren artwork 6', src: require('assets/images/artwork/mclaren6.jpg')},
   ];
 
   return (

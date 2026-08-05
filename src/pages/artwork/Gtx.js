@@ -1,31 +1,31 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Gtx = () => {
   const buttons = [
     {
       href: 'https://www.cgtrader.com/3d-models/car/antique-car/1971-plymouth-gtx',
-      icon: require('../../assets/images/home/cgt1.png'),
+      icon: require('assets/images/home/cgt1.png'),
       iconAlt: 'CGTrader',
       label: 'Purchase on CGTrader',
     },
     {
       href: 'https://www.artstation.com/artwork/L2Y4a0',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
   ];
 
   const media = [
-    {alt: 'GTX artwork 1', src: require('../../assets/images/artwork/gtx1.jpg')},
-    {alt: 'GTX artwork 2', src: require('../../assets/images/artwork/gtx2.jpg')},
-    {alt: 'GTX artwork 3', src: require('../../assets/images/artwork/gtx3.jpg')},
-    {alt: 'GTX artwork 4', src: require('../../assets/images/artwork/gtx4.jpg')},
-    {alt: 'GTX artwork 5', src: require('../../assets/images/artwork/gtx5.jpg')},
-    {alt: 'GTX artwork 6', src: require('../../assets/images/artwork/gtx6.jpg')},
-    {alt: 'GTX artwork 7', src: require('../../assets/images/artwork/gtx7.jpg')},
-    {alt: 'GTX artwork 8', src: require('../../assets/images/artwork/gtx8.jpg')},
+    {alt: 'GTX artwork 1', src: require('assets/images/artwork/gtx1.jpg')},
+    {alt: 'GTX artwork 2', src: require('assets/images/artwork/gtx2.jpg')},
+    {alt: 'GTX artwork 3', src: require('assets/images/artwork/gtx3.jpg')},
+    {alt: 'GTX artwork 4', src: require('assets/images/artwork/gtx4.jpg')},
+    {alt: 'GTX artwork 5', src: require('assets/images/artwork/gtx5.jpg')},
+    {alt: 'GTX artwork 6', src: require('assets/images/artwork/gtx6.jpg')},
+    {alt: 'GTX artwork 7', src: require('assets/images/artwork/gtx7.jpg')},
+    {alt: 'GTX artwork 8', src: require('assets/images/artwork/gtx8.jpg')},
   ];
 
   return (

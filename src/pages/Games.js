@@ -1,13 +1,13 @@
 import React from 'react';
-import PageIntro from '../components/PageIntro.js';
-import PageShell from '../components/PageShell.js';
-import ProjectCard from '../components/ProjectCard.js';
+import PageIntro from 'components/PageIntro.js';
+import PageShell from 'components/PageShell.js';
+import ProjectCard from 'components/ProjectCard.js';
 
 const Games = () => {
   const projects = [
     {
       to: 'circuitry',
-      logo: require('../assets/images/circuitry/logo1.png'),
+      logo: require('assets/images/circuitry/logo1.png'),
       title: 'Circuitry',
       meta: '2025 • React Native',
       description: (
@@ -18,14 +18,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
-        {src: require('../assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
-        {src: require('../assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
+        {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
+        {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
+        {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
       ],
     },
     {
       to: 'flocking_evolution',
-      logo: require('../assets/images/flocking_evolution/logo1.png'),
+      logo: require('assets/images/flocking_evolution/logo1.png'),
       title: 'Flocking Evolution',
       meta: '2023 • Unity',
       description: (
@@ -36,14 +36,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
     {
       to: 'space_salvagers',
-      logo: require('../assets/images/space_salvagers/logo1.png'),
+      logo: require('assets/images/space_salvagers/logo1.png'),
       title: 'Super Space Salvagers',
       meta: '2023 • C++',
       description: (
@@ -56,14 +56,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
     {
       to: 'mini_racer',
-      logo: require('../assets/images/mini_racer/logo1.png'),
+      logo: require('assets/images/mini_racer/logo1.png'),
       title: 'Mini Racer',
       meta: '2022 • Unreal Engine 5',
       description: (
@@ -73,14 +73,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
     {
       to: 'apogee',
-      logo: require('../assets/images/apogee/logo1.png'),
+      logo: require('assets/images/apogee/logo1.png'),
       title: 'Apogee',
       meta: '2021 • Unreal Engine 4',
       description: (
@@ -91,14 +91,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
     {
       to: 'pinata_clicker',
-      logo: require('../assets/images/pinata_clicker/logo1.png'),
+      logo: require('assets/images/pinata_clicker/logo1.png'),
       title: 'Pinata Clicker',
       meta: '2020 • Unreal Engine 4',
       description: (
@@ -111,14 +111,14 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
     {
       to: 'misfire',
-      logo: require('../assets/images/misfire/logo1.png'),
+      logo: require('assets/images/misfire/logo1.png'),
       title: 'Misfire',
       meta: '2019 • Unreal Engine 4',
       description: (
@@ -129,9 +129,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('../assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('../assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
       ],
     },
   ];

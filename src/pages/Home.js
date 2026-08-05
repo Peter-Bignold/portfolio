@@ -1,17 +1,17 @@
 import React from 'react';
-import CompactProjectLink from '../components/CompactProjectLink.js';
-import IconLink from '../components/IconLink.js';
-import PageShell from '../components/PageShell.js';
-import SkillChip from '../components/SkillChip.js';
-import Slideshow from '../components/Slideshow.js';
+import CompactProjectLink from 'components/CompactProjectLink.js';
+import IconLink from 'components/IconLink.js';
+import PageShell from 'components/PageShell.js';
+import SkillChip from 'components/SkillChip.js';
+import Slideshow from 'components/Slideshow.js';
 
 const Home = () => {
   const socials = [
-    {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('../assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
-    {href: 'https://github.com/Peter-Bignold', icon: require('../assets/images/home/github1.png'), alt: 'GitHub'},
-    {href: 'https://www.youtube.com/@noodle_games', icon: require('../assets/images/home/youtube1.png'), alt: 'YouTube'},
-    {href: 'https://www.artstation.com/peter_bignold', icon: require('../assets/images/home/artstation1.png'), alt: 'ArtStation'},
-    {href: 'https://noodlegames.itch.io/', icon: require('../assets/images/home/itch1.png'), alt: 'itch.io'},
+    {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
+    {href: 'https://github.com/Peter-Bignold', icon: require('assets/images/home/github1.png'), alt: 'GitHub'},
+    {href: 'https://www.youtube.com/@noodle_games', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube'},
+    {href: 'https://www.artstation.com/peter_bignold', icon: require('assets/images/home/artstation1.png'), alt: 'ArtStation'},
+    {href: 'https://noodlegames.itch.io/', icon: require('assets/images/home/itch1.png'), alt: 'itch.io'},
   ];
 
   const skills = [
@@ -22,13 +22,13 @@ const Home = () => {
   ];
 
   const featuredProjects = [
-    {to: 'games/circuitry', logo: require('../assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
-    {to: 'games/flocking_evolution', logo: require('../assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
-    {to: 'games/space_salvagers', logo: require('../assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},
-    {to: 'games/mini_racer', logo: require('../assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
-    {to: 'games/apogee', logo: require('../assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
-    {to: 'games/pinata_clicker', logo: require('../assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
-    {to: 'games/misfire', logo: require('../assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
+    {to: 'games/circuitry', logo: require('assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
+    {to: 'games/flocking_evolution', logo: require('assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
+    {to: 'games/space_salvagers', logo: require('assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},
+    {to: 'games/mini_racer', logo: require('assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
+    {to: 'games/apogee', logo: require('assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
+    {to: 'games/pinata_clicker', logo: require('assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
+    {to: 'games/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
   ];
 
   return (
@@ -44,11 +44,11 @@ const Home = () => {
       </PageShell>
 
       <div className="flex flex-col items-center bg-neutral-200 text-center">
-        <img className="mt-8 w-full animate-fade-in-0" src={require('../assets/images/home/mclaren1.jpg')} alt="Mclaren"></img>
+        <img className="mt-8 w-full animate-fade-in-0" src={require('assets/images/home/mclaren1.jpg')} alt="Mclaren"></img>
       </div>
 
       <PageShell className="mb-[100px] mt-10 flex-row flex-wrap-reverse justify-center gap-x-10 gap-y-8 text-left">
-        <img className="h-[325px] w-[325px] rounded-full" src={require('../assets/images/home/headshot2.jpg')} alt="Peter Bignold"></img>
+        <img className="h-[325px] w-[325px] rounded-full" src={require('assets/images/home/headshot2.jpg')} alt="Peter Bignold"></img>
         <div className="mb-10 flex max-w-[860px] flex-col items-center px-10 text-center md:items-start md:text-left">
           <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Hey There!</h3>
           <p className="max-w-[820px] text-xl font-light leading-[1.3] md:text-2xl">

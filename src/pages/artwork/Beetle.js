@@ -1,21 +1,21 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Beetle = () => {
   const buttons = [
     {
       href: 'https://www.artstation.com/artwork/rAb9z2',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
   ];
 
   const media = [
-    {alt: 'Beetle artwork 1', src: require('../../assets/images/artwork/beetle1.jpg')},
-    {alt: 'Beetle artwork 2', src: require('../../assets/images/artwork/beetle2.jpg')},
-    {alt: 'Beetle artwork 3', src: require('../../assets/images/artwork/beetle3.jpg')},
-    {alt: 'Beetle artwork 4', src: require('../../assets/images/artwork/beetle4.jpg')},
+    {alt: 'Beetle artwork 1', src: require('assets/images/artwork/beetle1.jpg')},
+    {alt: 'Beetle artwork 2', src: require('assets/images/artwork/beetle2.jpg')},
+    {alt: 'Beetle artwork 3', src: require('assets/images/artwork/beetle3.jpg')},
+    {alt: 'Beetle artwork 4', src: require('assets/images/artwork/beetle4.jpg')},
   ];
 
   return (

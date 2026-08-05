@@ -1,24 +1,24 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Ferrari = () => {
   const buttons = [
     {
       href: 'https://www.artstation.com/artwork/eJN433',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
   ];
 
   const media = [
-    {alt: 'Ferrari artwork 1', src: require('../../assets/images/artwork/ferrari1.jpg')},
-    {alt: 'Ferrari artwork 2', src: require('../../assets/images/artwork/ferrari2.jpg')},
-    {alt: 'Ferrari artwork 3', src: require('../../assets/images/artwork/ferrari3.jpg')},
-    {alt: 'Ferrari artwork 4', src: require('../../assets/images/artwork/ferrari4.jpg')},
-    {alt: 'Ferrari artwork 5', src: require('../../assets/images/artwork/ferrari5.jpg')},
-    {alt: 'Ferrari artwork 6', src: require('../../assets/images/artwork/ferrari6.jpg')},
-    {alt: 'Ferrari artwork 7', src: require('../../assets/images/artwork/ferrari7.jpg')},
+    {alt: 'Ferrari artwork 1', src: require('assets/images/artwork/ferrari1.jpg')},
+    {alt: 'Ferrari artwork 2', src: require('assets/images/artwork/ferrari2.jpg')},
+    {alt: 'Ferrari artwork 3', src: require('assets/images/artwork/ferrari3.jpg')},
+    {alt: 'Ferrari artwork 4', src: require('assets/images/artwork/ferrari4.jpg')},
+    {alt: 'Ferrari artwork 5', src: require('assets/images/artwork/ferrari5.jpg')},
+    {alt: 'Ferrari artwork 6', src: require('assets/images/artwork/ferrari6.jpg')},
+    {alt: 'Ferrari artwork 7', src: require('assets/images/artwork/ferrari7.jpg')},
   ];
 
   return (

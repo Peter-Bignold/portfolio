@@ -1,23 +1,23 @@
 import React from 'react';
-import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
+import {DetailPageShell, MediaGallery} from 'components/DetailPageShell.js';
 
 const Bmw = () => {
   const buttons = [
     {
       href: 'https://3dmodels.org/blog/peter-bignold-interview/',
-      icon: require('../../assets/images/home/3dm1.png'),
+      icon: require('assets/images/home/3dm1.png'),
       iconAlt: '3DModels.org',
       label: 'Artist Interview',
     },
     {
       href: 'https://3dmodels.org/challenges/making-up-lost-time/',
-      icon: require('../../assets/images/home/3dm1.png'),
+      icon: require('assets/images/home/3dm1.png'),
       iconAlt: '3DModels.org',
       label: 'View on 3DModels.org',
     },
     {
       href: 'https://www.artstation.com/artwork/xDxxOm',
-      icon: require('../../assets/images/home/artstation1.png'),
+      icon: require('assets/images/home/artstation1.png'),
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
@@ -25,13 +25,13 @@ const Bmw = () => {
 
   const media = [
     {type: 'video', title: 'Modeling timelapse', src: 'https://www.youtube.com/embed/U2CDPIyf9lA?rel=0'},
-    {alt: 'BMW artwork 1', src: require('../../assets/images/artwork/bmw1.jpg')},
-    {alt: 'BMW artwork 2', src: require('../../assets/images/artwork/bmw2.jpg')},
-    {alt: 'BMW artwork 3', src: require('../../assets/images/artwork/bmw3.jpg')},
-    {alt: 'BMW artwork 4', src: require('../../assets/images/artwork/bmw4.jpg')},
-    {alt: 'BMW artwork 5', src: require('../../assets/images/artwork/bmw5.jpg')},
-    {alt: 'BMW artwork 6', src: require('../../assets/images/artwork/bmw6.jpg')},
-    {alt: 'BMW artwork 7', src: require('../../assets/images/artwork/bmw7.jpg')},
+    {alt: 'BMW artwork 1', src: require('assets/images/artwork/bmw1.jpg')},
+    {alt: 'BMW artwork 2', src: require('assets/images/artwork/bmw2.jpg')},
+    {alt: 'BMW artwork 3', src: require('assets/images/artwork/bmw3.jpg')},
+    {alt: 'BMW artwork 4', src: require('assets/images/artwork/bmw4.jpg')},
+    {alt: 'BMW artwork 5', src: require('assets/images/artwork/bmw5.jpg')},
+    {alt: 'BMW artwork 6', src: require('assets/images/artwork/bmw6.jpg')},
+    {alt: 'BMW artwork 7', src: require('assets/images/artwork/bmw7.jpg')},
   ];
 
   return (
