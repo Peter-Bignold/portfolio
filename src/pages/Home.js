@@ -98,8 +98,12 @@ const Home = () => {
 
   return (
     <div ref={homeRef} className="relative bg-slate-950" style={{height: `${((SCENE_COUNT - 1) * SCENE_STEP + 1) * 100}vh`}}>
-      <div className="fixed inset-0 w-full opacity-10">
-        <img className="w-full animate-fade-in-1" src={require('assets/images/backgrounds/background1.jpg')} alt="Background"></img>
+      <div className="fixed inset-0 opacity-10">
+        <img
+          className="h-full w-full object-cover object-center animate-fade-in-1"
+          src={require('assets/images/backgrounds/background1.jpg')}
+          alt="Background"
+        ></img>
       </div>
 
       <div className="sticky top-0 h-screen overflow-hidden pb-24 animate-fade-in-3">
