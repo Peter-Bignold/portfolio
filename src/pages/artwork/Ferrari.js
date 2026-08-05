@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Ferrari = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Ferrari = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Ferrari artwork 1', src: require('assets/images/artwork/ferrari1.jpg')},
@@ -21,7 +21,7 @@ const Ferrari = () => {
     {alt: 'Ferrari artwork 5', src: require('assets/images/artwork/ferrari5.jpg')},
     {alt: 'Ferrari artwork 6', src: require('assets/images/artwork/ferrari6.jpg')},
     {alt: 'Ferrari artwork 7', src: require('assets/images/artwork/ferrari7.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -50,4 +50,4 @@ const Ferrari = () => {
   )
 }
 
-export default Ferrari;
+export default Ferrari

@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Misfire = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Misfire = () => {
       iconAlt: 'Steam',
       label: 'Download on Steam',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: 'Trailer', src: 'https://www.youtube.com/embed/wrwGrtdeAiw?rel=0', caption: 'Trailer'},
@@ -21,7 +21,7 @@ const Misfire = () => {
     {alt: 'Misfire perpendivolver', src: require('assets/images/misfire/screen7.jpg'), caption: 'Using the Perpendivolver'},
     {alt: 'Misfire character customization', src: require('assets/images/misfire/screen8.jpg'), caption: 'Character customization'},
     {alt: 'Misfire player statistics', src: require('assets/images/misfire/screen9.jpg'), caption: 'Player statistics'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -55,4 +55,4 @@ const Misfire = () => {
   )
 }
 
-export default Misfire;
+export default Misfire

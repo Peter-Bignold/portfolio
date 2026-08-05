@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Guitar = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Guitar = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Guitar artwork 1', src: require('assets/images/artwork/guitar1.jpg')},
@@ -21,7 +21,7 @@ const Guitar = () => {
     {alt: 'Guitar artwork 5', src: require('assets/images/artwork/guitar5.jpg')},
     {alt: 'Guitar artwork 6', src: require('assets/images/artwork/guitar6.jpg')},
     {alt: 'Guitar artwork 7', src: require('assets/images/artwork/guitar7.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -49,4 +49,4 @@ const Guitar = () => {
   )
 }
 
-export default Guitar;
+export default Guitar

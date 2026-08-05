@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Gtx = () => {
   const buttons = [
@@ -17,7 +17,7 @@ const Gtx = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'GTX artwork 1', src: require('assets/images/artwork/gtx1.jpg')},
@@ -28,7 +28,7 @@ const Gtx = () => {
     {alt: 'GTX artwork 6', src: require('assets/images/artwork/gtx6.jpg')},
     {alt: 'GTX artwork 7', src: require('assets/images/artwork/gtx7.jpg')},
     {alt: 'GTX artwork 8', src: require('assets/images/artwork/gtx8.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -57,4 +57,4 @@ const Gtx = () => {
   )
 }
 
-export default Gtx;
+export default Gtx

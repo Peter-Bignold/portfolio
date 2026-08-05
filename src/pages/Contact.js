@@ -1,7 +1,7 @@
-import React from 'react';
-import ContactCard from 'components/ContactCard.js';
-import IconLink from 'components/IconLink.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ContactCard from 'components/ContactCard.js'
+import IconLink from 'components/IconLink.js'
+import Page from 'components/Page.js'
 
 const Contact = () => {
   const contacts = [
@@ -17,7 +17,7 @@ const Contact = () => {
       label: 'Game Development',
       value: 'noodlegamesdev@gmail.com',
     },
-  ];
+  ]
 
   const socials = [
     {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn', label: 'Linkedin'},
@@ -25,7 +25,7 @@ const Contact = () => {
     {href: 'https://www.youtube.com/@noodle_games', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube', label: 'Youtube'},
     {href: 'https://www.artstation.com/peter_bignold', icon: require('assets/images/home/artstation1.png'), alt: 'ArtStation', label: 'Artstation'},
     {href: 'https://noodlegames.itch.io/', icon: require('assets/images/home/itch1.png'), alt: 'itch.io', label: 'itch.io'},
-  ];
+  ]
 
   return (
     <Page>
@@ -47,4 +47,4 @@ const Contact = () => {
   )
 }
 
-export default Contact;
+export default Contact

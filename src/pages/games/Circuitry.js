@@ -1,19 +1,19 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Circuitry = () => {
   const buttons = [
     {label: 'Work in Progress...', disabled: true},
-  ];
+  ]
 
   const media = [
     {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', caption: 'Heads up display', width: 281, height: 609, wrapperClassName: 'mx-1'},
     {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', caption: 'New session screen', width: 281, height: 609, wrapperClassName: 'mx-1'},
     {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', caption: 'Track select screen', width: 281, height: 609, wrapperClassName: 'mx-1'},
     {src: require('assets/images/circuitry/preview2.jpg'), alt: 'Circuitry sessions list', caption: 'Sessions list', width: 281, height: 609, wrapperClassName: 'mx-1'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -47,4 +47,4 @@ const Circuitry = () => {
   )
 }
 
-export default Circuitry;
+export default Circuitry

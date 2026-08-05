@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Mazda = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Mazda = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Mazda artwork 1', src: require('assets/images/artwork/mazda1.jpg')},
@@ -20,7 +20,7 @@ const Mazda = () => {
     {alt: 'Mazda artwork 4', src: require('assets/images/artwork/mazda4.jpg')},
     {alt: 'Mazda artwork 5', src: require('assets/images/artwork/mazda5.jpg')},
     {alt: 'Mazda artwork 6', src: require('assets/images/artwork/mazda6.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -52,4 +52,4 @@ const Mazda = () => {
   )
 }
 
-export default Mazda;
+export default Mazda

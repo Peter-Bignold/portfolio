@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Bmw = () => {
   const buttons = [
@@ -23,7 +23,7 @@ const Bmw = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: 'Modeling timelapse', src: 'https://www.youtube.com/embed/U2CDPIyf9lA?rel=0'},
@@ -34,7 +34,7 @@ const Bmw = () => {
     {alt: 'BMW artwork 5', src: require('assets/images/artwork/bmw5.jpg')},
     {alt: 'BMW artwork 6', src: require('assets/images/artwork/bmw6.jpg')},
     {alt: 'BMW artwork 7', src: require('assets/images/artwork/bmw7.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -65,4 +65,4 @@ const Bmw = () => {
   )
 }
 
-export default Bmw;
+export default Bmw

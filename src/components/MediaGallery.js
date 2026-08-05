@@ -1,22 +1,22 @@
-import React from 'react';
+import React from 'react'
 
-const mediaCaptionClassName = 'm-0 text-xl font-light leading-[1.3] md:text-2xl';
+const mediaCaptionClassName = 'm-0 text-xl font-light leading-[1.3] md:text-2xl'
 
 const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
   const containerClassName = layout === 'wrap'
     ? 'flex w-full flex-wrap items-start justify-center'
-    : 'flex w-full flex-col items-center';
+    : 'flex w-full flex-col items-center'
 
   return (
     <div className={containerClassName}>
       {items.map((item, index) => {
-        const isLast = index === items.length - 1;
-        const spacingClassName = isLast ? '' : 'mb-5';
+        const isLast = index === items.length - 1
+        const spacingClassName = isLast ? '' : 'mb-5'
         const wrapperClassName = [
           'flex flex-col items-center',
           spacingClassName,
           item.wrapperClassName ?? '',
-        ].join(' ').trim();
+        ].join(' ').trim()
 
         if (item.type === 'video') {
           return (
@@ -32,12 +32,12 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
               </div>
               {item.caption ? <p className={mediaCaptionClassName}>{item.caption}</p> : null}
             </div>
-          );
-        }
+        )
+      }
 
         const imageClassName = variant === 'app'
           ? 'mb-2.5 rounded'
-          : 'w-full max-w-5xl rounded';
+          : 'w-full max-w-5xl rounded'
 
         return (
           <div key={`${item.alt}-${index}`} className={wrapperClassName}>
@@ -50,10 +50,10 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
             ></img>
             {item.caption ? <p className={mediaCaptionClassName}>{item.caption}</p> : null}
           </div>
-        );
+        )
       })}
     </div>
-  );
-};
+  )
+}
 
-export default MediaGallery;
+export default MediaGallery

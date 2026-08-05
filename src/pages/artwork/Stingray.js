@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Stingray = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Stingray = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Stingray artwork 1', src: require('assets/images/artwork/stingray1.jpg')},
@@ -23,7 +23,7 @@ const Stingray = () => {
     {alt: 'Stingray artwork 7', src: require('assets/images/artwork/stingray7.jpg')},
     {alt: 'Stingray artwork 8', src: require('assets/images/artwork/stingray8.jpg')},
     {alt: 'Stingray artwork 9', src: require('assets/images/artwork/stingray9.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -51,4 +51,4 @@ const Stingray = () => {
   )
 }
 
-export default Stingray;
+export default Stingray

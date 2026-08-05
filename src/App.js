@@ -1,37 +1,37 @@
-import React from 'react';
-import {Routes, Route} from "react-router-dom";
+import React from 'react'
+import {Routes, Route} from "react-router-dom"
 
 // Header / Footer
-import Header from 'components/Header.js';
-import Footer from 'components/Footer.js';
+import Header from 'components/Header.js'
+import Footer from 'components/Footer.js'
 
 // Main Pages
-import Home from 'pages/Home.js';
-import Games from 'pages/Games.js';
-import Artwork from 'pages/Artwork.js';
-import Contact from 'pages/Contact.js';
+import Home from 'pages/Home.js'
+import Games from 'pages/Games.js'
+import Artwork from 'pages/Artwork.js'
+import Contact from 'pages/Contact.js'
 
 // Games
-import Circuitry from 'pages/games/Circuitry.js';
-import FlockingEvolution from 'pages/games/FlockingEvolution.js';
-import SpaceSalvagers from 'pages/games/SpaceSalvagers.js';
-import MiniRacer from 'pages/games/MiniRacer.js';
-import Apogee from 'pages/games/Apogee.js';
-import PinataClicker from 'pages/games/PinataClicker.js';
-import Misfire from 'pages/games/Misfire.js';
+import Circuitry from 'pages/games/Circuitry.js'
+import FlockingEvolution from 'pages/games/FlockingEvolution.js'
+import SpaceSalvagers from 'pages/games/SpaceSalvagers.js'
+import MiniRacer from 'pages/games/MiniRacer.js'
+import Apogee from 'pages/games/Apogee.js'
+import PinataClicker from 'pages/games/PinataClicker.js'
+import Misfire from 'pages/games/Misfire.js'
 
 // Artwork
-import Bmw from 'pages/artwork/Bmw.js';
-import Harley from 'pages/artwork/Harley.js';
-import Mclaren from 'pages/artwork/Mclaren.js';
-import Ninja from 'pages/artwork/Ninja.js';
-import Civic from 'pages/artwork/Civic.js';
-import Ferrari from 'pages/artwork/Ferrari.js';
-import Mazda from 'pages/artwork/Mazda.js';
-import Stingray from 'pages/artwork/Stingray.js';
-import Gtx from 'pages/artwork/Gtx.js';
-import Beetle from 'pages/artwork/Beetle.js';
-import Guitar from 'pages/artwork/Guitar.js';
+import Bmw from 'pages/artwork/Bmw.js'
+import Harley from 'pages/artwork/Harley.js'
+import Mclaren from 'pages/artwork/Mclaren.js'
+import Ninja from 'pages/artwork/Ninja.js'
+import Civic from 'pages/artwork/Civic.js'
+import Ferrari from 'pages/artwork/Ferrari.js'
+import Mazda from 'pages/artwork/Mazda.js'
+import Stingray from 'pages/artwork/Stingray.js'
+import Gtx from 'pages/artwork/Gtx.js'
+import Beetle from 'pages/artwork/Beetle.js'
+import Guitar from 'pages/artwork/Guitar.js'
 
 const App = () => {
   return (
@@ -63,7 +63,7 @@ const App = () => {
       </Routes>
       <Footer/>
         </div>
-      );
+      )
 }
 
-export default App;
+export default App

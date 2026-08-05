@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'
 
 const slides = [
   {image: 'bmw1', caption: 'BMW E30 M3'},
@@ -9,24 +9,24 @@ const slides = [
   {image: 'mazda1', caption: 'Maxda RX-7'},
   {image: 'civic1', caption: 'Honda Civic Si'},
   {image: 'stingray1', caption: 'Chevrolet Corvette'},
-];
+]
 
 const Slideshow = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(0)
 
   const setSlide = (nextIndex) => {
     if (nextIndex > slides.length - 1) {
-      setIndex(0);
-      return;
+      setIndex(0)
+      return
     }
 
     if (nextIndex < 0) {
-      setIndex(slides.length - 1);
-      return;
+      setIndex(slides.length - 1)
+      return
     }
 
-    setIndex(nextIndex);
-  };
+    setIndex(nextIndex)
+  }
 
   return (
     <div className="mx-[5%] flex flex-col items-center text-center">
@@ -72,7 +72,7 @@ const Slideshow = () => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Slideshow;
+export default Slideshow

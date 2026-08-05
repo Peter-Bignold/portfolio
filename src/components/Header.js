@@ -1,8 +1,8 @@
-import React from 'react';
-import {Link, useLocation} from 'react-router-dom';
+import React from 'react'
+import {Link, useLocation} from 'react-router-dom'
 
 const Header = () => {
-  const url = useLocation().pathname;
+  const url = useLocation().pathname
   const getLinkClass = (isActive, isHome = false) => {
     if (isHome) {
       return [
@@ -14,8 +14,8 @@ const Header = () => {
       'mx-4 mt-1 block text-xl font-light text-neutral-400 transition duration-200 hover:text-neutral-100',
       isActive ? '!text-neutral-100 underline decoration-[1px] underline-offset-[30%]' : '',
     ].join(' ')
-  };
-  
+  }
+
   return (
     <div className="fixed top-0 z-[1000] m-0 w-full">
       <header className="flex h-14 items-center justify-center border-b border-slate-800/80 bg-slate-900/50 px-[6%] py-2.5 text-3xl text-neutral-100 shadow-soft backdrop-blur md:justify-between">
@@ -45,4 +45,4 @@ const Header = () => {
   )
 }
 
-export default Header;
+export default Header

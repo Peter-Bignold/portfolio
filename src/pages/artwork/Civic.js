@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Civic = () => {
   const buttons = [
@@ -17,7 +17,7 @@ const Civic = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Civic artwork 1', src: require('assets/images/artwork/civic1.jpg')},
@@ -27,7 +27,7 @@ const Civic = () => {
     {alt: 'Civic artwork 5', src: require('assets/images/artwork/civic5.jpg')},
     {alt: 'Civic artwork 6', src: require('assets/images/artwork/civic6.jpg')},
     {alt: 'Civic artwork 7', src: require('assets/images/artwork/civic7.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -55,4 +55,4 @@ const Civic = () => {
   )
 }
 
-export default Civic;
+export default Civic

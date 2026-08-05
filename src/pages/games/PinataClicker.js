@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const PinataClicker = () => {
   const buttons = [
@@ -11,14 +11,14 @@ const PinataClicker = () => {
       iconAlt: 'itch.io',
       label: 'Download on itch.io',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: 'Gameplay demonstration', src: 'https://www.youtube.com/embed/mM6Yn8_FwxQ?rel=0', caption: 'Gameplay demonstration'},
     {alt: 'Pinata Clicker tutorial', src: require('assets/images/pinata_clicker/screen2.jpg'), caption: 'Introduction and tutorial'},
     {alt: 'Pinata Clicker early game', src: require('assets/images/pinata_clicker/screen1.jpg'), caption: 'Early game'},
     {alt: 'Pinata Clicker late game', src: require('assets/images/pinata_clicker/screen3.jpg'), caption: 'Late game'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -54,4 +54,4 @@ const PinataClicker = () => {
   )
 }
 
-export default PinataClicker;
+export default PinataClicker

@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const FlockingEvolution = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const FlockingEvolution = () => {
       iconAlt: 'itch.io',
       label: 'Download on itch.io',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: 'Simulation demonstration', src: 'https://www.youtube.com/embed/YmZfC2egsYA?rel=0', caption: 'Simulation demonstration'},
@@ -20,7 +20,7 @@ const FlockingEvolution = () => {
     {alt: 'Flocking Evolution carnivores hunting', src: require('assets/images/flocking_evolution/screen2.jpg'), caption: 'Carnivores herd and hunt herbivores'},
     {alt: 'Flocking Evolution lure tool', src: require('assets/images/flocking_evolution/screen3.jpg'), caption: 'Using the lure to redirect blue herbivores'},
     {alt: 'Flocking Evolution particle trails', src: require('assets/images/flocking_evolution/screen5.jpg'), caption: 'Giving agents particle trails'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -54,4 +54,4 @@ const FlockingEvolution = () => {
   )
 }
 
-export default FlockingEvolution;
+export default FlockingEvolution

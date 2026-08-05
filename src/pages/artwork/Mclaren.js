@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Mclaren = () => {
   const buttons = [
@@ -17,7 +17,7 @@ const Mclaren = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Mclaren artwork 1', src: require('assets/images/artwork/mclaren1.jpg')},
@@ -26,7 +26,7 @@ const Mclaren = () => {
     {alt: 'Mclaren artwork 4', src: require('assets/images/artwork/mclaren4.jpg')},
     {alt: 'Mclaren artwork 5', src: require('assets/images/artwork/mclaren5.jpg')},
     {alt: 'Mclaren artwork 6', src: require('assets/images/artwork/mclaren6.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -58,4 +58,4 @@ const Mclaren = () => {
   )
 }
 
-export default Mclaren;
+export default Mclaren

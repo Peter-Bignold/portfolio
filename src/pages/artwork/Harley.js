@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Harley = () => {
   const buttons = [
@@ -17,7 +17,7 @@ const Harley = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Harley artwork 1', src: require('assets/images/artwork/harley1.jpg')},
@@ -26,7 +26,7 @@ const Harley = () => {
     {alt: 'Harley artwork 4', src: require('assets/images/artwork/harley4.jpg')},
     {alt: 'Harley artwork 5', src: require('assets/images/artwork/harley5.jpg')},
     {alt: 'Harley artwork 6', src: require('assets/images/artwork/harley6.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -54,4 +54,4 @@ const Harley = () => {
   )
 }
 
-export default Harley;
+export default Harley

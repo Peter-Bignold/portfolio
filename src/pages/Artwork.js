@@ -1,6 +1,6 @@
-import React from 'react';
-import ArtworkCard from 'components/ArtworkCard.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ArtworkCard from 'components/ArtworkCard.js'
+import Page from 'components/Page.js'
 
 const Artwork = () => {
   const artwork = [
@@ -15,7 +15,7 @@ const Artwork = () => {
     {to: 'gtx', image: require('assets/images/artwork/preview_gtx1.jpg'), title: 'Plymouth GTX'},
     {to: 'beetle', image: require('assets/images/artwork/preview_beetle1.jpg'), title: 'Volkswagen Beetle'},
     {to: 'guitar', image: require('assets/images/artwork/preview_guitar1.jpg'), title: 'Simon & Patrick Songsmith'},
-  ];
+  ]
 
   return (
     <Page className="pb-10">
@@ -32,4 +32,4 @@ const Artwork = () => {
   )
 }
 
-export default Artwork;
+export default Artwork

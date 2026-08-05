@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Beetle = () => {
   const buttons = [
@@ -11,14 +11,14 @@ const Beetle = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Beetle artwork 1', src: require('assets/images/artwork/beetle1.jpg')},
     {alt: 'Beetle artwork 2', src: require('assets/images/artwork/beetle2.jpg')},
     {alt: 'Beetle artwork 3', src: require('assets/images/artwork/beetle3.jpg')},
     {alt: 'Beetle artwork 4', src: require('assets/images/artwork/beetle4.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -47,4 +47,4 @@ const Beetle = () => {
   )
 }
 
-export default Beetle;
+export default Beetle

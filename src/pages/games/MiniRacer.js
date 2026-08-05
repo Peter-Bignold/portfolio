@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const MiniRacer = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const MiniRacer = () => {
       iconAlt: 'itch.io',
       label: 'Download on itch.io',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: '20 vehicle race gameplay', src: 'https://www.youtube.com/embed/FrO2i0B0eFs?rel=0', caption: '20 vehicle race gameplay'},
@@ -21,7 +21,7 @@ const MiniRacer = () => {
     {alt: 'Mini Racer hairpin', src: require('assets/images/mini_racer/screen4.jpg'), caption: 'Cedar Creek - hairpin'},
     {alt: 'Mini Racer straight', src: require('assets/images/mini_racer/screen6.jpg'), caption: 'A pack of cars accelerate down a straight'},
     {alt: 'Mini Racer long right hand corner', src: require('assets/images/mini_racer/screen7.jpg'), caption: 'Sliding through a long right hand corner'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -54,4 +54,4 @@ const MiniRacer = () => {
   )
 }
 
-export default MiniRacer;
+export default MiniRacer

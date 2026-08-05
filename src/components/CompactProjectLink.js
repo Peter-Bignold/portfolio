@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 const CompactProjectLink = ({to, logo, title, meta, className = ''}) => (
   <Link
@@ -14,6 +14,6 @@ const CompactProjectLink = ({to, logo, title, meta, className = ''}) => (
       </div>
     </div>
   </Link>
-);
+)
 
-export default CompactProjectLink;
+export default CompactProjectLink

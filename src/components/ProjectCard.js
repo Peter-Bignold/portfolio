@@ -1,5 +1,5 @@
-import React from 'react';
-import {Link} from 'react-router-dom';
+import React from 'react'
+import {Link} from 'react-router-dom'
 
 const ProjectCard = ({to, logo, title, meta, description, previews, className = ''}) => (
   <Link
@@ -27,6 +27,6 @@ const ProjectCard = ({to, logo, title, meta, description, previews, className = 
       ))}
     </div>
   </Link>
-);
+)
 
-export default ProjectCard;
+export default ProjectCard

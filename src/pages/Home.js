@@ -1,18 +1,18 @@
-import React, {startTransition, useEffect, useRef, useState} from 'react';
-import CompactProjectLink from 'components/CompactProjectLink.js';
-import IconLink from 'components/IconLink.js';
-import SkillChip from 'components/SkillChip.js';
-import Slideshow from 'components/Slideshow.js';
+import React, {startTransition, useEffect, useRef, useState} from 'react'
+import CompactProjectLink from 'components/CompactProjectLink.js'
+import IconLink from 'components/IconLink.js'
+import SkillChip from 'components/SkillChip.js'
+import Slideshow from 'components/Slideshow.js'
 
-const SCENE_COUNT = 5;
-const SCENE_STEP = 1.2;
-const SCENE_HOLD_RANGE = 0.24;
-const SCENE_FADE_RANGE = 0.34;
-const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+const SCENE_COUNT = 5
+const SCENE_STEP = 1.2
+const SCENE_HOLD_RANGE = 0.24
+const SCENE_FADE_RANGE = 0.34
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max)
 
 const Home = () => {
-  const homeRef = useRef(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
+  const homeRef = useRef(null)
+  const [scrollProgress, setScrollProgress] = useState(0)
 
   const socials = [
     {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
@@ -20,14 +20,14 @@ const Home = () => {
     {href: 'https://www.youtube.com/@noodle_games', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube'},
     {href: 'https://www.artstation.com/peter_bignold', icon: require('assets/images/home/artstation1.png'), alt: 'ArtStation'},
     {href: 'https://noodlegames.itch.io/', icon: require('assets/images/home/itch1.png'), alt: 'itch.io'},
-  ];
+  ]
 
   const skills = [
     'C', 'C++', 'C#', 'Python', 'Java', 'Haskell', 'Bash / Shell', 'SQL', 'MySQL', 'SQLite', 'PHP', 'HTML', 'CSS', 'JavaScript', 'Git', 'React',
     'Vue', 'Vue Options API', 'Vue Composition API', 'Vuex', 'Redux', 'Node', 'NPM', 'Expo', 'Tailwind', 'Bootstrap', 'PowerBI', 'Logic Apps',
     'Office', 'Unity', 'Unreal Engine 4/5', 'Blueprints', 'Blender', 'GIMP', 'Audacity', 'OpenGL', 'PhysX', 'ElasticSearch', 'DynamoDB', 'Lambda',
     'Cloudfront', 'S3',
-  ];
+  ]
 
   const featuredProjects = [
     {to: 'games/circuitry', logo: require('assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
@@ -37,64 +37,64 @@ const Home = () => {
     {to: 'games/apogee', logo: require('assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
     {to: 'games/pinata_clicker', logo: require('assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
     {to: 'games/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
-  ];
+  ]
 
   useEffect(() => {
-    let frameId = null;
+    let frameId = null
 
     const updateSceneProgress = () => {
-      frameId = null;
+      frameId = null
 
       if (!homeRef.current) {
-        return;
+        return
       }
 
-      const rect = homeRef.current.getBoundingClientRect();
-      const viewportHeight = window.innerHeight || 1;
-      const maxScroll = (SCENE_COUNT - 1) * SCENE_STEP * viewportHeight;
-      const relativeScroll = clamp(-rect.top, 0, maxScroll);
+      const rect = homeRef.current.getBoundingClientRect()
+      const viewportHeight = window.innerHeight || 1
+      const maxScroll = (SCENE_COUNT - 1) * SCENE_STEP * viewportHeight
+      const relativeScroll = clamp(-rect.top, 0, maxScroll)
 
       startTransition(() => {
-        setScrollProgress(relativeScroll / viewportHeight);
-      });
-    };
+        setScrollProgress(relativeScroll / viewportHeight)
+      })
+    }
 
     const requestSceneUpdate = () => {
       if (frameId !== null) {
-        return;
+        return
       }
 
-      frameId = window.requestAnimationFrame(updateSceneProgress);
-    };
+      frameId = window.requestAnimationFrame(updateSceneProgress)
+    }
 
-    requestSceneUpdate();
-    window.addEventListener('scroll', requestSceneUpdate, {passive: true});
-    window.addEventListener('resize', requestSceneUpdate);
+    requestSceneUpdate()
+    window.addEventListener('scroll', requestSceneUpdate, {passive: true})
+    window.addEventListener('resize', requestSceneUpdate)
 
     return () => {
       if (frameId !== null) {
-        window.cancelAnimationFrame(frameId);
+        window.cancelAnimationFrame(frameId)
       }
 
-      window.removeEventListener('scroll', requestSceneUpdate);
-      window.removeEventListener('resize', requestSceneUpdate);
-    };
-  }, []);
+      window.removeEventListener('scroll', requestSceneUpdate)
+      window.removeEventListener('resize', requestSceneUpdate)
+    }
+  }, [])
 
   const getSceneStyle = (sceneIndex) => {
-    const sceneCenter = sceneIndex * SCENE_STEP;
-    const distance = scrollProgress - sceneCenter;
-    const motionDistance = Math.sign(distance) * Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0);
-    const distanceFromHold = Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0);
-    const normalizedDistance = distanceFromHold / SCENE_FADE_RANGE;
-    const opacity = clamp(1 - normalizedDistance, 0, 1);
+    const sceneCenter = sceneIndex * SCENE_STEP
+    const distance = scrollProgress - sceneCenter
+    const motionDistance = Math.sign(distance) * Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0)
+    const distanceFromHold = Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0)
+    const normalizedDistance = distanceFromHold / SCENE_FADE_RANGE
+    const opacity = clamp(1 - normalizedDistance, 0, 1)
 
     return {
       opacity,
       transform: `translateY(${motionDistance * -56}px) scale(${1 - Math.min(Math.abs(motionDistance) * 0.03, 0.03)})`,
       pointerEvents: opacity > 0.6 ? 'auto' : 'none',
-    };
-  };
+    }
+  }
 
   return (
     <div ref={homeRef} className="relative bg-slate-950" style={{height: `${((SCENE_COUNT - 1) * SCENE_STEP + 1) * 100}vh`}}>
@@ -176,4 +176,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

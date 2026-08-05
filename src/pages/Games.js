@@ -1,6 +1,6 @@
-import React from 'react';
-import Page from 'components/Page.js';
-import ProjectCard from 'components/ProjectCard.js';
+import React from 'react'
+import Page from 'components/Page.js'
+import ProjectCard from 'components/ProjectCard.js'
 
 const Games = () => {
   const projects = [
@@ -133,7 +133,7 @@ const Games = () => {
         {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
-  ];
+  ]
 
   return (
     <Page className="pb-10">
@@ -150,4 +150,4 @@ const Games = () => {
   )
 }
 
-export default Games;
+export default Games

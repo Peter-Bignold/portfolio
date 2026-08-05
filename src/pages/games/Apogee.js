@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Apogee = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const Apogee = () => {
       iconAlt: 'itch.io',
       label: 'Download on itch.io',
     },
-  ];
+  ]
 
   const media = [
     {type: 'video', title: 'Gameplay demonstration', src: 'https://www.youtube.com/embed/aYETykjwY1w?rel=0', caption: 'Gameplay demonstration'},
@@ -20,7 +20,7 @@ const Apogee = () => {
     {alt: 'Apogee tutorial hints', src: require('assets/images/apogee/screen3.jpg'), caption: 'Tutorial hints'},
     {alt: 'Apogee unlockable ships', src: require('assets/images/apogee/screen4.jpg'), caption: 'Unlock ships with unique gameplay buffs by reaching point milestones'},
     {alt: 'Apogee cargo delivery', src: require('assets/images/apogee/screen5.jpg'), caption: 'Finding and delivering cargo for bonus points'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -54,4 +54,4 @@ const Apogee = () => {
   )
 }
 
-export default Apogee;
+export default Apogee

@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const SpaceSalvagers = () => {
   const buttons = [
@@ -11,7 +11,7 @@ const SpaceSalvagers = () => {
       iconAlt: 'GitHub',
       label: 'Github Repository',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Super Space Salvagers title screen', src: require('assets/images/space_salvagers/screen4.jpg'), caption: 'Title screen and credits'},
@@ -20,7 +20,7 @@ const SpaceSalvagers = () => {
     {alt: 'Super Space Salvagers AI opponents', src: require('assets/images/space_salvagers/screen2.jpg'), caption: "AI opponents maneuvering to steal each other's cargo"},
     {alt: 'Super Space Salvagers rival collision', src: require('assets/images/space_salvagers/screen3.jpg'), caption: 'Boosting into a rival salvager'},
     {alt: 'Super Space Salvagers splitscreen', src: require('assets/images/space_salvagers/screen5.jpg'), caption: '4 - player splitscreen'},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -56,4 +56,4 @@ const SpaceSalvagers = () => {
   )
 }
 
-export default SpaceSalvagers;
+export default SpaceSalvagers

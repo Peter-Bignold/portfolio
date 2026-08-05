@@ -1,7 +1,7 @@
-import React from 'react';
-import ExternalButton from 'components/ExternalButton.js';
-import MediaGallery from 'components/MediaGallery.js';
-import Page from 'components/Page.js';
+import React from 'react'
+import ExternalButton from 'components/ExternalButton.js'
+import MediaGallery from 'components/MediaGallery.js'
+import Page from 'components/Page.js'
 
 const Ninja = () => {
   const buttons = [
@@ -17,7 +17,7 @@ const Ninja = () => {
       iconAlt: 'Artstation',
       label: 'View on Artstation',
     },
-  ];
+  ]
 
   const media = [
     {alt: 'Ninja artwork 1', src: require('assets/images/artwork/ninja1.jpg')},
@@ -29,7 +29,7 @@ const Ninja = () => {
     {alt: 'Ninja artwork 7', src: require('assets/images/artwork/ninja7.jpg')},
     {alt: 'Ninja artwork 8', src: require('assets/images/artwork/ninja8.jpg')},
     {alt: 'Ninja artwork 9', src: require('assets/images/artwork/ninja9.jpg')},
-  ];
+  ]
 
   return (
     <Page className="pt-32">
@@ -59,4 +59,4 @@ const Ninja = () => {
   )
 }
 
-export default Ninja;
+export default Ninja
