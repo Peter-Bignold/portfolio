@@ -24,17 +24,17 @@ const Guitar = () => {
   ];
 
   return (
-    <Page className="pt-[120px]">
+    <Page className="pt-32">
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="my-4 text-[40px] font-normal animate-fade-in-1 md:text-[55px]">Simon & Patrick Songsmith</h1>
-        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">Simon & Patrick Songsmith</h1>
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
           <i>A Simon and Patrick Songsmith modelled off my very own guitar! Having a physical object
           to refer to when modeling fine details was incredibly helpful, and enabled me to achieve a high
           level of realism.</i>
         </div>
       </div>
 
-      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+      <div className="mb-10 flex w-full max-w-5xl animate-fade-in-2 flex-col items-center">
         {buttons.map((button) => (
           <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
             {button.label}

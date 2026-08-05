@@ -30,17 +30,17 @@ const Civic = () => {
   ];
 
   return (
-    <Page className="pt-[120px]">
+    <Page className="pt-32">
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="my-4 text-[40px] font-normal animate-fade-in-1 md:text-[55px]">2007 Honda Civic Si</h1>
-        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">2007 Honda Civic Si</h1>
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
           <i>The 8th Generation Honda Civic Si features a lightweight chassis, short wheelbase, 6-speed manual, and
           2.0 liter naturally aspirated i-VTEC 4 cylinder engine. The styling is modest but charming, with no unnecessary
           vents or trim. Relaxed lines flow from front to back, with the flush head and tail lights meshing perfectly.</i>
         </div>
       </div>
 
-      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+      <div className="mb-10 flex w-full max-w-5xl animate-fade-in-2 flex-col items-center">
         {buttons.map((button) => (
           <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
             {button.label}

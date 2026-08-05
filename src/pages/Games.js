@@ -17,9 +17,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
-        {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
-        {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', width: 281, height: 609, className: 'm-1 rounded-[5px]'},
+        {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', width: 281, height: 609, className: 'm-1 rounded'},
+        {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', width: 281, height: 609, className: 'm-1 rounded'},
+        {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', width: 281, height: 609, className: 'm-1 rounded'},
       ],
     },
     {
@@ -35,9 +35,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
     {
@@ -55,9 +55,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
     {
@@ -72,9 +72,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
     {
@@ -90,9 +90,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
     {
@@ -110,9 +110,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
     {
@@ -128,9 +128,9 @@ const Games = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
-        {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-[397px] rounded-[5px]'},
+        {src: require('assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
       ],
     },
   ];
@@ -138,8 +138,8 @@ const Games = () => {
   return (
     <Page className="pb-10">
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Projects</h1>
-        <h2 className="text-[20px] font-light text-neutral-400 animate-fade-in-2 md:text-[30px]">Apps, Games, Simulations, and Prototypes</h2>
+        <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Projects</h1>
+        <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Apps, Games, Simulations, and Prototypes</h2>
       </div>
       <div className="flex w-full animate-move-up flex-col items-center">
         {projects.map((project) => (

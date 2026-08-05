@@ -23,10 +23,10 @@ const Mazda = () => {
   ];
 
   return (
-    <Page className="pt-[120px]">
+    <Page className="pt-32">
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="my-4 text-[40px] font-normal animate-fade-in-1 md:text-[55px]">1982 Mazda RX-7 (SA)</h1>
-        <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1982 Mazda RX-7 (SA)</h1>
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
           <i>A 1982 Mazda RX-7 restored and enhanced for racing! Officially referred to as the SA (Savannah)
           and nicknamed FB, this first generation RX-7 helped pave the way for a decades-long explosion in Japanese
           sports car popularity. Although it isn't as famous as the FD generation that came later,
@@ -37,7 +37,7 @@ const Mazda = () => {
         </div>
       </div>
 
-      <div className="mb-10 flex w-full max-w-[1000px] animate-fade-in-2 flex-col items-center">
+      <div className="mb-10 flex w-full max-w-5xl animate-fade-in-2 flex-col items-center">
         {buttons.map((button) => (
           <ExternalButton key={button.label} href={button.href} icon={button.icon} iconAlt={button.iconAlt} disabled={button.disabled} className="my-1">
             {button.label}

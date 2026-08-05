@@ -21,9 +21,9 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
         if (item.type === 'video') {
           return (
             <div key={item.title} className={wrapperClassName}>
-              <div className="w-full max-w-[1000px]">
+              <div className="w-full max-w-5xl">
                 <iframe
-                  className="mb-[10px] aspect-video w-full rounded-[5px] border-0 bg-transparent"
+                  className="mb-2.5 aspect-video w-full rounded border-0 bg-transparent"
                   title={item.title}
                   frameBorder="0"
                   allow="fullscreen;"
@@ -36,8 +36,8 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
         }
 
         const imageClassName = variant === 'app'
-          ? 'mb-[10px] rounded-[5px]'
-          : 'w-full max-w-[1000px] rounded-[5px]';
+          ? 'mb-2.5 rounded'
+          : 'w-full max-w-5xl rounded';
 
         return (
           <div key={`${item.alt}-${index}`} className={wrapperClassName}>

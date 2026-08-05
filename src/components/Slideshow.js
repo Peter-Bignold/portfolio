@@ -30,26 +30,26 @@ const Slideshow = () => {
 
   return (
     <div className="mx-[5%] flex flex-col items-center text-center">
-      <div className="relative flex max-w-[1256px] items-center leading-none">
+      <div className="relative flex max-w-7xl items-center leading-none">
         <div>
           <img
-            className="w-full rounded-[5px] shadow-gallery animate-fade-in-half"
+            className="w-full rounded shadow-gallery animate-fade-in-half"
             alt="Gallery"
             src={require(`../assets/images/artwork/${slides[index].image}.jpg`)}
           ></img>
-          <div className="absolute bottom-2 w-full pb-[14px] text-xl text-neutral-100 [text-shadow:0_0_3px_black] md:text-2xl">
+          <div className="absolute bottom-2 w-full pb-3.5 text-xl text-neutral-100 drop-shadow-md md:text-2xl">
             {slides[index].caption}
           </div>
         </div>
         <button
-          className="absolute left-0 top-0 flex h-full select-none items-center rounded-l-[5px] px-6 text-[28px] font-bold text-white transition duration-200 hover:bg-black/30"
+          className="absolute left-0 top-0 flex h-full select-none items-center rounded-l px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
           type="button"
           onClick={() => setSlide(index - 1)}
         >
           &#10094;
         </button>
         <button
-          className="absolute right-0 top-0 flex h-full select-none items-center rounded-r-[5px] px-6 text-[28px] font-bold text-white transition duration-200 hover:bg-black/30"
+          className="absolute right-0 top-0 flex h-full select-none items-center rounded-r px-6 text-3xl font-bold text-white transition duration-200 hover:bg-black/30"
           type="button"
           onClick={() => setSlide(index + 1)}
         >
@@ -62,7 +62,7 @@ const Slideshow = () => {
           <button
             key={slide.image}
             className={[
-              'mx-1 inline-block h-[15px] w-[15px] rounded-full transition duration-200',
+              'mx-1 inline-block h-4 w-4 rounded-full transition duration-200',
               slideIndex === index ? 'bg-neutral-100' : 'bg-slate-700 hover:bg-slate-500',
             ].join(' ')}
             type="button"

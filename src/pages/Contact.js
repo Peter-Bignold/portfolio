@@ -30,9 +30,9 @@ const Contact = () => {
   return (
     <Page>
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Contact</h1>
+        <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Contact</h1>
       </div>
-      <div className="mt-16 flex w-full max-w-[1256px] animate-move-up flex-col items-center">
+      <div className="mt-16 flex w-full max-w-7xl animate-move-up flex-col items-center">
         {contacts.map((contact) => (
           <ContactCard key={contact.value} {...contact}></ContactCard>
         ))}
