@@ -1,66 +1,43 @@
 import React from 'react';
-
-import '../../styles/style_text.css';
-import '../../styles/style_button.css';
-import '../../styles/style_container.css';
-import '../../styles/style_anims.css';
-import '../../styles/style_scroll.css';
+import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
 
 const Stingray = () => {
-    return (
-        <body style={{backgroundColor: "#eeeeee", overflowY: "hidden"}}>
+  const buttons = [
+    {
+      href: 'https://www.artstation.com/artwork/xE9Z4',
+      icon: require('../../assets/images/home/artstation1.png'),
+      iconAlt: 'Artstation',
+      label: 'View on Artstation',
+    },
+  ];
 
-            <div className="flex_MV" style={{marginRight: "5%", marginLeft: "5%", marginTop: "120px"}}>
+  const media = [
+    {alt: 'Stingray artwork 1', src: require('../../assets/images/artwork/stingray1.jpg')},
+    {alt: 'Stingray artwork 2', src: require('../../assets/images/artwork/stingray2.jpg')},
+    {alt: 'Stingray artwork 3', src: require('../../assets/images/artwork/stingray3.jpg')},
+    {alt: 'Stingray artwork 4', src: require('../../assets/images/artwork/stingray4.jpg')},
+    {alt: 'Stingray artwork 5', src: require('../../assets/images/artwork/stingray5.jpg')},
+    {alt: 'Stingray artwork 6', src: require('../../assets/images/artwork/stingray6.jpg')},
+    {alt: 'Stingray artwork 7', src: require('../../assets/images/artwork/stingray7.jpg')},
+    {alt: 'Stingray artwork 8', src: require('../../assets/images/artwork/stingray8.jpg')},
+    {alt: 'Stingray artwork 9', src: require('../../assets/images/artwork/stingray9.jpg')},
+  ];
 
-                <div className="flex_MV anim_fadeIn1" style={{marginBottom: "20px"}}>
-                    <h3> 1967 Chevrolet Corvette Stingray </h3>
-                </div>
-
-                <p className="anim_fadeIn2">
-                    <i>A 1967 Corvette Stingray featuring a fully detailed interior. I combined elements
-                    from earlier Stingray models, namely the side vents and split rear window.
-                    Other than those tweaks the car is accurate to the original. </i>
-                </p>
-
-                <div className="flex_MV anim_fadeIn2" style={{marginBottom: "40px", maxWidth: "1000px", width: "100%"}}>
-                    <button className="button_wide" onClick={() => window.open("https://www.artstation.com/artwork/xE9Z4")} style={{margin: "4px"}}> 
-                        <img src={require("../../images/home/artstation1.png")} alt="Download" style={{width: "24px", height: "24px", paddingRight: "12px"}}></img>
-                        View on Artstation
-                    </button>
-                </div>
-
-                <div className="flex_MV anim_fadeIn3">
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray1.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray2.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray3.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray4.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray5.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray6.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray7.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray8.jpg")}></img>
-                    </div>
-                    <div className="flex_MV">
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/stingray9.jpg")}></img>
-                    </div>
-                </div>
-            </div>
-        </body>
-    )
+  return (
+    <DetailPageShell
+      title="1967 Chevrolet Corvette Stingray"
+      description={(
+        <>
+          <i>A 1967 Corvette Stingray featuring a fully detailed interior. I combined elements
+          from earlier Stingray models, namely the side vents and split rear window.
+          Other than those tweaks the car is accurate to the original.</i>
+        </>
+      )}
+      buttons={buttons}
+    >
+      <MediaGallery items={media}></MediaGallery>
+    </DetailPageShell>
+  )
 }
 
 export default Stingray;

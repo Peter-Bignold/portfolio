@@ -1,192 +1,100 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import CompactProjectLink from '../components/CompactProjectLink.js';
+import IconLink from '../components/IconLink.js';
+import PageShell from '../components/PageShell.js';
+import SkillChip from '../components/SkillChip.js';
 import Slideshow from '../components/Slideshow.js';
 
-import '../styles/style_text.css';
-import '../styles/style_button.css';
-import '../styles/style_container.css';
-import '../styles/style_anims.css';
-import '../styles/style_scroll.css';
-import '../styles/style_index.css';
-
 const Home = () => {
-    return (
-        <body style={{backgroundColor: "#eeeeee"}}>
-            <div className="flex_MV" style={{backgroundColor: "#e8e8e8", paddingLeft: "5%", paddingRight: "5%"}}>
-                <h1 className="anim_fadeIn1"> Peter Bignold </h1>
-                <h2 className="anim_fadeIn2"> Computer Scientist &#x2022; Software Developer &#x2022; Digital Artist </h2>
-                <div class="flex_MH anim_fadeIn3">
-                    <button className="button_icon" onClick={() => window.open("https://www.linkedin.com/in/peter-bignold-b507171b1/")}> 
-                        <img src={require("../images/home/linkedin1.png")} alt="LinkedIn" style={{width: "32px", height: "32px"}}></img>
-                    </button>
-                    <button className="button_icon" onClick={() => window.open("https://github.com/Peter-Bignold")}> 
-                        <img src={require("../images/home/github1.png")} alt="GitHub" style={{width: "32px", height: "32px"}}></img>
-                    </button>
-                    <button className="button_icon" onClick={() => window.open("https://www.youtube.com/@noodle_games")}>
-                        <img src={require("../images/home/youtube1.png")} alt="YouTube" style={{width: "32px", height: "32px"}}></img>
-                    </button>
-                    <button className="button_icon" onClick={() => window.open("https://www.artstation.com/peter_bignold")}>
-                        <img src={require("../images/home/artstation1.png")} alt="ArtStation" style={{width: "32px", height: "32px"}}></img>
-                    </button>
-                    <button className="button_icon" onClick={() => window.open("https://noodlegames.itch.io/")}>
-                        <img src={require("../images/home/itch1.png")} alt="itch.io" style={{width: "32px", height: "32px"}}></img>
-                    </button>
-                </div>
-            </div>
+  const socials = [
+    {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('../assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
+    {href: 'https://github.com/Peter-Bignold', icon: require('../assets/images/home/github1.png'), alt: 'GitHub'},
+    {href: 'https://www.youtube.com/@noodle_games', icon: require('../assets/images/home/youtube1.png'), alt: 'YouTube'},
+    {href: 'https://www.artstation.com/peter_bignold', icon: require('../assets/images/home/artstation1.png'), alt: 'ArtStation'},
+    {href: 'https://noodlegames.itch.io/', icon: require('../assets/images/home/itch1.png'), alt: 'itch.io'},
+  ];
 
-            <div className="flex_MV" style={{backgroundColor: "#e8e8e8"}}>
-                <img className="anim_fadeIn0" src={require("../images/home/mclaren1.jpg")} alt="Mclaren" style={{width: "100%", marginTop: "32px"}}></img>
-            </div>
+  const skills = [
+    'C', 'C++', 'C#', 'Python', 'Java', 'Haskell', 'Bash / Shell', 'SQL', 'MySQL', 'SQLite', 'PHP', 'HTML', 'CSS', 'JavaScript', 'Git', 'React',
+    'Vue', 'Vue Options API', 'Vue Composition API', 'Vuex', 'Redux', 'Node', 'NPM', 'Expo', 'Tailwind', 'Bootstrap', 'PowerBI', 'Logic Apps',
+    'Office', 'Unity', 'Unreal Engine 4/5', 'Blueprints', 'Blender', 'GIMP', 'Audacity', 'OpenGL', 'PhysX', 'ElasticSearch', 'DynamoDB', 'Lambda',
+    'Cloudfront', 'S3',
+  ];
 
-            <div className="flex_MH wrap_reverse" style={{marginBottom: "100px"}}>
-                <img src={require("../images/home/headshot2.jpg")} alt="Peter Bignold" style={{width: "325px", height: "325px", borderRadius: "100%"}}></img>
-                <div className="flex_MV index_intro" style={{paddingLeft: "40px", paddingRight: "40px", marginBottom: "40px"}}>
-                    <h3> Hey There! </h3>
-                    <p style={{maxWidth: "820px"}}>
-                        I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
-                        striving to create innovative and impactful products. With proficiency
-                        in modern development frameworks and a strong problem-solving foundation, 
-                        I'm excited to bring my skills to meaningful projects and collaborate with
-                        creative teams.
-                    </p>
-                </div>
-            </div>
+  const featuredProjects = [
+    {to: 'games/circuitry', logo: require('../assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
+    {to: 'games/flocking_evolution', logo: require('../assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
+    {to: 'games/space_salvagers', logo: require('../assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},
+    {to: 'games/mini_racer', logo: require('../assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
+    {to: 'games/apogee', logo: require('../assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
+    {to: 'games/pinata_clicker', logo: require('../assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
+    {to: 'games/misfire', logo: require('../assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
+  ];
 
-            <div class="flex_MV" style={{marginBottom:"100px", marginLeft: "5%", marginRight: "5%"}}>
-            <h3> I'm Familiar With... </h3>
-            <div class="flex_MH wrap" style={{maxWidth: "1200px"}}>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C++ </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> C# </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Python </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Java </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Haskell </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bash / Shell </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQL </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> MySQL </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> SQLite </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PHP </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> HTML </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> CSS </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> JavaScript </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Git </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> React </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Options API </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vue Composition API </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Vuex </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Redux </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Node </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> NPM </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Expo </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Tailwind </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Bootstrap </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PowerBI </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Logic Apps </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Office </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Unity </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Unreal Engine 4/5 </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blueprints </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Blender </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> GIMP </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Audacity </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> OpenGL </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> PhysX </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> ElasticSearch </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> DynamoDB </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Lambda </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> Cloudfront </p></div>
-                <div class="flex_textbox"><p style={{margin: 0, marginTop: "5px"}}> S3 </p></div>
-            </div>
+  return (
+    <div className="bg-neutral-200">
+      <PageShell className="bg-neutral-200 px-[5%]">
+        <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Peter Bignold</h1>
+        <h2 className="text-[20px] font-light text-neutral-500 animate-fade-in-2 md:text-[30px]">Computer Scientist &#x2022; Software Developer &#x2022; Digital Artist</h2>
+        <div className="flex items-center justify-center animate-fade-in-3">
+          {socials.map((social) => (
+            <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
+          ))}
         </div>
+      </PageShell>
 
-        <div class="flex_MV" style={{marginBottom: "100px", marginLeft: "5%", marginRight: "5%"}}>
-            <h3> Software Development </h3>
-            <p> 
-                During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
-                <a style={{cursor: "pointer"}} onClick={() => window.open("https://noodlegames.itch.io/")} href="#/">itch.io</a>
-            </p>
-            <div class="flex_MH wrap">
-                <Link class="flex_LV button_game_small" to='games/circuitry'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/circuitry/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Circuitry </h4>
-                            <h5> 2025 &#x2022; React Native </h5>
-                        </div>
-                    </div>
-                </Link>
-                <Link class="flex_LV button_game_small" to='games/flocking_evolution'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/flocking_evolution/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Flocking Evolution </h4>
-                            <h5> 2023 &#x2022; Unity </h5>
-                        </div>
-                    </div>
-                </Link>
-                <Link class="flex_LV button_game_small" to='games/space_salvagers'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/space_salvagers/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Super Space Salvagers </h4>
-                            <h5> 2023 &#x2022; C++ </h5>
-                        </div>
-                    </div>
-                </Link>
-            </div>
-            <div class="flex_MH wrap">
-                <Link class="flex_LV button_game_small" to='games/mini_racer'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/mini_racer/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Mini Racer </h4>
-                            <h5> 2022 &#x2022; Unreal Engine 5 </h5>
-                        </div>
-                    </div>
-                </Link>
-                <Link class="flex_LV button_game_small" to='games/apogee'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/apogee/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Apogee </h4>
-                            <h5> 2021 &#x2022; Unreal Engine 4 </h5>
-                        </div>
-                    </div>
-                </Link>
-                <Link class="flex_LV button_game_small" to='games/pinata_clicker'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/pinata_clicker/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Pinata Clicker </h4>
-                            <h5> 2020 &#x2022; Unreal Engine 4 </h5>
-                        </div>
-                    </div>
-                </Link>
-                <Link class="flex_LV button_game_small" to='games/misfire'>
-                    <div class="flex_LH">
-                        <img alt="logo" src={require("../images/misfire/logo1.png")} style={{width: "68px", height: "68px"}}></img>
-                        <div class="flex_LV" style={{marginLeft: "24px"}}>
-                            <h4> Misfire </h4>
-                            <h5> 2019 &#x2022; Unreal Engine 4 </h5>
-                        </div>
-                    </div>
-                </Link>
-            </div>
+      <div className="flex flex-col items-center bg-neutral-200 text-center">
+        <img className="mt-8 w-full animate-fade-in-0" src={require('../assets/images/home/mclaren1.jpg')} alt="Mclaren"></img>
+      </div>
+
+      <PageShell className="mb-[100px] mt-10 flex-row flex-wrap-reverse justify-center gap-x-10 gap-y-8 text-left">
+        <img className="h-[325px] w-[325px] rounded-full" src={require('../assets/images/home/headshot2.jpg')} alt="Peter Bignold"></img>
+        <div className="mb-10 flex max-w-[860px] flex-col items-center px-10 text-center md:items-start md:text-left">
+          <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Hey There!</h3>
+          <p className="max-w-[820px] text-xl font-light leading-[1.3] md:text-2xl">
+            I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
+            striving to create innovative and impactful products. With proficiency
+            in modern development frameworks and a strong problem-solving foundation, 
+            I'm excited to bring my skills to meaningful projects and collaborate with
+            creative teams.
+          </p>
         </div>
+      </PageShell>
 
-        <div class="flex_MV" style={{marginRight: "5%", marginLeft: "5%"}}>
-            <h3> Digital Artwork </h3>
-            <p> 
-                I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of 
-                choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp; 
-                <a style={{cursor: "pointer"}} onClick={() => window.open("https://www.artstation.com/peter_bignold")} href="#/">Artstation</a>
-            </p>
+      <PageShell className="mb-[100px]">
+        <h3 className="my-4 text-[40px] font-normal md:text-[55px]">I'm Familiar With...</h3>
+        <div className="flex max-w-[1200px] flex-wrap items-center justify-center">
+          {skills.map((skill) => (
+            <SkillChip key={skill}>{skill}</SkillChip>
+          ))}
         </div>
+      </PageShell>
 
-        <Slideshow/>
-        </body>
-    )
+      <PageShell className="mb-[100px]">
+        <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Software Development</h3>
+        <p className="max-w-[1000px] text-xl font-light leading-[1.3] md:text-2xl">
+        During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
+        <a className="font-semibold text-neutral-400 hover:text-neutral-700" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+        </p>
+        <div className="flex w-full max-w-[1256px] flex-wrap items-stretch justify-center">
+          {featuredProjects.map((project) => (
+            <CompactProjectLink key={project.to} to={project.to} logo={project.logo} title={project.title} meta={project.meta}></CompactProjectLink>
+          ))}
+        </div>
+      </PageShell>
+
+      <PageShell>
+        <h3 className="my-4 text-[40px] font-normal md:text-[55px]">Digital Artwork</h3>
+        <p className="max-w-[1000px] text-xl font-light leading-[1.3] md:text-2xl">
+        I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of 
+        choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp; 
+        <a className="font-semibold text-neutral-400 hover:text-neutral-700" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
+        </p>
+      </PageShell>
+
+      <Slideshow/>
+    </div>
+  )
 }
 
 export default Home;

@@ -1,17 +1,13 @@
 import React from 'react';
 
-import '../styles/style_text.css';
-import '../styles/style_container.css';
-import '../styles/style_footer.css';
-
 const Footer = () => {
-    return (
-        <body className="footer_body">
-            <footer class="flex_MH footer">
-                <p className="footer_p"> &copy; 2025 Peter Bignold </p>
-            </footer>
-        </body>
-    )
+  return (
+    <div className="flex overflow-x-hidden bg-neutral-200">
+      <footer className="flex w-full items-end justify-center px-8 pb-[30px] pt-12 shadow-footer md:px-20 md:justify-end">
+        <p className="m-0 text-lg text-neutral-500">&copy; 2025 Peter Bignold</p>
+      </footer>
+    </div>
+  )
 }
 
 export default Footer;

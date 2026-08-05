@@ -1,72 +1,51 @@
 import React from 'react';
-
-import '../../styles/style_text.css';
-import '../../styles/style_button.css';
-import '../../styles/style_container.css';
-import '../../styles/style_anims.css';
-import '../../styles/style_scroll.css';
+import {DetailPageShell, MediaGallery} from '../../components/DetailPageShell.js';
 
 const Ninja = () => {
-    return (
-        <body style={{backgroundColor: "#eeeeee", overflowY: "hidden"}}>
+  const buttons = [
+    {
+      href: 'https://www.cgtrader.com/3d-models/vehicle/motorcycle/kawasaki-ninja-gpz-900r',
+      icon: require('../../assets/images/home/cgt1.png'),
+      iconAlt: 'CGTrader',
+      label: 'Purchase on CGTrader',
+    },
+    {
+      href: 'https://www.artstation.com/artwork/LeogNr',
+      icon: require('../../assets/images/home/artstation1.png'),
+      iconAlt: 'Artstation',
+      label: 'View on Artstation',
+    },
+  ];
 
-            <div className="flex_MV" style={{marginRight: "5%", marginLeft: "5%", marginTop: "120px"}}>
+  const media = [
+    {alt: 'Ninja artwork 1', src: require('../../assets/images/artwork/ninja1.jpg')},
+    {alt: 'Ninja artwork 2', src: require('../../assets/images/artwork/ninja2.jpg')},
+    {alt: 'Ninja artwork 3', src: require('../../assets/images/artwork/ninja3.jpg')},
+    {alt: 'Ninja artwork 4', src: require('../../assets/images/artwork/ninja4.jpg')},
+    {alt: 'Ninja artwork 5', src: require('../../assets/images/artwork/ninja5.jpg')},
+    {alt: 'Ninja artwork 6', src: require('../../assets/images/artwork/ninja6.jpg')},
+    {alt: 'Ninja artwork 7', src: require('../../assets/images/artwork/ninja7.jpg')},
+    {alt: 'Ninja artwork 8', src: require('../../assets/images/artwork/ninja8.jpg')},
+    {alt: 'Ninja artwork 9', src: require('../../assets/images/artwork/ninja9.jpg')},
+  ];
 
-                <div className="flex_MV anim_fadeIn1" style={{marginBottom: "20px"}}>
-                    <h3> 1985 Kawasaki Ninja </h3>
-                </div>
-
-                <p className="anim_fadeIn2">
-                    <i>The Top-Gun bike brought to life in UE5 with real-time raytracing! Here's the final result of my 
-                    2-month journey to model the Kawasaki Ninja (or GPZ 900R) with as much detail as possible. I 
-                    recently got an RTX card and was itching to play around with UE5's Lumen, and it sure impresses. 
-                    The ability to see the model rendered from every angle in real-time was a game changer, and I 
-                    feel elevated the project's quality.</i>
-                </p>
-
-                <div className="flex_MV anim_fadeIn2" style={{marginBottom: "40px", maxWidth: "1000px", width: "100%"}}>
-                    <button className="button_wide" onClick={() => window.open("https://www.cgtrader.com/3d-models/vehicle/motorcycle/kawasaki-ninja-gpz-900r")} style={{margin: "4px"}}> 
-                        <img src={require("../../images/home/cgt1.png")} alt="Download" style={{width: "24px", height: "24px", paddingRight: "12px"}}></img>
-                        Purchase on CGTrader
-                    </button>
-                    <button className="button_wide" onClick={() => window.open("https://www.artstation.com/artwork/LeogNr")} style={{margin: "4px"}}> 
-                        <img src={require("../../images/home/artstation1.png")} alt="Download" style={{width: "24px", height: "24px", paddingRight: "12px"}}></img>
-                        View on Artstation
-                    </button>
-                </div>
-
-                <div className="flex_MV anim_fadeIn3">
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja1.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja2.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja3.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja4.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja5.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja6.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja7.jpg")}></img>
-                    </div>
-                    <div className="flex_MV" style={{margin: "4px"}}>
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja8.jpg")}></img>
-                    </div>
-                    <div className="flex_MV">
-                        <img className="img_gallery" alt="artwork" src={require("../../images/artwork/ninja9.jpg")}></img>
-                    </div>
-                </div>
-            </div>
-        </body>
-    )
+  return (
+    <DetailPageShell
+      title="1985 Kawasaki Ninja"
+      description={(
+        <>
+          <i>The Top-Gun bike brought to life in UE5 with real-time raytracing! Here's the final result of my
+          2-month journey to model the Kawasaki Ninja (or GPZ 900R) with as much detail as possible. I
+          recently got an RTX card and was itching to play around with UE5's Lumen, and it sure impresses.
+          The ability to see the model rendered from every angle in real-time was a game changer, and I
+          feel elevated the project's quality.</i>
+        </>
+      )}
+      buttons={buttons}
+    >
+      <MediaGallery items={media}></MediaGallery>
+    </DetailPageShell>
+  )
 }
 
 export default Ninja;
