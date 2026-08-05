@@ -13,7 +13,7 @@ const ExternalButton = ({href, icon, iconAlt, children, disabled = false, classN
     'text-xl',
     'font-semibold',
     'shadow-panel',
-    disabled ? 'cursor-default bg-neutral-200 text-neutral-500' : 'bg-neutral-50 text-black hover:bg-neutral-100',
+    disabled ? 'cursor-default bg-slate-800 text-neutral-500' : 'bg-neutral-100 text-slate-950 hover:bg-neutral-300',
     className,
   ].join(' ');
 

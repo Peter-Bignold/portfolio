@@ -29,7 +29,7 @@ const Apogee = () => {
           <img className="h-[85px] w-[85px]" alt="Apogee logo" src={require('assets/images/apogee/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
             <h1 className="mb-[10px] text-[38px] font-semibold md:text-[50px]">Apogee</h1>
-            <p className="mt-2 text-[28px] font-normal text-neutral-500 md:text-[32px]">2021 • Unreal Engine 4</p>
+            <p className="mt-2 text-[28px] font-normal text-neutral-400 md:text-[32px]">2021 • Unreal Engine 4</p>
           </div>
         </div>
         <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">

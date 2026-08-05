@@ -3,7 +3,7 @@ import React from 'react';
 const IconLink = ({href, icon, alt, label, large = false}) => (
   <a
     className={[
-      'inline-flex flex-col items-center text-black transition duration-200 hover:opacity-50',
+      'inline-flex flex-col items-center text-neutral-100 transition duration-200 hover:opacity-60',
       large ? 'm-6 gap-2' : 'mx-2',
     ].join(' ')}
     href={href}

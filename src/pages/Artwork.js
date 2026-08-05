@@ -21,7 +21,7 @@ const Artwork = () => {
     <Page className="pb-10">
       <div className="mb-10 flex flex-col items-center">
         <h1 className="mt-[120px] mb-[10px] text-[50px] font-normal animate-fade-in-1 md:text-[80px]">Digital Artwork</h1>
-        <h2 className="text-[20px] font-light text-neutral-500 animate-fade-in-2 md:text-[30px]">Rendered in Blender Cycles and Unreal Engine 5</h2>
+        <h2 className="text-[20px] font-light text-neutral-400 animate-fade-in-2 md:text-[30px]">Rendered in Blender Cycles and Unreal Engine 5</h2>
       </div>
       <div className="flex flex-wrap items-center justify-center animate-move-up">
         {artwork.map((item) => (

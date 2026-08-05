@@ -22,7 +22,7 @@ const Circuitry = () => {
           <img className="h-[85px] w-[85px]" alt="Circuitry logo" src={require('assets/images/circuitry/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
             <h1 className="mb-[10px] text-[38px] font-semibold md:text-[50px]">Circuitry</h1>
-            <p className="mt-2 text-[28px] font-normal text-neutral-500 md:text-[32px]">2025 • React Native</p>
+            <p className="mt-2 text-[28px] font-normal text-neutral-400 md:text-[32px]">2025 • React Native</p>
           </div>
         </div>
         <div className="animate-fade-in-2 max-w-[1000px] text-center text-xl font-light leading-[1.3] md:text-2xl">

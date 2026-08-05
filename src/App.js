@@ -35,7 +35,7 @@ import Guitar from 'pages/artwork/Guitar.js';
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-neutral-200 text-black">
+    <div className="min-h-screen bg-slate-950 text-neutral-100">
       <Header/>
       <Routes>
         <Route path="/" exact element={<Home/>}/>

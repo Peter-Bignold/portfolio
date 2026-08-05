@@ -63,7 +63,7 @@ const Slideshow = () => {
             key={slide.image}
             className={[
               'mx-1 inline-block h-[15px] w-[15px] rounded-full transition duration-200',
-              slideIndex === index ? 'bg-neutral-500' : 'bg-neutral-300 hover:bg-neutral-400',
+              slideIndex === index ? 'bg-neutral-100' : 'bg-slate-700 hover:bg-slate-500',
             ].join(' ')}
             type="button"
             aria-label={`Show ${slide.caption}`}
