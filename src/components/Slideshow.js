@@ -30,7 +30,7 @@ const Slideshow = () => {
 
   return (
     <div className="mx-[5%] flex flex-col items-center text-center">
-      <div className="relative flex max-w-7xl items-center leading-none">
+      <div className="relative flex max-w-5xl items-center leading-none">
         <div>
           <img
             className="w-full rounded shadow-gallery animate-fade-in-half"

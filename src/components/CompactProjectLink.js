@@ -1,9 +1,9 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-const CompactProjectLink = ({to, logo, title, meta}) => (
+const CompactProjectLink = ({to, logo, title, meta, className = ''}) => (
   <Link
-    className="m-2 flex w-full flex-col rounded border border-slate-800 bg-slate-800/50 backdrop-blur px-6 py-5 text-left text-neutral-100 shadow-panel transition duration-200 hover:bg-slate-800 md:w-auto md:min-w-72"
+    className={`m-2 flex w-full flex-col rounded border border-slate-800 bg-slate-800/50 backdrop-blur px-6 py-5 text-left text-neutral-100 shadow-panel transition duration-200 hover:bg-slate-800 md:w-auto md:min-w-72 ${className}`}
     to={to}
   >
     <div className="flex items-start">

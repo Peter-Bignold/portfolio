@@ -1,10 +1,19 @@
-import React from 'react';
+import React, {startTransition, useEffect, useRef, useState} from 'react';
 import CompactProjectLink from 'components/CompactProjectLink.js';
 import IconLink from 'components/IconLink.js';
 import SkillChip from 'components/SkillChip.js';
 import Slideshow from 'components/Slideshow.js';
 
+const SCENE_COUNT = 5;
+const SCENE_STEP = 1.2;
+const SCENE_HOLD_RANGE = 0.14;
+const SCENE_FADE_RANGE = 0.34;
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
 const Home = () => {
+  const homeRef = useRef(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+
   const socials = [
     {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
     {href: 'https://github.com/Peter-Bignold', icon: require('assets/images/home/github1.png'), alt: 'GitHub'},
@@ -30,69 +39,137 @@ const Home = () => {
     {to: 'games/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
   ];
 
+  useEffect(() => {
+    let frameId = null;
+
+    const updateSceneProgress = () => {
+      frameId = null;
+
+      if (!homeRef.current) {
+        return;
+      }
+
+      const rect = homeRef.current.getBoundingClientRect();
+      const viewportHeight = window.innerHeight || 1;
+      const maxScroll = (SCENE_COUNT - 1) * SCENE_STEP * viewportHeight;
+      const relativeScroll = clamp(-rect.top, 0, maxScroll);
+
+      startTransition(() => {
+        setScrollProgress(relativeScroll / viewportHeight);
+      });
+    };
+
+    const requestSceneUpdate = () => {
+      if (frameId !== null) {
+        return;
+      }
+
+      frameId = window.requestAnimationFrame(updateSceneProgress);
+    };
+
+    requestSceneUpdate();
+    window.addEventListener('scroll', requestSceneUpdate, {passive: true});
+    window.addEventListener('resize', requestSceneUpdate);
+
+    return () => {
+      if (frameId !== null) {
+        window.cancelAnimationFrame(frameId);
+      }
+
+      window.removeEventListener('scroll', requestSceneUpdate);
+      window.removeEventListener('resize', requestSceneUpdate);
+    };
+  }, []);
+
+  const getSceneStyle = (sceneIndex) => {
+    const sceneCenter = sceneIndex * SCENE_STEP;
+    const distance = scrollProgress - sceneCenter;
+    const distanceFromHold = Math.max(Math.abs(distance) - SCENE_HOLD_RANGE, 0);
+    const normalizedDistance = distanceFromHold / SCENE_FADE_RANGE;
+    const opacity = clamp(1 - normalizedDistance, 0, 1);
+
+    return {
+      opacity,
+      transform: `translateY(${distance * -56}px) scale(${1 - Math.min(Math.abs(distance) * 0.03, 0.03)})`,
+      pointerEvents: opacity > 0.6 ? 'auto' : 'none',
+    };
+  };
+
   return (
-    <div className="relative flex flex-col bg-slate-950">
+    <div ref={homeRef} className="relative bg-slate-950" style={{height: `${((SCENE_COUNT - 1) * SCENE_STEP + 1) * 100}vh`}}>
       <div className="fixed inset-0 w-full opacity-10">
         <img className="mt-8 w-full animate-fade-in-1" src={require('assets/images/home/helmet1.jpg')} alt="Background"></img>
       </div>
 
-      <div className="relative flex flex-col">
-        <div className="mx-[5%] flex flex-col items-center px-[5%] text-center">
-          <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Peter Bignold</h1>
-          <h2 className="text-xl font-light text-neutral-300 animate-fade-in-2 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Race Driver</h2>
-          <div className="flex items-center justify-center animate-fade-in-3">
-            {socials.map((social) => (
-              <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
-            ))}
-          </div>
-        </div>
+      <div className="sticky top-0 h-screen overflow-hidden pb-24">
 
-        <div className="mx-[5%] mb-24 mt-10 flex flex-row flex-wrap-reverse items-center justify-center gap-x-10 gap-y-8 text-center text-left">
-          <img className="h-80 w-80 rounded-full" src={require('assets/images/home/headshot3.jpg')} alt="Peter Bignold"></img>
-          <div className="mb-10 flex max-w-4xl flex-col items-center px-10 text-center md:items-start md:text-left">
-            <h3 className="my-4 text-4xl font-normal md:text-6xl">Hey There!</h3>
-            <p className="max-w-3xl text-xl font-light leading-[1.3] md:text-2xl">
-              I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
-              striving to create innovative and impactful products. With proficiency
-              in modern development frameworks and a strong problem-solving foundation, 
-              I'm excited to bring my skills to meaningful projects and collaborate with
-              creative teams.
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
+          <div className="flex w-full flex-col items-center text-center">
+            <h1 className="mb-2.5 text-5xl font-normal md:text-7xl">Peter Bignold</h1>
+            <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Race Driver</h2>
+            <div className="mt-6 flex items-center justify-center">
+              {socials.map((social) => (
+                <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt}></IconLink>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(1)}>
+          <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-10 text-center md:flex-row md:text-left">
+            <img className="h-72 w-72 rounded-full border border-slate-700 object-cover shadow-2xl shadow-black/40 md:h-80 md:w-80" src={require('assets/images/home/headshot3.jpg')} alt="Peter Bignold"></img>
+            <div className="flex max-w-3xl flex-col items-center md:items-start">
+              <h3 className="my-4 text-4xl font-normal md:text-6xl">Hey There!</h3>
+              <p className="text-xl font-light leading-[1.3] md:text-2xl">
+                I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
+                striving to create innovative and impactful products. With proficiency
+                in modern development frameworks and a strong problem-solving foundation,
+                I'm excited to bring my skills to meaningful projects and collaborate with
+                creative teams.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(2)}>
+          <div className="flex w-full max-w-6xl flex-col items-center text-center">
+            <h3 className="my-4 text-4xl font-normal md:text-6xl">I'm Familiar With...</h3>
+            <div className="mt-6 flex flex-wrap items-center justify-center">
+              {skills.map((skill) => (
+                <SkillChip key={skill}>{skill}</SkillChip>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(3)}>
+          <div className="flex w-full max-w-7xl flex-col items-center text-center">
+            <h3 className="mb-2 text-4xl font-normal md:text-6xl">Software Development</h3>
+            <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
+              During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
+              <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
             </p>
+            <div className="mt-8 flex w-full max-w-7xl flex-wrap items-stretch justify-center">
+              {featuredProjects.map((project) => (
+                <CompactProjectLink key={project.to} to={project.to} logo={project.logo} title={project.title} meta={project.meta}></CompactProjectLink>
+              ))}
+            </div>
           </div>
-        </div>
+        </section>
 
-        <div className="mx-[5%] mb-24 flex flex-col items-center text-center">
-          <h3 className="my-4 text-4xl font-normal md:text-6xl">I'm Familiar With...</h3>
-          <div className="flex max-w-6xl flex-wrap items-center justify-center">
-            {skills.map((skill) => (
-              <SkillChip key={skill}>{skill}</SkillChip>
-            ))}
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(4)}>
+          <div className="flex w-full max-w-7xl flex-col items-center text-center">
+            <h3 className="mb-2 text-4xl font-normal md:text-6xl">Digital Artwork</h3>
+            <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
+              I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of
+              choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp;
+              <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
+            </p>
+            <div className="mt-8 w-full">
+              <Slideshow/>
+            </div>
           </div>
-        </div>
-
-        <div className="mx-[5%] mb-24 flex flex-col items-center text-center">
-          <h3 className="my-4 text-4xl font-normal md:text-6xl">Software Development</h3>
-          <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
-          During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
-          <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
-          </p>
-          <div className="flex w-full max-w-7xl flex-wrap items-stretch justify-center">
-            {featuredProjects.map((project) => (
-              <CompactProjectLink key={project.to} to={project.to} logo={project.logo} title={project.title} meta={project.meta}></CompactProjectLink>
-            ))}
-          </div>
-        </div>
-
-        <div className="mx-[5%] flex flex-col items-center text-center">
-          <h3 className="my-4 text-4xl font-normal md:text-6xl">Digital Artwork</h3>
-          <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
-          I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of 
-          choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp; 
-          <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
-          </p>
-        </div>
-
-        <Slideshow/>
+        </section>
       </div>
     </div>
   )
