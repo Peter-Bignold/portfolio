@@ -2,7 +2,7 @@ import React from 'react'
 import Page from 'components/Page.js'
 import ProjectCard from 'components/ProjectCard.js'
 
-const Games = () => {
+const Projects = () => {
   const projects = [
     {
       to: 'circuitry',
@@ -150,4 +150,4 @@ const Games = () => {
   )
 }
 
-export default Games
+export default Projects

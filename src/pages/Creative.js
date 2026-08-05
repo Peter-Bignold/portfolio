@@ -2,7 +2,7 @@ import React from 'react'
 import ArtworkCard from 'components/ArtworkCard.js'
 import Page from 'components/Page.js'
 
-const Artwork = () => {
+const Creative = () => {
   const artwork = [
     {to: 'bmw', image: require('assets/images/artwork/preview_bmw1.jpg'), title: 'BMW E30 M3 (DTM)'},
     {to: 'harley', image: require('assets/images/artwork/preview_harley1.jpg'), title: 'Harley Davidson Fatboy'},
@@ -20,7 +20,7 @@ const Artwork = () => {
   return (
     <Page className="pb-10">
       <div className="mb-10 flex flex-col items-center">
-        <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Digital Artwork</h1>
+        <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Creative Works</h1>
         <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Rendered in Blender Cycles and Unreal Engine 5</h2>
       </div>
       <div className="flex flex-wrap items-center justify-center animate-move-up">
@@ -32,4 +32,4 @@ const Artwork = () => {
   )
 }
 
-export default Artwork
+export default Creative

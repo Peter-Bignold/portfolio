@@ -25,14 +25,14 @@ const Header = () => {
         </Link>
         <div className="mt-1 flex flex-row justify-end text-right">
           <Link 
-            className={getLinkClass(url.includes('games'))} 
-            to="/games">
-            Software
+            className={getLinkClass(url.includes('projects'))} 
+            to="/projects">
+            Projects
           </Link>
           <Link 
-            className={getLinkClass(url.includes('artwork'))} 
-            to="/artwork">
-            Artwork
+            className={getLinkClass(url.includes('creative'))} 
+            to="/creative">
+            Creative
           </Link>
           <Link 
             className={getLinkClass(url.includes('contact'))} 

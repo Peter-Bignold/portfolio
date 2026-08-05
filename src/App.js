@@ -7,8 +7,8 @@ import Footer from 'components/Footer.js'
 
 // Main Pages
 import Home from 'pages/Home.js'
-import Games from 'pages/Games.js'
-import Artwork from 'pages/Artwork.js'
+import Projects from 'pages/Projects.js'
+import Creative from 'pages/Creative.js'
 import Contact from 'pages/Contact.js'
 
 // Games
@@ -39,26 +39,26 @@ const App = () => {
       <Header/>
       <Routes>
         <Route path="/" exact element={<Home/>}/>
-        <Route path="/games" element={<Games/>}/>
-          <Route path="/games/circuitry" element={<Circuitry/>}/>
-          <Route path="/games/flocking_evolution" element={<FlockingEvolution/>}/>
-          <Route path="/games/space_salvagers" element={<SpaceSalvagers/>}/>
-          <Route path="/games/mini_racer" element={<MiniRacer/>}/>
-          <Route path="/games/apogee" element={<Apogee/>}/>
-          <Route path="/games/pinata_clicker" element={<PinataClicker/>}/>
-          <Route path="/games/misfire" element={<Misfire/>}/>
-        <Route path="/artwork" element={<Artwork/>}/>
-          <Route path="/artwork/bmw" element={<Bmw/>}/>
-          <Route path="/artwork/harley" element={<Harley/>}/>
-          <Route path="/artwork/mclaren" element={<Mclaren/>}/>
-          <Route path="/artwork/ninja" element={<Ninja/>}/>
-          <Route path="/artwork/civic" element={<Civic/>}/>
-          <Route path="/artwork/ferrari" element={<Ferrari/>}/>
-          <Route path="/artwork/mazda" element={<Mazda/>}/>
-          <Route path="/artwork/stingray" element={<Stingray/>}/>
-          <Route path="/artwork/gtx" element={<Gtx/>}/>
-          <Route path="/artwork/beetle" element={<Beetle/>}/>
-          <Route path="/artwork/guitar" element={<Guitar/>}/>
+        <Route path="/projects" element={<Projects/>}/>
+          <Route path="/projects/circuitry" element={<Circuitry/>}/>
+          <Route path="/projects/flocking_evolution" element={<FlockingEvolution/>}/>
+          <Route path="/projects/space_salvagers" element={<SpaceSalvagers/>}/>
+          <Route path="/projects/mini_racer" element={<MiniRacer/>}/>
+          <Route path="/projects/apogee" element={<Apogee/>}/>
+          <Route path="/projects/pinata_clicker" element={<PinataClicker/>}/>
+          <Route path="/projects/misfire" element={<Misfire/>}/>
+        <Route path="/creative" element={<Creative/>}/>
+          <Route path="/creative/bmw" element={<Bmw/>}/>
+          <Route path="/creative/harley" element={<Harley/>}/>
+          <Route path="/creative/mclaren" element={<Mclaren/>}/>
+          <Route path="/creative/ninja" element={<Ninja/>}/>
+          <Route path="/creative/civic" element={<Civic/>}/>
+          <Route path="/creative/ferrari" element={<Ferrari/>}/>
+          <Route path="/creative/mazda" element={<Mazda/>}/>
+          <Route path="/creative/stingray" element={<Stingray/>}/>
+          <Route path="/creative/gtx" element={<Gtx/>}/>
+          <Route path="/creative/beetle" element={<Beetle/>}/>
+          <Route path="/creative/guitar" element={<Guitar/>}/>
         <Route path="/contact" element={<Contact/>}/>
       </Routes>
       <Footer/>
