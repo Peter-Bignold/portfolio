@@ -110,11 +110,17 @@ const Home = () => {
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
           <div className="flex w-full flex-col items-center text-center gap-6">
-            <h1 className="text-5xl font-normal md:text-7xl">Peter Bignold</h1>
-            <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
+            <h1 className="text-5xl xl:text-7xl font-normal">Peter Bignold</h1>
+            <h2 className="text-xl xl:text-3xl font-light text-neutral-300 ">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
             <div className="gap-4 flex items-center justify-center flex-wrap">
               {socials.map((social) => (
-                <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} large></IconLink>
+                <IconLink 
+                  key={social.href} 
+                  href={social.href} 
+                  icon={social.icon} 
+                  alt={social.alt} 
+                  large
+                />
               ))}
             </div>
           </div>
@@ -122,10 +128,10 @@ const Home = () => {
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(1)}>
           <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-10 text-center md:flex-row md:text-left">
-            <img className="h-72 w-72 rounded-full border border-slate-700 object-cover shadow-2xl shadow-black/40 md:h-80 md:w-80" src={require('assets/images/home/headshot3.jpg')} alt="Peter Bignold"></img>
-            <div className="flex max-w-3xl flex-col items-center md:items-start">
-              <h3 className="my-4 text-4xl font-normal md:text-6xl">Hey There!</h3>
-              <p className="text-xl font-light leading-[1.3] md:text-2xl">
+            <img className="h-64 w-64 xl:h-80 xl:w-80 rounded-full border border-slate-700 object-cover shadow-2xl shadow-black/40" src={require('assets/images/home/headshot3.jpg')} alt="Peter Bignold"></img>
+            <div className="flex max-w-3xl flex-col items-center md:items-start gap-4">
+              <h3 className="text-5xl xl:text-6xl font-normal">Hey There!</h3>
+              <p className="text-xl xl:text-2xl font-light leading-[1.3]">
                 I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
                 striving to create innovative and impactful products. With proficiency
                 in modern development frameworks and a strong problem-solving foundation,
@@ -137,9 +143,9 @@ const Home = () => {
         </section>
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(2)}>
-          <div className="flex w-full max-w-6xl flex-col items-center text-center">
-            <h3 className="my-4 text-4xl font-normal md:text-6xl">I'm Familiar With...</h3>
-            <div className="mt-6 flex flex-wrap items-center justify-center">
+          <div className="flex w-full max-w-6xl flex-col items-center text-center gap-4">
+            <h3 className="text-4xl xl:text-6xl font-normal">I'm Familiar With...</h3>
+            <div className="flex flex-wrap items-center justify-center">
               {skills.map((skill) => (
                 <SkillChip key={skill}>{skill}</SkillChip>
               ))}
