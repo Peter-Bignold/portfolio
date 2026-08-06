@@ -109,10 +109,10 @@ const Home = () => {
       <div className="sticky top-0 h-screen overflow-hidden pb-24 animate-fade-in-3">
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
-          <div className="flex w-full flex-col items-center text-center">
-            <h1 className="mb-2.5 text-5xl font-normal md:text-7xl">Peter Bignold</h1>
+          <div className="flex w-full flex-col items-center text-center gap-6">
+            <h1 className="text-5xl font-normal md:text-7xl">Peter Bignold</h1>
             <h2 className="text-xl font-light text-neutral-300 md:text-3xl">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
-            <div className="mt-4 gap-4 flex items-center justify-center flex-wrap">
+            <div className="gap-4 flex items-center justify-center flex-wrap">
               {socials.map((social) => (
                 <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} large></IconLink>
               ))}
