@@ -140,7 +140,7 @@ const Home = () => {
               <p className="text-lg xl:text-2xl font-light">
                 I'm a <b>developer</b> who loves building things that are fast, polished, and useful.
                 My projects range from <b>web apps</b>, <b>games</b>, <b>simulations</b> and <b>3D renders</b>.
-                This portfolio brings that work together in one place.
+                This portfolio brings that work into one place.
               </p>
             </div>
           </div>
