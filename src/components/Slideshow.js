@@ -37,7 +37,7 @@ const Slideshow = () => {
             alt="Gallery"
             src={require(`../assets/images/artwork/${slides[index].image}.jpg`)}
           ></img>
-          <div className="absolute bottom-2 w-full pb-3.5 text-xl text-neutral-100 drop-shadow-md md:text-2xl">
+          <div className="absolute bottom-2 w-full pb-3 text-lg font-light text-neutral-100 drop-shadow-md">
             {slides[index].caption}
           </div>
         </div>
@@ -62,8 +62,8 @@ const Slideshow = () => {
           <button
             key={slide.image}
             className={[
-              'mx-1 inline-block h-4 w-4 rounded-full transition duration-200',
-              slideIndex === index ? 'bg-neutral-100' : 'bg-slate-700 hover:bg-slate-500',
+              'mx-1 inline-block h-3 w-6 rounded-full transition duration-200',
+              slideIndex === index ? 'bg-neutral-100' : 'bg-slate-700/50 hover:bg-slate-500',
             ].join(' ')}
             type="button"
             aria-label={`Show ${slide.caption}`}
