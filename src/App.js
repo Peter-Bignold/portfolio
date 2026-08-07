@@ -12,6 +12,7 @@ import Creative from 'pages/Creative.js'
 import Contact from 'pages/Contact.js'
 
 // Games
+import MJTimingCloud from 'pages/projects/MJTimingCloud.js'
 import Trackfest from 'pages/projects/Trackfest.js'
 import Circuitry from 'pages/projects/Circuitry.js'
 import FlockingEvolution from 'pages/projects/FlockingEvolution.js'
@@ -41,6 +42,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
+          <Route path="/projects/mjtiming_cloud" element={<MJTimingCloud/>}/>
           <Route path="/projects/trackfest" element={<Trackfest/>}/>
           <Route path="/projects/circuitry" element={<Circuitry/>}/>
           <Route path="/projects/flocking_evolution" element={<FlockingEvolution/>}/>

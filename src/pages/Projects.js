@@ -5,6 +5,24 @@ import ProjectCard from 'components/ProjectCard.js'
 const Projects = () => {
   const projects = [
     {
+      to: 'mjtiming_cloud',
+      logo: require('assets/images/mjtiming_cloud/logo1.png'),
+      title: 'MJ Timing Cloud',
+      meta: '2026 • Vue + Node.js',
+      description: (
+        <>
+          MJ Timing Cloud extends a legacy autocross scoring software called MJ Timing. It provides a cloud-based platform for displaying live
+          event data, including timing, results, and championship standings. The platform is designed to be accessible on any device with a
+          web browser. It also automates the calculation of championship standings, reducing the manual effort required by event organizers.
+        </>
+      ),
+      previews: [
+        {src: require('assets/images/mjtiming_cloud/preview1.jpg'), alt: 'MJ Timing Cloud preview 1'},
+        {src: require('assets/images/mjtiming_cloud/preview2.jpg'), alt: 'MJ Timing Cloud preview 2'},
+        {src: require('assets/images/mjtiming_cloud/preview3.jpg'), alt: 'MJ Timing Cloud preview 3'},
+      ],
+    },
+    {
       to: 'trackfest',
       logo: require('assets/images/trackfest/logo1.png'),
       title: 'Trackfest',
