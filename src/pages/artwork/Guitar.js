@@ -25,12 +25,12 @@ const Guitar = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">Simon & Patrick Songsmith</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>A Simon and Patrick Songsmith modelled off my very own guitar! Having a physical object
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>A Simon and Patrick Songsmith modelled off my very own guitar! Having a physical object
           to refer to when modeling fine details was incredibly helpful, and enabled me to achieve a high
-          level of realism.</i>
+          level of realism.</p>
         </div>
       </div>
 

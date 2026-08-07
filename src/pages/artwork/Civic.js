@@ -31,12 +31,12 @@ const Civic = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">2007 Honda Civic Si</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>The 8th Generation Honda Civic Si features a lightweight chassis, short wheelbase, 6-speed manual, and
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>The 8th Generation Honda Civic Si features a lightweight chassis, short wheelbase, 6-speed manual, and
           2.0 liter naturally aspirated i-VTEC 4 cylinder engine. The styling is modest but charming, with no unnecessary
-          vents or trim. Relaxed lines flow from front to back, with the flush head and tail lights meshing perfectly.</i>
+          vents or trim. Relaxed lines flow from front to back, with the flush head and tail lights meshing perfectly.</p>
         </div>
       </div>
 

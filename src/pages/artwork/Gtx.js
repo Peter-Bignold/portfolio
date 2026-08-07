@@ -32,13 +32,13 @@ const Gtx = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1971 Plymouth GTX</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>This 1972 GTX sat dormant in my project files as nothing more than a half-finished body for around a year
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>This 1972 GTX sat dormant in my project files as nothing more than a half-finished body for around a year
           until I rediscovered the old mesh. I committed to finally completing it, ending up doing a chassis and suspension
           system as well as trying new techniques for the tires and rims. The 71 and 72 GTX's were some of the most stand-out
-          body styles of the era, with the thick chrome trim and duel headlights of the front grill giving a large presence.</i>
+          body styles of the era, with the thick chrome trim and duel headlights of the front grill giving a large presence.</p>
         </div>
       </div>
 

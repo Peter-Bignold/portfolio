@@ -30,12 +30,12 @@ const Harley = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">2018 Harley Davidson Softail Fatboy</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>My version of the 2018 Fatboy. This was one of my longer projects,
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>My version of the 2018 Fatboy. This was one of my longer projects,
           taking roughly 3 months to finish. Each detail of the engine and linkages are
-          modelled as accurately as possible.</i>
+          modelled as accurately as possible.</p>
         </div>
       </div>
 

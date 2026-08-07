@@ -33,14 +33,14 @@ const Ninja = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1985 Kawasaki Ninja</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>The Top-Gun bike brought to life in UE5 with real-time raytracing! Here's the final result of my
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>The Top-Gun bike brought to life in UE5 with real-time raytracing! Here's the final result of my
           2-month journey to model the Kawasaki Ninja (or GPZ 900R) with as much detail as possible. I
           recently got an RTX card and was itching to play around with UE5's Lumen, and it sure impresses.
           The ability to see the model rendered from every angle in real-time was a game changer, and I
-          feel elevated the project's quality.</i>
+          feel elevated the project's quality.</p>
         </div>
       </div>
 

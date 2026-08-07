@@ -30,16 +30,16 @@ const Mclaren = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1991 Mclaren MP4-6</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>The 1991 Mclaren MP4-6 with the Iconic Marlboro white and red livery. I love the style and cleanliness of
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>The 1991 Mclaren MP4-6 with the Iconic Marlboro white and red livery. I love the style and cleanliness of
           the late 80's to early 90's era Mclaren F1 cars with the MP4-6 standing out as the sharpest of the bunch.
           The seamless integration of the roll-hoop / upper intake into the bodywork, and clever use of black to make
           the car appear slimmer in the front combine to make one of the best looking F1 cars ever driven. This project
           took me 3 weeks to complete, much shorter than some of my previous works. I wasn't as obsessed with getting
           every tiny detail exactly correct, but instead let happy accidents happen. This was much more enjoyable, and
-          while the end result isn't an exact replica it still carries the spirit of the MP4-6!</i>
+          while the end result isn't an exact replica it still carries the spirit of the MP4-6!</p>
         </div>
       </div>
 

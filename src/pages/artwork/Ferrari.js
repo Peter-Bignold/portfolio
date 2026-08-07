@@ -25,13 +25,13 @@ const Ferrari = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1967 Ferrari 330 P4</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>Originally a game model for my Wreckfest mod, I revisited this Ferrari 330-P4
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>Originally a game model for my Wreckfest mod, I revisited this Ferrari 330-P4
           inspired race car to create some proper Blender renders! More thought and effort
           were put into lighting, with the aim of emphasizing the flowing curves and unique
-          silhouette of the car.</i>
+          silhouette of the car.</p>
         </div>
       </div>
 

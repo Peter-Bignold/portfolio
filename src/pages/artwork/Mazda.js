@@ -24,16 +24,16 @@ const Mazda = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1982 Mazda RX-7 (SA)</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
-          <i>A 1982 Mazda RX-7 restored and enhanced for racing! Officially referred to as the SA (Savannah)
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
+          <p>A 1982 Mazda RX-7 restored and enhanced for racing! Officially referred to as the SA (Savannah)
           and nicknamed FB, this first generation RX-7 helped pave the way for a decades-long explosion in Japanese
           sports car popularity. Although it isn't as famous as the FD generation that came later,
           the SA laid the foundations that the later generations would build off. The fastback body style, simple yet powerful
           design language, and the charming pop-up headlights were present since the beginning. With this
           project I brought to life my imagining of an SA RX-7 adapted for racing in the present day. The result is a
-          combination of the car's Group C racing heritage with modern styling and design.</i>
+          combination of the car's Group C racing heritage with modern styling and design.</p>
         </div>
       </div>
 

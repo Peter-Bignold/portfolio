@@ -38,15 +38,15 @@ const Bmw = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
+      <div className="mb-4 flex flex-col items-center">
         <h1 className="my-4 text-4xl font-normal animate-fade-in-1 md:text-6xl">1987 BMW E30 M3 (DTM)</h1>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
           <b>Submission to the 3DModels.org 2023 Car Render Challenge</b><br/>
-          <i>As the #10 BMW sits in the pitlane the field races by. Mechanics scramble to secure the car's
+          <p>As the #10 BMW sits in the pitlane the field races by. Mechanics scramble to secure the car's
           damaged front-end, knowing victory prospects fade with every second spent stationary. Bodywork is
           forced into shape with only tape, hammers, and muscle. Eventually the car rejoins to any empty track,
           leagues behind the rest. The team hopes for a stroke of good luck to come their way. It's a long race
-          that's only just started, and plenty of opportunities await.</i>
+          that's only just started, and plenty of opportunities await.</p>
         </div>
       </div>
 
