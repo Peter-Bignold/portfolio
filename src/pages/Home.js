@@ -38,7 +38,6 @@ const Home = () => {
     {to: 'projects/mini_racer', logo: require('assets/images/mini_racer/logo1.png'), title: 'Mini Racer', meta: '2022 • Unreal Engine 5'},
     {to: 'projects/apogee', logo: require('assets/images/apogee/logo1.png'), title: 'Apogee', meta: '2021 • Unreal Engine 4'},
     {to: 'projects/pinata_clicker', logo: require('assets/images/pinata_clicker/logo1.png'), title: 'Pinata Clicker', meta: '2020 • Unreal Engine 4'},
-    {to: 'projects/misfire', logo: require('assets/images/misfire/logo1.png'), title: 'Misfire', meta: '2019 • Unreal Engine 4'},
   ]
 
   useEffect(() => {
