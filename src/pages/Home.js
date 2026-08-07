@@ -4,7 +4,7 @@ import IconLink from 'components/IconLink.js'
 import SkillChip from 'components/SkillChip.js'
 import Slideshow from 'components/Slideshow.js'
 
-const SCENE_COUNT = 5
+const SCENE_COUNT = 6
 const SCENE_STEP = 1.2
 const SCENE_HOLD_RANGE = 0.24
 const SCENE_FADE_RANGE = 0.34
@@ -148,7 +148,7 @@ const Home = () => {
         </section>
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(2)}>
-          <div className="flex w-full max-w-6xl flex-col items-center text-center gap-4">
+          <div className="flex w-full max-w-5xl flex-col items-center text-center gap-4">
             <h3 className="text-4xl xl:text-6xl font-normal">I'm Familiar With...</h3>
             <div className="flex flex-wrap items-center justify-center gap-2">
               {skills.map((skill) => (
@@ -164,7 +164,7 @@ const Home = () => {
             <p className="max-w-5xl text-lg xl:text-2xl font-light">
               During my free time I create websites, apps, games, and simulations. I've worked in React, Vue, Unreal Engine, Unity, and bare C++ for my projects.
             </p>
-            <div className="mt-2 flex w-full max-w-7xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
+            <div className="mt-2 flex w-full max-w-5xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
               {featuredProjects.map((project, index) => (
                 <ProjectCardCompact 
                   key={project.to} 
@@ -187,6 +187,34 @@ const Home = () => {
             </p>
             <div className="mt-2 w-full">
               <Slideshow/>
+            </div>
+          </div>
+        </section>
+
+        <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(5)}>
+          <div className="flex w-full max-w-7xl flex-col items-center text-center gap-2 xl:gap-4">
+            <h3 className="text-4xl xl:text-6xl font-normal">Motorsports</h3>
+            <p className="max-w-5xl text-lg xl:text-2xl font-light">
+              I'm an avid racing driver, having won at several Alberta racetracks while
+              competing in the WCMA Endurance Championship. I've driven for multiple teams
+              and have experience in a variety of race cars. I document my racing adventures on
+            </p>
+            <div className="flex flex-row flex-wrap items-center justify-center gap-6 mt-2">
+              <img 
+                className="w-32 md:w-48 xl:w-64 aspect-square rounded-full object-cover shadow-2xl" 
+                src={require('assets/images/home/racing1.jpg')} 
+                alt="Racing1"
+              />
+              <img 
+                className="w-32 md:w-48 xl:w-64 aspect-square rounded-full object-cover shadow-2xl" 
+                src={require('assets/images/home/racing4.jpg')} 
+                alt="Racing1"
+              />
+              <img 
+                className="w-32 md:w-48 xl:w-64 aspect-square rounded-full object-cover shadow-2xl" 
+                src={require('assets/images/home/racing2.jpg')} 
+                alt="Racing1"
+              />
             </div>
           </div>
         </section>
