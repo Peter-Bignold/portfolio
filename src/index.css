@@ -48,6 +48,10 @@
   a {
   @apply transition-colors duration-200;
   }
+
+  b {
+    @apply font-semibold;
+  }
 }
 
 @layer utilities {

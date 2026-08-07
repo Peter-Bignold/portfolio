@@ -138,11 +138,9 @@ const Home = () => {
             <div className="flex max-w-3xl flex-col items-center md:items-start gap-4">
               <h3 className="text-5xl xl:text-6xl font-normal">Hey There!</h3>
               <p className="text-lg xl:text-2xl font-light">
-                I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
-                striving to create innovative and impactful products. With proficiency
-                in modern development frameworks and a strong problem-solving foundation,
-                I'm excited to bring my skills to meaningful projects and collaborate with
-                creative teams.
+                I'm a <b>developer</b> who loves building things that are fast, polished, and useful.
+                My projects range from <b>web apps</b>, <b>games</b>, <b>simulations</b> and <b>3D renders</b>.
+                This portfolio brings that work together in one place.
               </p>
             </div>
           </div>
@@ -163,8 +161,7 @@ const Home = () => {
           <div className="flex w-full max-w-7xl flex-col items-center text-center gap-2 xl:gap-4">
             <h3 className="text-4xl xl:text-6xl font-normal">Software Development</h3>
             <p className="max-w-5xl text-lg xl:text-2xl font-light">
-              During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
-              <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+              During my free time I create websites, apps, games, and simulations. I've worked in React, Vue, Unreal Engine, Unity, and bare C++ for my projects.
             </p>
             <div className="mt-2 flex w-full max-w-7xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
               {featuredProjects.map((project, index) => (
@@ -184,9 +181,8 @@ const Home = () => {
           <div className="flex w-full max-w-7xl flex-col items-center text-center gap-2 xl:gap-4">
             <h3 className="text-4xl xl:text-6xl font-normal">Digital Artwork</h3>
             <p className="max-w-5xl text-lg xl:text-2xl font-light">
-              I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of
-              choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp;
-              <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
+              I've practiced 3D vehicle modelling for over a decade, combining my passions for motorsports and 3D graphics. Blender is my program of
+              choice.
             </p>
             <div className="mt-2 w-full">
               <Slideshow/>
