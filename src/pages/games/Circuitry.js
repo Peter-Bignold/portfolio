@@ -11,21 +11,20 @@ const Circuitry = () => {
   const media = [
     {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', caption: 'Heads up display', width: 281, height: 609, wrapperClassName: 'mx-1'},
     {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', caption: 'New session screen', width: 281, height: 609, wrapperClassName: 'mx-1'},
-    {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', caption: 'Track select screen', width: 281, height: 609, wrapperClassName: 'mx-1'},
-    {src: require('assets/images/circuitry/preview2.jpg'), alt: 'Circuitry sessions list', caption: 'Sessions list', width: 281, height: 609, wrapperClassName: 'mx-1'},
+    {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', caption: 'Track select screen', width: 281, height: 609, wrapperClassName: 'mx-1'}
   ]
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
-        <div className="mb-10 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
+      <div className="mb-4 flex flex-col items-center">
+        <div className="mb-4 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
           <img className="h-20 w-20" alt="Circuitry logo" src={require('assets/images/circuitry/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
-            <h1 className="mb-2.5 text-4xl font-semibold md:text-5xl">Circuitry</h1>
+            <h1 className="mt-4 text-4xl font-normal md:text-6xl">Circuitry</h1>
             <p className="mt-2 text-3xl font-normal text-neutral-400 md:text-3xl">2025 • React Native</p>
           </div>
         </div>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
           An accessible, polished, and versatile mobile app providing telemetry and insights to performance driving enthusiasts. Circuitry aims to
           increase the accessibility of motorsports by providing professional grade location, accelerometer, and timing data with only a mobile device.
           Featuring innovations like a custom track builder and heads-up-display, Circuitry can be tailored to many different motorsport disciplines.

@@ -24,15 +24,15 @@ const SpaceSalvagers = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
-        <div className="mb-10 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
+      <div className="mb-4 flex flex-col items-center">
+        <div className="mb-4 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
           <img className="h-20 w-20" alt="Super Space Salvagers logo" src={require('assets/images/space_salvagers/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
-            <h1 className="mb-2.5 text-4xl font-semibold md:text-5xl">Super Space Salvagers</h1>
+            <h1 className="mt-4 text-4xl font-normal md:text-6xl">Super Space Salvagers</h1>
             <p className="mt-2 text-3xl font-normal text-neutral-400 md:text-3xl">2023 • C++</p>
           </div>
         </div>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
           <b>Student Exemplar for CPSC 585 - Games Programming at the University of Calgary</b><br/>
           Super Space Salvagers is a 4-player chaotic, goofy, and frantic party game where players compete to
           gather cargo pods from a rugged planet's space wreckage. Made for CPSC 585 - Games Programming, Super Space Salvagers

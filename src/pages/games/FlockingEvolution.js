@@ -24,15 +24,15 @@ const FlockingEvolution = () => {
 
   return (
     <Page className="pt-32">
-      <div className="mb-10 flex flex-col items-center">
-        <div className="mb-10 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
+      <div className="mb-4 flex flex-col items-center">
+        <div className="mb-4 flex flex-col items-center justify-center gap-4 animate-fade-in-1 sm:flex-row">
           <img className="h-20 w-20" alt="Flocking Evolution logo" src={require('assets/images/flocking_evolution/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
-            <h1 className="mb-2.5 text-4xl font-semibold md:text-5xl">Flocking Evolution</h1>
+            <h1 className="mt-4 text-4xl font-normal md:text-6xl">Flocking Evolution</h1>
             <p className="mt-2 text-3xl font-normal text-neutral-400 md:text-3xl">2023 • Unity</p>
           </div>
         </div>
-        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-light leading-[1.3] md:text-2xl">
+        <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
           An evolutionary flocking simulation inspired by <i>Flocks, Herds, and Schools: A Distributed Behavioral Model</i> - Craig Reynolds (1986).
           The simulation contains two herbivore species (blue and green) that multiply over time and one carnivore species (red) that
           reproduces upon eating enough herbivores. Additionally features a suite of tools to alter and interact with the simulation.
