@@ -165,27 +165,28 @@ const Home = () => {
               <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
             </p>
             <div className="mt-2 flex w-full max-w-7xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
-              {featuredProjects.map((project) => (
+              {featuredProjects.map((project, index) => (
                 <CompactProjectLink 
                   key={project.to} 
                   to={project.to} 
                   logo={project.logo} 
                   title={project.title}
-                  meta={project.meta}/>
+                  meta={project.meta}
+                  className={index > 3 ? 'hidden md:flex' : ''}/>
               ))}
             </div>
           </div>
         </section>
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(4)}>
-          <div className="flex w-full max-w-7xl flex-col items-center text-center">
-            <h3 className="mb-2 text-4xl font-normal md:text-6xl">Digital Artwork</h3>
+          <div className="flex w-full max-w-7xl flex-col items-center text-center gap-2 xl:gap-4">
+            <h3 className="text-4xl xl:text-6xl font-normal">Digital Artwork</h3>
             <p className="max-w-5xl text-lg xl:text-2xl font-light">
               I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of
               choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp;
               <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
             </p>
-            <div className="mt-4 xl:mt-8 w-full">
+            <div className="mt-2 w-full">
               <Slideshow/>
             </div>
           </div>
