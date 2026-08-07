@@ -12,13 +12,13 @@ import Creative from 'pages/Creative.js'
 import Contact from 'pages/Contact.js'
 
 // Games
-import Circuitry from 'pages/games/Circuitry.js'
-import FlockingEvolution from 'pages/games/FlockingEvolution.js'
-import SpaceSalvagers from 'pages/games/SpaceSalvagers.js'
-import MiniRacer from 'pages/games/MiniRacer.js'
-import Apogee from 'pages/games/Apogee.js'
-import PinataClicker from 'pages/games/PinataClicker.js'
-import Misfire from 'pages/games/Misfire.js'
+import Circuitry from 'pages/projects/Circuitry.js'
+import FlockingEvolution from 'pages/projects/FlockingEvolution.js'
+import SpaceSalvagers from 'pages/projects/SpaceSalvagers.js'
+import MiniRacer from 'pages/projects/MiniRacer.js'
+import Apogee from 'pages/projects/Apogee.js'
+import PinataClicker from 'pages/projects/PinataClicker.js'
+import Misfire from 'pages/projects/Misfire.js'
 
 // Artwork
 import Bmw from 'pages/artwork/Bmw.js'
