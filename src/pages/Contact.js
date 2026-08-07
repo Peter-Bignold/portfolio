@@ -16,8 +16,9 @@ const Contact = () => {
   const socials = [
     {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn', label: 'Linkedin'},
     {href: 'https://github.com/Peter-Bignold', icon: require('assets/images/home/github1.png'), alt: 'GitHub', label: 'Github'},
-    {href: 'https://www.youtube.com/@noodle_games', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube', label: 'Youtube'},
+    {href: 'https://www.youtube.com/@peter-goes-fast', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube', label: 'Youtube'},
     {href: 'https://www.artstation.com/peter_bignold', icon: require('assets/images/home/artstation1.png'), alt: 'ArtStation', label: 'Artstation'},
+    {href: 'https://www.instagram.com/peter.goes.fast/?hl=en', icon: require('assets/images/home/instagram1.png'), alt: 'Instagram', label: 'Instagram'},
     {href: 'https://noodlegames.itch.io/', icon: require('assets/images/home/itch1.png'), alt: 'itch.io', label: 'itch.io'},
   ]
 

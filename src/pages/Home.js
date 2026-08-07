@@ -17,8 +17,9 @@ const Home = () => {
   const socials = [
     {href: 'https://www.linkedin.com/in/peter-bignold-b507171b1/', icon: require('assets/images/home/linkedin1.png'), alt: 'LinkedIn'},
     {href: 'https://github.com/Peter-Bignold', icon: require('assets/images/home/github1.png'), alt: 'GitHub'},
-    {href: 'https://www.youtube.com/@noodle_games', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube'},
+    {href: 'https://www.youtube.com/@peter-goes-fast', icon: require('assets/images/home/youtube1.png'), alt: 'YouTube'},
     {href: 'https://www.artstation.com/peter_bignold', icon: require('assets/images/home/artstation1.png'), alt: 'ArtStation'},
+    {href: 'https://www.instagram.com/peter.goes.fast/?hl=en', icon: require('assets/images/home/instagram1.png'), alt: 'Instagram'},
     {href: 'https://noodlegames.itch.io/', icon: require('assets/images/home/itch1.png'), alt: 'itch.io'},
   ]
 
@@ -118,7 +119,7 @@ const Home = () => {
             <h2 className="md:hidden text-2xl xl:text-3xl font-light text-neutral-300 ">
               Engineer &#x2022; Creator &#x2022; Driver
             </h2>
-            <div className="gap-4 flex items-center justify-center flex-wrap">
+            <div className="gap-5 flex items-center justify-center flex-wrap">
               {socials.map((social) => (
                 <IconLink 
                   key={social.href} 
