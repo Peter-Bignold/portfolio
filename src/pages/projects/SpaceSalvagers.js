@@ -29,7 +29,7 @@ const SpaceSalvagers = () => {
           <img className="h-20 w-20" alt="Super Space Salvagers logo" src={require('assets/images/space_salvagers/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
             <h1 className="mt-4 text-4xl font-normal md:text-6xl">Super Space Salvagers</h1>
-            <p className="mt-2 text-3xl font-normal text-neutral-400 md:text-3xl">2023 • C++</p>
+            <p className="text-3xl font-normal text-neutral-400 md:text-3xl">2023 • C++</p>
           </div>
         </div>
         <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">

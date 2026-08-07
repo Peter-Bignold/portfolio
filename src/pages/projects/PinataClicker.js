@@ -27,7 +27,7 @@ const PinataClicker = () => {
           <img className="h-20 w-20" alt="Pinata Clicker logo" src={require('assets/images/pinata_clicker/logo1.png')}></img>
           <div className="flex flex-col items-center text-center sm:items-start sm:pl-8 sm:text-left">
             <h1 className="mt-4 text-4xl font-normal md:text-6xl">Pinata Clicker</h1>
-            <p className="mt-2 text-3xl font-normal text-neutral-400 md:text-3xl">2020 • Unreal Engine 4</p>
+            <p className="text-3xl font-normal text-neutral-400 md:text-3xl">2020 • Unreal Engine 4</p>
           </div>
         </div>
         <div className="animate-fade-in-2 max-w-5xl text-center text-xl font-thin leading-[1.3]">
