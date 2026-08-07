@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <div className="fixed top-0 z-[1000] m-0 w-full">
-      <header className="flex h-14 items-center justify-center border-b border-slate-800/80 bg-slate-900/50 px-[6%] py-2.5 text-3xl text-neutral-100 shadow-soft backdrop-blur md:justify-between">
+      <header className="flex h-14 items-center justify-center border-b border-slate-800/80 bg-slate-900/50 px-[6%] py-2.5 text-3xl text-neutral-100 shadow-soft md:justify-between">
         <Link to="/" className="hidden flex-row items-center text-left md:flex rounded-lg">
           <img alt="Peter Bignold" src={require("assets/images/home/headshot3.jpg")} className="h-7 w-7 rounded-full"></img>
           <h3 className={getLinkClass(url === '/')}>Peter Bignold</h3>

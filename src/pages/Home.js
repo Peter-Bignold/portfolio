@@ -23,10 +23,9 @@ const Home = () => {
   ]
 
   const skills = [
-    'C', 'C++', 'C#', 'Python', 'Java', 'Haskell', 'Bash / Shell', 'SQL', 'MySQL', 'SQLite', 'PHP', 'HTML', 'CSS', 'JavaScript', 'Git', 'React',
-    'Vue', 'Vue Options API', 'Vue Composition API', 'Vuex', 'Redux', 'Node', 'NPM', 'Expo', 'Tailwind', 'Bootstrap', 'PowerBI', 'Logic Apps',
-    'Office', 'Unity', 'Unreal Engine 4/5', 'Blueprints', 'Blender', 'GIMP', 'Audacity', 'OpenGL', 'PhysX', 'ElasticSearch', 'DynamoDB', 'Lambda',
-    'Cloudfront', 'S3',
+    'JavaScript', 'C', 'C++', 'C#', 'Python', 'Java', 'SQL', 'MySQL', 'SQLite', 'PHP', 'HTML', 'CSS', 'Git', 'OAuth 2', 'React',
+    'Vue 2', 'Vue 3', 'Vuex', 'Redux', 'Node', 'NPM', 'Expo', 'Tailwind', 'Bootstrap', 'Unity', 'UE5', 'Davinci Resolve', 'Blender', 
+    'GIMP', 'Audacity', 'OpenGL', 'PhysX', 'ElasticSearch', 'DynamoDB', 'Lambda', 'Cloudfront', 'S3', 'Typesense'
   ]
 
   const featuredProjects = [
@@ -111,7 +110,12 @@ const Home = () => {
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(0)}>
           <div className="flex w-full flex-col items-center text-center gap-6">
             <h1 className="text-5xl xl:text-7xl font-normal">Peter Bignold</h1>
-            <h2 className="text-xl xl:text-3xl font-light text-neutral-300 ">Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver</h2>
+            <h2 className="hidden md:block text-2xl xl:text-3xl font-light text-neutral-300 ">
+              Software Engineer &#x2022; Digital Creator &#x2022; Racing Driver
+            </h2>
+            <h2 className="md:hidden text-2xl xl:text-3xl font-light text-neutral-300 ">
+              Engineer &#x2022; Creator &#x2022; Driver
+            </h2>
             <div className="gap-4 flex items-center justify-center flex-wrap">
               {socials.map((social) => (
                 <IconLink 
@@ -127,11 +131,11 @@ const Home = () => {
         </section>
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(1)}>
-          <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-10 text-center md:flex-row md:text-left">
+          <div className="flex w-full max-w-6xl flex-col items-center justify-center gap-8 text-center md:flex-row md:text-left">
             <img className="h-64 w-64 xl:h-80 xl:w-80 rounded-full border border-slate-700 object-cover shadow-2xl shadow-black/40" src={require('assets/images/home/headshot3.jpg')} alt="Peter Bignold"></img>
             <div className="flex max-w-3xl flex-col items-center md:items-start gap-4">
               <h3 className="text-5xl xl:text-6xl font-normal">Hey There!</h3>
-              <p className="text-xl xl:text-2xl font-light leading-[1.3]">
+              <p className="text-lg xl:text-2xl font-light">
                 I'm a <b>computer scientist</b> experienced in <b>web</b> and <b>app development</b>,
                 striving to create innovative and impactful products. With proficiency
                 in modern development frameworks and a strong problem-solving foundation,
@@ -145,7 +149,7 @@ const Home = () => {
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(2)}>
           <div className="flex w-full max-w-6xl flex-col items-center text-center gap-4">
             <h3 className="text-4xl xl:text-6xl font-normal">I'm Familiar With...</h3>
-            <div className="flex flex-wrap items-center justify-center">
+            <div className="flex flex-wrap items-center justify-center gap-2">
               {skills.map((skill) => (
                 <SkillChip key={skill}>{skill}</SkillChip>
               ))}
@@ -154,15 +158,20 @@ const Home = () => {
         </section>
 
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(3)}>
-          <div className="flex w-full max-w-7xl flex-col items-center text-center">
-            <h3 className="mb-2 text-4xl font-normal md:text-6xl">Software Development</h3>
-            <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
+          <div className="flex w-full max-w-7xl flex-col items-center text-center gap-2 xl:gap-4">
+            <h3 className="text-4xl xl:text-6xl font-normal">Software Development</h3>
+            <p className="max-w-5xl text-lg xl:text-2xl font-light">
               During my free time I create apps, games and real-time simulations. I've worked in React Native, UE4, UE5, Unity, and raw C++ for my projects, and upload my prototypes, game jams, and full games to&nbsp;
               <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://noodlegames.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
             </p>
-            <div className="mt-8 flex w-full max-w-7xl flex-wrap items-stretch justify-center">
+            <div className="mt-2 flex w-full max-w-7xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
               {featuredProjects.map((project) => (
-                <CompactProjectLink key={project.to} to={project.to} logo={project.logo} title={project.title} meta={project.meta}></CompactProjectLink>
+                <CompactProjectLink 
+                  key={project.to} 
+                  to={project.to} 
+                  logo={project.logo} 
+                  title={project.title}
+                  meta={project.meta}/>
               ))}
             </div>
           </div>
@@ -171,12 +180,12 @@ const Home = () => {
         <section className="absolute inset-0 flex items-center justify-center px-[5%] py-12" style={getSceneStyle(4)}>
           <div className="flex w-full max-w-7xl flex-col items-center text-center">
             <h3 className="mb-2 text-4xl font-normal md:text-6xl">Digital Artwork</h3>
-            <p className="max-w-5xl text-xl font-light leading-[1.3] md:text-2xl">
+            <p className="max-w-5xl text-lg xl:text-2xl font-light">
               I've practiced 3D vehicle modelling since 2016, combining my interests in motorsports and graphics. Blender is my program of
               choice for creating models and I use GIMP for textures and editing. My digital artwork can be viewed on&nbsp;
               <a className="font-semibold text-neutral-300 hover:text-neutral-100" href="https://www.artstation.com/peter_bignold" target="_blank" rel="noreferrer">Artstation</a>
             </p>
-            <div className="mt-8 w-full">
+            <div className="mt-4 xl:mt-8 w-full">
               <Slideshow/>
             </div>
           </div>
