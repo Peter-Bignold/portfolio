@@ -20,8 +20,8 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
 
         if (item.type === 'video') {
           return (
-            <div key={item.title} className={wrapperClassName}>
-              <div className="w-full max-w-5xl">
+            <div key={item.title} className={`${wrapperClassName} w-full`}>
+              <div className="mx-auto w-full max-w-5xl">
                 <iframe
                   className="mb-2.5 aspect-video w-full rounded-lg border-0 bg-transparent"
                   title={item.title}
