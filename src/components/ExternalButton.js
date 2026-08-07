@@ -8,12 +8,12 @@ const ExternalButton = ({href, icon, iconAlt, children, disabled = false, classN
     'justify-center',
     'rounded-lg',
     'px-5',
-    'py-3',
+    'pt-3 pb-2.5',
     'text-center',
     'text-xl',
-    'font-semibold',
+    'font-normal',
     'shadow-panel',
-    disabled ? 'cursor-default bg-slate-800 text-neutral-500' : 'bg-neutral-100 text-slate-950 hover:bg-neutral-300',
+    disabled ? 'cursor-default bg-slate-800 text-neutral-500' : 'border-slate-800 bg-slate-800/50 hover:bg-slate-800',
     className,
   ].join(' ')
 
