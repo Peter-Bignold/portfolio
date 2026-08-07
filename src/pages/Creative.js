@@ -23,7 +23,7 @@ const Creative = () => {
         <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Creative Works</h1>
         <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Rendered in Blender Cycles and Unreal Engine 5</h2>
       </div>
-      <div className="flex flex-wrap items-center justify-center animate-move-up">
+      <div className="flex flex-wrap items-center justify-center animate-move-up gap-2">
         {artwork.map((item) => (
           <ArtworkCard key={item.to} to={item.to} image={item.image} title={item.title}></ArtworkCard>
         ))}

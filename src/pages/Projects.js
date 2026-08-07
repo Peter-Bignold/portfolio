@@ -138,7 +138,7 @@ const Projects = () => {
         <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Projects</h1>
         <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Apps, Games, Simulations, and Prototypes</h2>
       </div>
-      <div className="flex w-full animate-move-up flex-col items-center">
+      <div className="flex w-full animate-move-up flex-col items-center gap-2">
         {projects.map((project) => (
           <ProjectCard key={project.to} {...project}></ProjectCard>
         ))}

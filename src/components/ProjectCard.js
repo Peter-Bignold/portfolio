@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 const ProjectCard = ({to, logo, title, meta, description, previews, className = ''}) => (
   <Link
-    className={`mt-4 flex w-full max-w-6xl flex-col rounded-lg border border-slate-800 bg-slate-800/50 p-5 text-left text-neutral-100 shadow-soft transition duration-200 hover:bg-slate-800 xl:w-auto ${className}`}
+    className={`flex w-full max-w-6xl flex-col rounded-lg border border-slate-800 bg-slate-800/50 p-5 text-left text-neutral-100 shadow-soft transition duration-200 hover:bg-slate-800 xl:w-auto ${className}`}
     to={to}
   >
     <div className="flex items-start">
