@@ -197,7 +197,7 @@ const Home = () => {
             <p className="max-w-5xl text-lg xl:text-2xl font-light">
               I'm an avid racing driver, having won at several Alberta racetracks while
               competing in the WCMA Endurance Championship. I've driven for multiple teams
-              and have experience in a variety of race cars. I document my racing adventures on
+              and have experience in a variety of race cars.
             </p>
             <div className="flex flex-row flex-wrap items-center justify-center gap-6 mt-2">
               <img 
