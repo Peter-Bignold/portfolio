@@ -1,6 +1,6 @@
 import React from 'react'
 
-const mediaCaptionClassName = 'm-0 text-xl font-light md:text-2xl'
+const mediaCaptionClassName = 'mt-2 text-xl font-light max-w-5xl'
 
 const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
   const containerClassName = layout === 'wrap'
@@ -36,7 +36,7 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
       }
 
         const imageClassName = variant === 'app'
-          ? 'mb-2.5 rounded-lg'
+          ? 'rounded-lg'
           : 'w-full max-w-5xl rounded-lg'
 
         return (
