@@ -23,7 +23,7 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
             <div key={item.title} className={wrapperClassName}>
               <div className="w-full max-w-5xl">
                 <iframe
-                  className="mb-2.5 aspect-video w-full rounded border-0 bg-transparent"
+                  className="mb-2.5 aspect-video w-full rounded-lg border-0 bg-transparent"
                   title={item.title}
                   frameBorder="0"
                   allow="fullscreen;"
@@ -36,8 +36,8 @@ const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
       }
 
         const imageClassName = variant === 'app'
-          ? 'mb-2.5 rounded'
-          : 'w-full max-w-5xl rounded'
+          ? 'mb-2.5 rounded-lg'
+          : 'w-full max-w-5xl rounded-lg'
 
         return (
           <div key={`${item.alt}-${index}`} className={wrapperClassName}>

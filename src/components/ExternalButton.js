@@ -6,7 +6,7 @@ const ExternalButton = ({href, icon, iconAlt, children, disabled = false, classN
     'w-full',
     'items-center',
     'justify-center',
-    'rounded',
+    'rounded-lg',
     'px-5',
     'py-3',
     'text-center',
