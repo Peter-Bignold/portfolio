@@ -5,6 +5,24 @@ import ProjectCard from 'components/ProjectCard.js'
 const Projects = () => {
   const projects = [
     {
+      to: 'trackfest',
+      logo: require('assets/images/trackfest/logo1.png'),
+      title: 'Trackfest',
+      meta: '2026 • Vue + Strapi',
+      description: (
+        <>
+          An overhaul of the Northern Alberta Sportscar Club (NASCC) website. NASCC is a motorsport club based in Edmonton, Alberta, Canada. 
+          The new website features a modern design, improved usability, and a custom content management system built with Strapi. 
+          The site is fully responsive and optimized for performance.
+        </>
+      ),
+      previews: [
+        {src: require('assets/images/trackfest/preview1.jpg'), alt: 'Trackfest preview 1'},
+        {src: require('assets/images/trackfest/preview2.jpg'), alt: 'Trackfest preview 2'},
+        {src: require('assets/images/trackfest/preview3.jpg'), alt: 'Trackfest preview 3'},
+      ],
+    },
+    {
       to: 'circuitry',
       logo: require('assets/images/circuitry/logo1.png'),
       title: 'Circuitry',
@@ -16,8 +34,7 @@ const Projects = () => {
           Featuring innovations like a custom track builder and heads-up-display, Circuitry can be tailored to many different motorsport disciplines.
         </>
       ),
-      previews: [
-      ],
+      previews: [],
     },
     {
       to: 'flocking_evolution',

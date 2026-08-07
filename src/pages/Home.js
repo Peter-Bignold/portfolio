@@ -29,6 +29,7 @@ const Home = () => {
   ]
 
   const featuredProjects = [
+    {to: 'projects/trackfest', logo: require('assets/images/trackfest/logo1.png'), title: 'Trackfest', meta: '2026 • Vue + Strapi'},
     {to: 'projects/circuitry', logo: require('assets/images/circuitry/logo1.png'), title: 'Circuitry', meta: '2025 • React Native'},
     {to: 'projects/flocking_evolution', logo: require('assets/images/flocking_evolution/logo1.png'), title: 'Flocking Evolution', meta: '2023 • Unity'},
     {to: 'projects/space_salvagers', logo: require('assets/images/space_salvagers/logo1.png'), title: 'Super Space Salvagers', meta: '2023 • C++'},

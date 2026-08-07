@@ -12,6 +12,7 @@ import Creative from 'pages/Creative.js'
 import Contact from 'pages/Contact.js'
 
 // Games
+import Trackfest from 'pages/projects/Trackfest.js'
 import Circuitry from 'pages/projects/Circuitry.js'
 import FlockingEvolution from 'pages/projects/FlockingEvolution.js'
 import SpaceSalvagers from 'pages/projects/SpaceSalvagers.js'
@@ -40,6 +41,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/projects" element={<Projects/>}/>
+          <Route path="/projects/trackfest" element={<Trackfest/>}/>
           <Route path="/projects/circuitry" element={<Circuitry/>}/>
           <Route path="/projects/flocking_evolution" element={<FlockingEvolution/>}/>
           <Route path="/projects/space_salvagers" element={<SpaceSalvagers/>}/>
