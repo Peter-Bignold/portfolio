@@ -30,7 +30,7 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="mt-16 flex flex-wrap items-center justify-center animate-fade-in-3 gap-6">
+        <div className="mt-16 flex flex-wrap items-center justify-center animate-fade-in-3 gap-10">
           {socials.map((social) => (
             <IconLink key={social.href} href={social.href} icon={social.icon} alt={social.alt} label={social.label} large></IconLink>
           ))}
