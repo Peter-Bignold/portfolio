@@ -136,7 +136,7 @@ const Projects = () => {
   ]
 
   return (
-    <Page className="pb-10">
+    <Page background="background2.jpg">
       <div className="mb-10 flex flex-col items-center">
         <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Projects</h1>
         <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Apps, Games, Simulations, and Prototypes</h2>

@@ -102,7 +102,7 @@ const Home = () => {
           className="h-full w-full object-cover object-center animate-fade-in-1"
           src={require('assets/images/backgrounds/background1.jpg')}
           alt=""
-        ></img>
+        />
       </div>
 
       <div className="sticky top-0 h-screen overflow-hidden pb-24 animate-fade-in-3">

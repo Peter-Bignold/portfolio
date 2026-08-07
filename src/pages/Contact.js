@@ -22,15 +22,7 @@ const Contact = () => {
   ]
 
   return (
-    <Page>
-      <div className="fixed inset-0 opacity-10 pointer-events-none select-none">
-        <img
-          className="h-full w-full object-cover object-center animate-fade-in-1"
-          src={require('assets/images/backgrounds/background4.jpg')}
-          alt=""
-        ></img>
-      </div>
-
+    <Page background="background4.jpg">
       <div className="flex flex-col h-screen items-center justify-center">
         <div className="flex w-full max-w-7xl animate-move-up flex-col items-center">
           {contacts.map((contact) => (

@@ -18,7 +18,7 @@ const Creative = () => {
   ]
 
   return (
-    <Page className="pb-10">
+    <Page background="background3.jpg">
       <div className="mb-10 flex flex-col items-center">
         <h1 className="mt-32 mb-2.5 text-5xl font-normal animate-fade-in-1 md:text-7xl">Creative Works</h1>
         <h2 className="text-xl font-light text-neutral-400 animate-fade-in-2 md:text-3xl">Rendered in Blender Cycles and Unreal Engine 5</h2>
