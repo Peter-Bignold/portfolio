@@ -23,11 +23,11 @@ const Contact = () => {
 
   return (
     <Page>
-      <div className="fixed inset-0 opacity-10">
+      <div className="fixed inset-0 opacity-10 pointer-events-none select-none">
         <img
           className="h-full w-full object-cover object-center animate-fade-in-1"
           src={require('assets/images/backgrounds/background4.jpg')}
-          alt="Background"
+          alt=""
         ></img>
       </div>
 
