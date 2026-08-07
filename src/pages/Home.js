@@ -1,5 +1,5 @@
 import React, {startTransition, useEffect, useRef, useState} from 'react'
-import CompactProjectLink from 'components/CompactProjectLink.js'
+import ProjectCardCompact from 'components/ProjectCardCompact.js'
 import IconLink from 'components/IconLink.js'
 import SkillChip from 'components/SkillChip.js'
 import Slideshow from 'components/Slideshow.js'
@@ -166,7 +166,7 @@ const Home = () => {
             </p>
             <div className="mt-2 flex w-full max-w-7xl flex-wrap items-stretch justify-center gap-2 overflow-hidden">
               {featuredProjects.map((project, index) => (
-                <CompactProjectLink 
+                <ProjectCardCompact 
                   key={project.to} 
                   to={project.to} 
                   logo={project.logo} 

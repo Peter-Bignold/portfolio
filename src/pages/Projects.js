@@ -17,9 +17,6 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/circuitry/preview4.jpg'), alt: 'Circuitry heads up display', width: 281, height: 609, className: 'm-1 rounded'},
-        {src: require('assets/images/circuitry/preview1.jpg'), alt: 'Circuitry new session screen', width: 281, height: 609, className: 'm-1 rounded'},
-        {src: require('assets/images/circuitry/preview3.jpg'), alt: 'Circuitry track select screen', width: 281, height: 609, className: 'm-1 rounded'},
       ],
     },
     {
@@ -35,9 +32,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/flocking_evolution/preview1.jpg'), alt: 'Flocking Evolution preview 1'},
+        {src: require('assets/images/flocking_evolution/preview2.jpg'), alt: 'Flocking Evolution preview 2'},
+        {src: require('assets/images/flocking_evolution/preview3.jpg'), alt: 'Flocking Evolution preview 3'},
       ],
     },
     {
@@ -55,9 +52,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/space_salvagers/preview1.jpg'), alt: 'Super Space Salvagers preview 1'},
+        {src: require('assets/images/space_salvagers/preview2.jpg'), alt: 'Super Space Salvagers preview 2'},
+        {src: require('assets/images/space_salvagers/preview3.jpg'), alt: 'Super Space Salvagers preview 3'},
       ],
     },
     {
@@ -72,9 +69,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/mini_racer/preview1.jpg'), alt: 'Mini Racer preview 1'},
+        {src: require('assets/images/mini_racer/preview2.jpg'), alt: 'Mini Racer preview 2'},
+        {src: require('assets/images/mini_racer/preview3.jpg'), alt: 'Mini Racer preview 3'},
       ],
     },
     {
@@ -90,9 +87,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/apogee/preview1.jpg'), alt: 'Apogee preview 1'},
+        {src: require('assets/images/apogee/preview2.jpg'), alt: 'Apogee preview 2'},
+        {src: require('assets/images/apogee/preview3.jpg'), alt: 'Apogee preview 3'},
       ],
     },
     {
@@ -110,9 +107,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/pinata_clicker/preview1.jpg'), alt: 'Pinata Clicker preview 1'},
+        {src: require('assets/images/pinata_clicker/preview2.jpg'), alt: 'Pinata Clicker preview 2'},
+        {src: require('assets/images/pinata_clicker/preview3.jpg'), alt: 'Pinata Clicker preview 3'},
       ],
     },
     {
@@ -128,9 +125,9 @@ const Projects = () => {
         </>
       ),
       previews: [
-        {src: require('assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2', className: 'm-1 w-[98%] max-w-sm rounded'},
-        {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3', className: 'm-1 w-[98%] max-w-sm rounded'},
+        {src: require('assets/images/misfire/preview1.jpg'), alt: 'Misfire preview 1'},
+        {src: require('assets/images/misfire/preview2.jpg'), alt: 'Misfire preview 2'},
+        {src: require('assets/images/misfire/preview3.jpg'), alt: 'Misfire preview 3'},
       ],
     },
   ]

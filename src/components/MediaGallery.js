@@ -1,6 +1,6 @@
 import React from 'react'
 
-const mediaCaptionClassName = 'm-0 text-xl font-light leading-[1.3] md:text-2xl'
+const mediaCaptionClassName = 'm-0 text-xl font-light md:text-2xl'
 
 const MediaGallery = ({items, layout = 'stack', variant = 'gallery'}) => {
   const containerClassName = layout === 'wrap'

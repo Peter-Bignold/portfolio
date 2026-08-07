@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-const CompactProjectLink = ({to, logo, title, meta, className = ''}) => (
+const ProjectCardCompact = ({to, logo, title, meta, className = ''}) => (
   <Link
     className={`flex w-full flex-col rounded-lg border border-slate-800 bg-slate-800/50 px-5 py-4 text-left text-neutral-100 shadow-panel transition duration-200 hover:bg-slate-800 md:w-auto md:min-w-72 ${className}`}
     to={to}
@@ -16,4 +16,4 @@ const CompactProjectLink = ({to, logo, title, meta, className = ''}) => (
   </Link>
 )
 
-export default CompactProjectLink
+export default ProjectCardCompact
